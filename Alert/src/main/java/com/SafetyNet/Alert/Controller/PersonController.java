@@ -17,21 +17,21 @@ public class PersonController {
     PersonService personService;
 
 
-    @GetMapping("/persons")
+    @GetMapping("/person")
     //TODO : ADD tray catch
     public List<Person> getAllPersons() {
         return personService.findAll();
     }
 
 
-    @GetMapping(value = "persons/{id}")
+    @GetMapping(value = "person/{id}")
     //TODO : ADD tray catch
     public Person getOneById(@PathVariable Long id) {
         return personService.findById(id).isPresent() ? personService.findById(id).get(): null ;
     }
 
 
-    @PostMapping("/persons/add")
+    @PostMapping("/person/add")
     public ResponseEntity<Integer> addPerson(@RequestBody Person person) {
         try {
             return new ResponseEntity<>(personService.save(person), HttpStatus.CREATED);
@@ -40,7 +40,7 @@ public class PersonController {
         }
     }
 
-    @PutMapping(value = "/persons/update/{id}")
+    @PutMapping(value = "/person/update/{id}")
     public ResponseEntity<Integer> updatePerson(@RequestBody Person person, @PathVariable Long id) {
         try {
             return new ResponseEntity<>(personService.update(person, id), HttpStatus.CREATED);
@@ -49,7 +49,7 @@ public class PersonController {
         }
     }
 
-    @DeleteMapping(value = "/persons/{id}")
+    @DeleteMapping(value = "/person/{id}")
     public ResponseEntity<Long> deletePerson(@PathVariable long id) {
         try {
             return new ResponseEntity<>(personService.deleteById(id), HttpStatus.ACCEPTED);
