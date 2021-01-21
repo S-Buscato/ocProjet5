@@ -6,14 +6,16 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
+@Table(name="TBL_PERSONS")
 public class Person {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String firstname;
     private String lastname;
