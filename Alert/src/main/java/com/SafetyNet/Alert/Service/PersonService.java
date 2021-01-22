@@ -31,6 +31,17 @@ public class PersonService {
         return null;
     }
 
+    public Person findByfirstnameAndLastname(String firstname, String lastname) {
+        try {
+            Person p = personRepository.findByfirstnameAndLastname(firstname, lastname);
+            return p;
+        } catch (Exception e) {
+
+        }
+
+        return null;
+    }
+
     public Optional<Person> findById(Long id) {
         try {
             return personRepository.findById(id);
@@ -61,16 +72,33 @@ public class PersonService {
         return 0;
     }
 
-    //TODO : faire controle si ID existe
     public int update(Person person, Long id) {
         try {
-            if(personRepository.existsById(id)){
-                person.setId(id);
-                personRepository.save(person);
+            final Person p = personRepository.findById(id).isPresent() ? personRepository.findById(id).get() : null;
+            if (p != null) {
+                p.setAddress(person.getAddress());
+                p.setCity(person.getCity());
+                p.setZip(person.getZip());
+                p.setPhone(person.getPhone());
+                p.setEmail(person.getEmail());
+                personRepository.save(p);
+                return 1;
+              }else{
+                return 0;
             }
         } catch (Exception e) {
 
         }
         return 0;
+    }
+
+    public Long deleteOneByfirstnameAndLastname(String firstname, String lastname) {
+        Person p = this.findByfirstnameAndLastname(firstname, lastname);
+        try {
+            return this.deleteById(p.getId());
+        } catch (
+                Exception e) {
+        }
+        return null;
     }
 }

@@ -18,16 +18,19 @@ public class PersonController {
 
 
     @GetMapping("/person")
-    //TODO : ADD tray catch
     public List<Person> getAllPersons() {
         return personService.findAll();
     }
 
 
     @GetMapping(value = "person/{id}")
-    //TODO : ADD tray catch
     public Person getOneById(@PathVariable Long id) {
         return personService.findById(id).isPresent() ? personService.findById(id).get(): null ;
+    }
+
+    @DeleteMapping(value = "person/delete")
+    public Long getOneByLastnameFirstname(@RequestParam String firstname, @RequestParam String lastname) {
+        return personService.deleteOneByfirstnameAndLastname(firstname, lastname);
     }
 
 

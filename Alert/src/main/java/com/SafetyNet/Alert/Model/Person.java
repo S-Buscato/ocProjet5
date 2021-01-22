@@ -1,8 +1,6 @@
 package com.SafetyNet.Alert.Model;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 
@@ -17,8 +15,12 @@ public class Person {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+
+    @Setter(AccessLevel.NONE)
     private String firstname;
+    @Setter(AccessLevel.NONE)
     private String lastname;
+
     private String address;
     private String city;
     private String zip;
