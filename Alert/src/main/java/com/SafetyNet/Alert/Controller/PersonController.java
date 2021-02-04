@@ -1,5 +1,8 @@
 package com.SafetyNet.Alert.Controller;
 
+import com.SafetyNet.Alert.Dto.Mapper.PersonMapper;
+import com.SafetyNet.Alert.Dto.PersonDTO;
+import com.SafetyNet.Alert.Dto.PersonUpdateDTO;
 import com.SafetyNet.Alert.Model.Person;
 import com.SafetyNet.Alert.Service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,35 +21,54 @@ public class PersonController {
 
 
     @GetMapping("/person")
-    public List<Person> getAllPersons() {
-        return personService.findAll();
+    public ResponseEntity<List<PersonDTO>> getAllPersons() {
+        try {
+            return ResponseEntity.ok(PersonMapper.INSTANCE.personToPersonsDTO(personService.findAll()));
+        } catch (Exception e) {
+            return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
     }
 
 
     @GetMapping(value = "person/{id}")
-    public Person getOneById(@PathVariable Long id) {
-        return personService.findById(id).isPresent() ? personService.findById(id).get(): null ;
+    public ResponseEntity<PersonDTO> getOneById(@PathVariable Long id) {
+        try {
+            return personService.findById(id).isPresent() ?
+                    ResponseEntity.ok(PersonMapper.INSTANCE.personToPersonDTO(personService.findById(id).get()))
+                    :
+                    ResponseEntity.badRequest().body(null);
+        } catch (Exception e) {
+            return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
     }
 
     @DeleteMapping(value = "person/delete")
-    public Long getOneByLastnameFirstname(@RequestParam String firstname, @RequestParam String lastname) {
-        return personService.deleteOneByfirstnameAndLastname(firstname, lastname);
+    public ResponseEntity<Long> getOneByLastnameFirstname(@RequestParam String firstname, @RequestParam String lastname) {
+        try {
+            return new ResponseEntity<>(personService.deleteOneByfirstnameAndLastname(firstname, lastname),
+                    HttpStatus.OK);
+
+        } catch (Exception e) {
+            return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
     }
 
 
     @PostMapping("/person/add")
-    public ResponseEntity<Integer> addPerson(@RequestBody Person person) {
+    public ResponseEntity<PersonDTO> addPerson(@RequestBody PersonDTO personDTO) {
         try {
-            return new ResponseEntity<>(personService.save(person), HttpStatus.CREATED);
+            personService.save(PersonMapper.INSTANCE.personDTOtoPerson(personDTO));
+            return ResponseEntity.status(HttpStatus.CREATED).body(personDTO);
         } catch (Exception e) {
             return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 
     @PutMapping(value = "/person/update/{id}")
-    public ResponseEntity<Integer> updatePerson(@RequestBody Person person, @PathVariable Long id) {
+    public ResponseEntity<Person> updatePerson(@RequestBody PersonUpdateDTO personDTO, @PathVariable Long id) {
         try {
-            return new ResponseEntity<>(personService.update(person, id), HttpStatus.CREATED);
+            personDTO.setId(id);
+            return ResponseEntity.status(HttpStatus.ACCEPTED).body(personService.update(personDTO, id));
         } catch (Exception e) {
             return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
         }
@@ -59,7 +81,6 @@ public class PersonController {
         } catch (Exception e) {
             return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
         }
-
     }
 
 

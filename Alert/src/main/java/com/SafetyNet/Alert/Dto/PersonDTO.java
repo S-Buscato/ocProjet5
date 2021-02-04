@@ -1,25 +1,19 @@
-package com.SafetyNet.Alert.Model;
+package com.SafetyNet.Alert.Dto;
 
 import lombok.*;
-
-import javax.persistence.*;
+import javax.persistence.Id;
 
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
-@Entity
-@Table(name="TBL_PERSONS")
-public class Person {
-
+public class PersonDTO {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+
     private String firstname;
     private String lastname;
+
     private String address;
     private String city;
     private String zip;
     private String phone;
     private String email;
-
 }

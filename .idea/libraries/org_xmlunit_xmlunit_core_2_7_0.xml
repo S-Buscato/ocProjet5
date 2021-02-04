@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="org.xmlunit:xmlunit-core:2.7.0" type="repository">
+    <properties maven-id="org.xmlunit:xmlunit-core:2.7.0" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/xmlunit/xmlunit-core/2.7.0/xmlunit-core-2.7.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/javax/xml/bind/jaxb-api/2.3.0/jaxb-api-2.3.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

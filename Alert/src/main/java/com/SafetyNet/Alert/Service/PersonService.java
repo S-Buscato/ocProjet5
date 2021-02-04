@@ -1,7 +1,13 @@
 package com.SafetyNet.Alert.Service;
 
+import com.SafetyNet.Alert.Dto.Mapper.PersonMapper;
+import com.SafetyNet.Alert.Dto.PersonDTO;
+import com.SafetyNet.Alert.Dto.PersonUpdateDTO;
 import com.SafetyNet.Alert.Model.Person;
 import com.SafetyNet.Alert.Repository.PersonRepository;
+import com.SafetyNet.Alert.Service.Iservice.IPersonService;
+import lombok.Data;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -9,16 +15,16 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
+@Data
 @Service
-public class PersonService {
+public class PersonService implements IPersonService {
 
 
-    private final PersonRepository personRepository;
 
-    public PersonService(PersonRepository personRepository) {
-        this.personRepository = personRepository;
-    }
+    @Autowired
+    PersonRepository personRepository;
 
+    @Override
     public List<Person> findAll() {
         try {
             List<Person> ret = StreamSupport.stream(personRepository.findAll().spliterator(),
@@ -31,6 +37,7 @@ public class PersonService {
         return null;
     }
 
+    @Override
     public Person findByfirstnameAndLastname(String firstname, String lastname) {
         try {
             Person p = personRepository.findByfirstnameAndLastname(firstname, lastname);
@@ -41,7 +48,7 @@ public class PersonService {
 
         return null;
     }
-
+    @Override
     public Optional<Person> findById(Long id) {
         try {
             return personRepository.findById(id);
@@ -53,6 +60,7 @@ public class PersonService {
     }
 
 
+    @Override
     public Long deleteById(Long id) {
         try {
             personRepository.deleteById(id);
@@ -63,33 +71,21 @@ public class PersonService {
         return null;
     }
 
-    public int save(Person person) {
-        try {
-            personRepository.save(person);
-        } catch (Exception e) {
+    @Override
+    public Person save(Person person) {
+            return personRepository.save(person);
 
-        }
-        return 0;
     }
 
-    public int update(Person person, Long id) {
+    @Override
+    public Person update(PersonUpdateDTO personDto, Long id) {
         try {
-            final Person p = personRepository.findById(id).isPresent() ? personRepository.findById(id).get() : null;
-            if (p != null) {
-                p.setAddress(person.getAddress());
-                p.setCity(person.getCity());
-                p.setZip(person.getZip());
-                p.setPhone(person.getPhone());
-                p.setEmail(person.getEmail());
-                personRepository.save(p);
-                return 1;
-              }else{
-                return 0;
-            }
+            Person p = personRepository.findById(id).isPresent() ? personRepository.findById(id).get() : null;
+            return save(PersonMapper.INSTANCE.personUpdateDtoToPersonUpdate(personDto, p));
         } catch (Exception e) {
 
         }
-        return 0;
+        return null;
     }
 
     public Long deleteOneByfirstnameAndLastname(String firstname, String lastname) {
