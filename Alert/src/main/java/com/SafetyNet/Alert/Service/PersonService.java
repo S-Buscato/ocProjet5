@@ -1,7 +1,13 @@
 package com.SafetyNet.Alert.Service;
 
+import com.SafetyNet.Alert.Dto.Mapper.PersonMapper;
+import com.SafetyNet.Alert.Dto.PersonDTO;
+import com.SafetyNet.Alert.Dto.PersonUpdateDTO;
 import com.SafetyNet.Alert.Model.Person;
 import com.SafetyNet.Alert.Repository.PersonRepository;
+import com.SafetyNet.Alert.Service.Iservice.IPersonService;
+import lombok.Data;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -9,16 +15,16 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
+@Data
 @Service
-public class PersonService {
+public class PersonService implements IPersonService {
 
 
-    private final PersonRepository personRepository;
 
-    public PersonService(PersonRepository personRepository) {
-        this.personRepository = personRepository;
-    }
+    @Autowired
+    PersonRepository personRepository;
 
+    @Override
     public List<Person> findAll() {
         try {
             List<Person> ret = StreamSupport.stream(personRepository.findAll().spliterator(),
@@ -31,6 +37,18 @@ public class PersonService {
         return null;
     }
 
+    @Override
+    public Person findByfirstnameAndLastname(String firstname, String lastname) {
+        try {
+            Person p = personRepository.findByfirstnameAndLastname(firstname, lastname);
+            return p;
+        } catch (Exception e) {
+
+        }
+
+        return null;
+    }
+    @Override
     public Optional<Person> findById(Long id) {
         try {
             return personRepository.findById(id);
@@ -42,6 +60,7 @@ public class PersonService {
     }
 
 
+    @Override
     public Long deleteById(Long id) {
         try {
             personRepository.deleteById(id);
@@ -52,25 +71,30 @@ public class PersonService {
         return null;
     }
 
-    public int save(Person person) {
-        try {
-            personRepository.save(person);
-        } catch (Exception e) {
+    @Override
+    public Person save(Person person) {
+            return personRepository.save(person);
 
-        }
-        return 0;
     }
 
-    //TODO : faire controle si ID existe
-    public int update(Person person, Long id) {
+    @Override
+    public Person update(PersonUpdateDTO personDto, Long id) {
         try {
-            if(personRepository.existsById(id)){
-                person.setId(id);
-                personRepository.save(person);
-            }
+            Person p = personRepository.findById(id).isPresent() ? personRepository.findById(id).get() : null;
+            return save(PersonMapper.INSTANCE.personUpdateDtoToPersonUpdate(personDto, p));
         } catch (Exception e) {
 
         }
-        return 0;
+        return null;
+    }
+
+    public Long deleteOneByfirstnameAndLastname(String firstname, String lastname) {
+        Person p = this.findByfirstnameAndLastname(firstname, lastname);
+        try {
+            return this.deleteById(p.getId());
+        } catch (
+                Exception e) {
+        }
+        return null;
     }
 }
