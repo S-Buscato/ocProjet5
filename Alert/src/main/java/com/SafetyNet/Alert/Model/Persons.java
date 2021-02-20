@@ -3,13 +3,14 @@ package com.SafetyNet.Alert.Model;
 import lombok.*;
 
 import javax.persistence.*;
+import java.util.Collection;
+import java.util.Set;
 
 @Data
 @AllArgsConstructor
-@NoArgsConstructor
 @Entity
-@Table(name="TBL_PERSONS")
-public class Person {
+@Table(name="persons")
+public class Persons {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,5 +22,15 @@ public class Person {
     private String zip;
     private String phone;
     private String email;
+
+    public Person(){
+        super();
+    }
+
+/*    @ManyToOne
+    Firestation firestation;
+
+    @OneToOne
+    Medicalrecords medicalrecords;*/
 
 }
