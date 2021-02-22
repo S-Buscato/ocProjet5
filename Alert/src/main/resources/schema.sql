@@ -1,12 +1,14 @@
-/*
-DROP TABLE IF EXISTS TBL_PERSONS;
-DROP TABLE IF EXISTS TBL_FIRESTATIONS;
+DROP TABLE IF EXISTS persons;
+DROP TABLE IF EXISTS firestations;
+DROP TABLE IF EXISTS medicalrecords;
 
-CREATE TABLE TBL_PERSONS
+
+
+CREATE TABLE persons
 (
     id        INT AUTO_INCREMENT PRIMARY KEY,
-    firstname VARCHAR(250) NOT NULL,
-    lastname  VARCHAR(250) NOT NULL,
+    first_name VARCHAR(250) NOT NULL,
+    last_name  VARCHAR(250) NOT NULL,
     address   VARCHAR(250) NOT NULL,
     city      VARCHAR(250) NOT NULL,
     zip       VARCHAR(250) NOT NULL,
@@ -14,19 +16,21 @@ CREATE TABLE TBL_PERSONS
     email     VARCHAR(250) DEFAULT NULL
 );
 
-CREATE TABLE TBL_FIRESTATIONS
+CREATE TABLE firestations
 (
     id      INT AUTO_INCREMENT PRIMARY KEY,
     address VARCHAR(250) NOT NULL,
-    station INT NOT NULL
+    station VARCHAR(250) NOT NULL
 );
 
-CREATE TABLE TBL_MEDICALRECORDS
+CREATE TABLE medicalrecords
 (
     id      INT AUTO_INCREMENT PRIMARY KEY,
-    firstName VARCHAR(250) NOT NULL,
-    lastName VARCHAR(250) NOT NULL,
+    first_name VARCHAR(250) NOT NULL,
+    last_name VARCHAR(250) NOT NULL,
     birthdate VARCHAR(250) NOT NULL,
-    medications ARRAY NOT NULL,
-    allergies ARRAY NOT NULL
-);*/
+    medications RESULT_SET,
+    allergies RESULT_SET
+);
+
+

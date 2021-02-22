@@ -1,9 +1,8 @@
 package com.SafetyNet.Alert.Service;
 
 import com.SafetyNet.Alert.Dto.Mapper.PersonMapper;
-import com.SafetyNet.Alert.Dto.PersonDTO;
 import com.SafetyNet.Alert.Dto.PersonUpdateDTO;
-import com.SafetyNet.Alert.Model.Person;
+import com.SafetyNet.Alert.Model.Persons;
 import com.SafetyNet.Alert.Repository.PersonRepository;
 import com.SafetyNet.Alert.Service.Iservice.IPersonService;
 import lombok.Data;
@@ -19,15 +18,13 @@ import java.util.stream.StreamSupport;
 @Service
 public class PersonService implements IPersonService {
 
-
-
     @Autowired
     PersonRepository personRepository;
 
     @Override
-    public List<Person> findAll() {
+    public List<Persons> findAll() {
         try {
-            List<Person> ret = StreamSupport.stream(personRepository.findAll().spliterator(),
+            List<Persons> ret = StreamSupport.stream(personRepository.findAll().spliterator(),
                     false).collect(Collectors.toList());
             return ret;
 
@@ -38,9 +35,9 @@ public class PersonService implements IPersonService {
     }
 
     @Override
-    public Person findByfirstnameAndLastname(String firstname, String lastname) {
+    public Persons findByfirstNameAndLastName(String firstName, String lastName) {
         try {
-            Person p = personRepository.findByfirstnameAndLastname(firstname, lastname);
+            Persons p = personRepository.findByfirstNameAndLastName(firstName, lastName);
             return p;
         } catch (Exception e) {
 
@@ -48,8 +45,14 @@ public class PersonService implements IPersonService {
 
         return null;
     }
+
     @Override
-    public Optional<Person> findById(Long id) {
+    public Iterable<Persons> saveAll(List<Persons> lstPerson) {
+        return personRepository.saveAll(lstPerson);
+    }
+
+    @Override
+    public Optional<Persons> findById(Long id) {
         try {
             return personRepository.findById(id);
         } catch (Exception e) {
@@ -72,15 +75,15 @@ public class PersonService implements IPersonService {
     }
 
     @Override
-    public Person save(Person person) {
+    public Persons save(Persons person) {
             return personRepository.save(person);
 
     }
 
     @Override
-    public Person update(PersonUpdateDTO personDto, Long id) {
+    public Persons update(PersonUpdateDTO personDto, Long id) {
         try {
-            Person p = personRepository.findById(id).isPresent() ? personRepository.findById(id).get() : null;
+            Persons p = personRepository.findById(id).isPresent() ? personRepository.findById(id).get() : null;
             return save(PersonMapper.INSTANCE.personUpdateDtoToPersonUpdate(personDto, p));
         } catch (Exception e) {
 
@@ -88,8 +91,8 @@ public class PersonService implements IPersonService {
         return null;
     }
 
-    public Long deleteOneByfirstnameAndLastname(String firstname, String lastname) {
-        Person p = this.findByfirstnameAndLastname(firstname, lastname);
+    public Long deleteOneByfirstnameAndLastname(String firstName, String lastName) {
+        Persons p = this.findByfirstNameAndLastName(firstName, lastName);
         try {
             return this.deleteById(p.getId());
         } catch (

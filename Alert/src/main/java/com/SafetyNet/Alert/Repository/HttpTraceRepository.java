@@ -1,2 +1,4 @@
-package com.SafetyNet.Alert.Repository;public interface HttpTraceRepository {
+package com.SafetyNet.Alert.Repository;
+
+public interface HttpTraceRepository {
 }

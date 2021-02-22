@@ -1,9 +1,11 @@
 <component name="libraryTable">
   <library name="org.mapstruct.extensions.spring:mapstruct-spring-annotations:0.0.1" type="repository">
-    <properties maven-id="org.mapstruct.extensions.spring:mapstruct-spring-annotations:0.0.1" />
-    <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/mapstruct/extensions/spring/mapstruct-spring-annotations/0.0.1/mapstruct-spring-annotations-0.0.1.jar!/" />
-    </CLASSES>
+    <properties maven-id="org.mapstruct.extensions.spring:mapstruct-spring-annotations:0.0.1">
+      <exclude>
+        <dependency maven-id="org.mapstruct.extensions.spring:mapstruct-spring-annotations" />
+      </exclude>
+    </properties>
+    <CLASSES />
     <JAVADOC />
     <SOURCES />
   </library>
