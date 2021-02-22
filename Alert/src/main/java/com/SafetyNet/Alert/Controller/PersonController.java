@@ -3,7 +3,7 @@ package com.SafetyNet.Alert.Controller;
 import com.SafetyNet.Alert.Dto.Mapper.PersonMapper;
 import com.SafetyNet.Alert.Dto.PersonDTO;
 import com.SafetyNet.Alert.Dto.PersonUpdateDTO;
-import com.SafetyNet.Alert.Model.Person;
+import com.SafetyNet.Alert.Model.Persons;
 import com.SafetyNet.Alert.Service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -43,9 +43,9 @@ public class PersonController {
     }
 
     @DeleteMapping(value = "person/delete")
-    public ResponseEntity<Long> getOneByLastnameFirstname(@RequestParam String firstname, @RequestParam String lastname) {
+    public ResponseEntity<Long> getOneByLastnameFirstname(@RequestParam String firstName, @RequestParam String lastName) {
         try {
-            return new ResponseEntity<>(personService.deleteOneByfirstnameAndLastname(firstname, lastname),
+            return new ResponseEntity<>(personService.deleteOneByfirstnameAndLastname(firstName, lastName),
                     HttpStatus.OK);
 
         } catch (Exception e) {
@@ -65,7 +65,7 @@ public class PersonController {
     }
 
     @PutMapping(value = "/person/update/{id}")
-    public ResponseEntity<Person> updatePerson(@RequestBody PersonUpdateDTO personDTO, @PathVariable Long id) {
+    public ResponseEntity<Persons> updatePerson(@RequestBody PersonUpdateDTO personDTO, @PathVariable Long id) {
         try {
             personDTO.setId(id);
             return ResponseEntity.status(HttpStatus.ACCEPTED).body(personService.update(personDTO, id));
@@ -73,16 +73,5 @@ public class PersonController {
             return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
-
-    @DeleteMapping(value = "/person/{id}")
-    public ResponseEntity<Long> deletePerson(@PathVariable long id) {
-        try {
-            return new ResponseEntity<>(personService.deleteById(id), HttpStatus.ACCEPTED);
-        } catch (Exception e) {
-            return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
-        }
-    }
-
-
 }
 

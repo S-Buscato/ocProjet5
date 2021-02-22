@@ -2,7 +2,7 @@ package com.SafetyNet.Alert.Dto.Mapper;
 
 import com.SafetyNet.Alert.Dto.PersonDTO;
 import com.SafetyNet.Alert.Dto.PersonUpdateDTO;
-import com.SafetyNet.Alert.Model.Person;
+import com.SafetyNet.Alert.Model.Persons;
 import org.mapstruct.BeanMapping;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingTarget;
@@ -18,13 +18,14 @@ public interface PersonMapper {
     PersonMapper INSTANCE = Mappers.getMapper(PersonMapper.class);
 
     @BeanMapping(nullValuePropertyMappingStrategy = NullValuePropertyMappingStrategy.IGNORE)
-    PersonDTO personToPersonDTO(Person entity);
+    PersonDTO personToPersonDTO(Persons entity);
 
     @BeanMapping(nullValuePropertyMappingStrategy = NullValuePropertyMappingStrategy.IGNORE)
-    Person personDTOtoPerson(PersonDTO dto);
-
-    List<PersonDTO> personToPersonsDTO(List<Person> persons);
+    Persons personDTOtoPerson(PersonDTO dto);
 
     @BeanMapping(nullValuePropertyMappingStrategy = NullValuePropertyMappingStrategy.IGNORE)
-    Person personUpdateDtoToPersonUpdate(PersonUpdateDTO person,  @MappingTarget Person entity);
+    List<PersonDTO> personToPersonsDTO(List<Persons> persons);
+
+    @BeanMapping(nullValuePropertyMappingStrategy = NullValuePropertyMappingStrategy.IGNORE)
+    Persons personUpdateDtoToPersonUpdate(PersonUpdateDTO person,  @MappingTarget Persons    entity);
 }

@@ -1,13 +1,12 @@
 package com.SafetyNet.Alert.Repository;
 
-import com.SafetyNet.Alert.Dto.PersonDTO;
-import com.SafetyNet.Alert.Model.Person;
+import com.SafetyNet.Alert.Model.Persons;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface PersonRepository extends CrudRepository<Person, Long> {
+public interface PersonRepository extends CrudRepository<Persons, Long> {
 
-  Person findByfirstnameAndLastname(String firstname, String lastname);
+  Persons findByfirstNameAndLastName(String firstName, String lastName);
     
 }
