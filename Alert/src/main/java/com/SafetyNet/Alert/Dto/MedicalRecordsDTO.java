@@ -14,7 +14,6 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@JsonDeserialize(builder = Medicalrecords.class)
 public class MedicalRecordsDTO {
     @Id
     private long id;

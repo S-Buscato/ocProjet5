@@ -5,7 +5,9 @@ import com.SafetyNet.Alert.Dto.FirestationDTO;
 import com.SafetyNet.Alert.Dto.Mapper.FirestationMapper;
 import com.SafetyNet.Alert.Dto.Mapper.MedicalrecordsMapper;
 import com.SafetyNet.Alert.Dto.MedicalRecordsDTO;
+import com.SafetyNet.Alert.Dto.MedicalRecordsUpdateDTO;
 import com.SafetyNet.Alert.Model.Firestations;
+import com.SafetyNet.Alert.Model.Medicalrecords;
 import com.SafetyNet.Alert.Service.FirestationService;
 import com.SafetyNet.Alert.Service.MedicalrecordsService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -44,17 +46,16 @@ public class MedicalrecordsController {
             return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
-/*
-    @DeleteMapping(value = "firestation/delete")
+    @DeleteMapping(value = "medicalrecords/delete")
     public ResponseEntity<Long> getOneByLastnameFirstname(@RequestParam String firstname, @RequestParam String lastname) {
         try {
-            return new ResponseEntity<>(firestationService.deleteOneByfirstnameAndLastname(firstname, lastname),
+            return new ResponseEntity<>(medicalrecordsService.deleteOneByfirstnameAndLastname(firstname, lastname),
                     HttpStatus.OK);
 
         } catch (Exception e) {
             return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
         }
-    }*/
+    }
 
 
     @PostMapping("/medicalrecords/add")
@@ -67,13 +68,13 @@ public class MedicalrecordsController {
         }
     }
 
-/*    @PutMapping(value = "/medicalrecords/update/{id}")
-    public ResponseEntity<MedicalRecordsDTO> updateMedicalRecords(@RequestBody MedicalRecordsDTO medicalRecordsDTO, @PathVariable Long id) {
+    @PutMapping(value = "/medicalrecords/update/{id}")
+    public ResponseEntity<Medicalrecords> updateMedicalRecords(@RequestBody MedicalRecordsUpdateDTO medicalRecordsUpdateDTO, @PathVariable Long id) {
         try {
-            medicalRecordsDTO.setId(id);
-            return ResponseEntity.status(HttpStatus.ACCEPTED).body(medicalrecordsService.update(medicalRecordsDTO, id));
+            medicalRecordsUpdateDTO.setId(id);
+            return ResponseEntity.status(HttpStatus.ACCEPTED).body(medicalrecordsService.update(medicalRecordsUpdateDTO, id));
         } catch (Exception e) {
             return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
         }
-    }*/
+    }
 }

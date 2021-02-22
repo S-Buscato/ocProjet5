@@ -1,5 +1,7 @@
 package com.SafetyNet.Alert.Service;
 
+import com.SafetyNet.Alert.Dto.Mapper.MedicalrecordsMapper;
+import com.SafetyNet.Alert.Dto.MedicalRecordsUpdateDTO;
 import com.SafetyNet.Alert.Model.Medicalrecords;
 import com.SafetyNet.Alert.Repository.MedicalserviceRepository;
 import com.SafetyNet.Alert.Service.Iservice.IMedicalrecordsService;
@@ -46,7 +48,7 @@ public class MedicalrecordsService implements IMedicalrecordsService {
     }
 
 
-/*    @Override
+    @Override
     public Long deleteById(Long id) {
         try {
             medicalserviceRepository.deleteById(id);
@@ -55,7 +57,7 @@ public class MedicalrecordsService implements IMedicalrecordsService {
 
         }
         return null;
-    }*/
+    }
 
     @Override
     public Medicalrecords save(Medicalrecords medicalrecords) {
@@ -63,29 +65,41 @@ public class MedicalrecordsService implements IMedicalrecordsService {
 
     }
 
+
     @Override
     public Iterable<Medicalrecords> saveAll(List<Medicalrecords> medicalrecordsList) {
         return medicalserviceRepository.saveAll(medicalrecordsList);
     }
 
-    /*@Override
-    public Medicalrecords update(PersonUpdateDTO personDto, Long id) {
+    @Override
+    public Medicalrecords update(MedicalRecordsUpdateDTO medicalRecordsUpdateDTO, Long id) {
         try {
-            Persons p = medicalserviceRepository.findById(id).isPresent() ? medicalserviceRepository.findById(id).get() : null;
-            return save(PersonMapper.INSTANCE.personUpdateDtoToPersonUpdate(personDto, p));
+            Medicalrecords m = medicalserviceRepository.findById(id).isPresent() ? medicalserviceRepository.findById(id).get() : null;
+            return save(MedicalrecordsMapper.INSTANCE.medicalRecordsUpdateDtoToMedicalRecordsUpdate(medicalRecordsUpdateDTO, m));
         } catch (Exception e) {
 
         }
         return null;
     }
-*/
-    /*public Long deleteOneByfirstnameAndLastname(String firstname, String lastname) {
-        Persons p = this.findByfirstnameAndLastname(firstname, lastname);
+
+    @Override
+    public Medicalrecords findByfirstnameAndLastname(String firstName, String lastName) {
         try {
-            return this.deleteById(p.getId());
+            Medicalrecords m = medicalserviceRepository.findByfirstNameAndLastName(firstName, lastName);
+            return m;
+        } catch (Exception e) {
+
+        }
+
+        return null;
+    }
+    public Long deleteOneByfirstnameAndLastname(String firstname, String lastname) {
+        Medicalrecords m = this.findByfirstnameAndLastname(firstname, lastname);
+        try {
+            return this.deleteById(m.getId());
         } catch (
                 Exception e) {
         }
         return null;
-    }*/
+    }
 }

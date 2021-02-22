@@ -1,6 +1,7 @@
 package com.SafetyNet.Alert.Dto.Mapper;
 
 import com.SafetyNet.Alert.Dto.MedicalRecordsDTO;
+import com.SafetyNet.Alert.Dto.MedicalRecordsUpdateDTO;
 import com.SafetyNet.Alert.Dto.PersonDTO;
 import com.SafetyNet.Alert.Dto.PersonUpdateDTO;
 import com.SafetyNet.Alert.Model.Medicalrecords;
@@ -26,4 +27,7 @@ public interface MedicalrecordsMapper {
 
     @BeanMapping(nullValuePropertyMappingStrategy = NullValuePropertyMappingStrategy.IGNORE)
     List<MedicalRecordsDTO> medicalrecordsToMedicalrecordsDTO(List<Medicalrecords> medicalrecords);
+
+    @BeanMapping(nullValuePropertyMappingStrategy = NullValuePropertyMappingStrategy.IGNORE)
+    Medicalrecords medicalRecordsUpdateDtoToMedicalRecordsUpdate(MedicalRecordsUpdateDTO medicalRecordsUpdateDTO, @MappingTarget Medicalrecords entity);
 }

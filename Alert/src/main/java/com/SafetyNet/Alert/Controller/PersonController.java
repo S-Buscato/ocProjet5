@@ -65,10 +65,10 @@ public class PersonController {
     }
 
     @PutMapping(value = "/person/update/{id}")
-    public ResponseEntity<Persons> updatePerson(@RequestBody PersonUpdateDTO personDTO, @PathVariable Long id) {
+    public ResponseEntity<Persons> updatePerson(@RequestBody PersonUpdateDTO personUpdateDTO, @PathVariable Long id) {
         try {
-            personDTO.setId(id);
-            return ResponseEntity.status(HttpStatus.ACCEPTED).body(personService.update(personDTO, id));
+            personUpdateDTO.setId(id);
+            return ResponseEntity.status(HttpStatus.ACCEPTED).body(personService.update(personUpdateDTO, id));
         } catch (Exception e) {
             return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
         }

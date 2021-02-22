@@ -80,15 +80,4 @@ public class FirestationService implements IFirestationService {
         return firestationRepository.saveAll(firestationsList);
     }
 
-/*    public Long deleteOneByfirstnameAndLastname(String firstname, String lastname) {
-        Firestation p = this.findByfirstnameAndLastname(firstname, lastname);
-        try {
-            return this.deleteById(p.getId());
-        } catch (
-                Exception e) {
-        }
-        return null;
-    }*/
-
-
 }
