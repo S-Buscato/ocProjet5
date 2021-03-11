@@ -1,14 +1,10 @@
 package com.SafetyNet.Alert.Controller;
 
 
-import com.SafetyNet.Alert.Dto.FirestationDTO;
-import com.SafetyNet.Alert.Dto.Mapper.FirestationMapper;
 import com.SafetyNet.Alert.Dto.Mapper.MedicalrecordsMapper;
 import com.SafetyNet.Alert.Dto.MedicalRecordsDTO;
 import com.SafetyNet.Alert.Dto.MedicalRecordsUpdateDTO;
-import com.SafetyNet.Alert.Model.Firestations;
 import com.SafetyNet.Alert.Model.Medicalrecords;
-import com.SafetyNet.Alert.Service.FirestationService;
 import com.SafetyNet.Alert.Service.MedicalrecordsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

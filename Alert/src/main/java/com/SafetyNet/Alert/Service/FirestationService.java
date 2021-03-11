@@ -4,6 +4,7 @@ import com.SafetyNet.Alert.Dto.FirestationDTO;
 import com.SafetyNet.Alert.Dto.Mapper.FirestationMapper;
 import com.SafetyNet.Alert.Model.Firestations;
 import com.SafetyNet.Alert.Repository.FirestationRepository;
+import com.SafetyNet.Alert.Repository.MedicalserviceRepository;
 import com.SafetyNet.Alert.Service.Iservice.IFirestationService;
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +21,7 @@ public class FirestationService implements IFirestationService {
 
     @Autowired
     FirestationRepository firestationRepository;
+
 
     @Override
     public List<Firestations> findAll() {
@@ -60,8 +62,15 @@ public class FirestationService implements IFirestationService {
 
     @Override
     public Firestations save(Firestations firestation) {
-        return firestationRepository.save(firestation);
+        Firestations f = new Firestations();
+        if(firestationRepository.findFirestationsByAddress(firestation.getAddress()) == null){
+           firestationRepository.save(firestation);
+            f.setAddress(firestation.getAddress());
+            f.setStation(firestation.getStation());
+            f.setId(firestation.getId());
+        }
 
+        return f;
     }
 
     @Override
@@ -79,5 +88,17 @@ public class FirestationService implements IFirestationService {
     public Iterable<Firestations> saveAll(List<Firestations> firestationsList) {
         return firestationRepository.saveAll(firestationsList);
     }
+
+/*    @Override
+    public List<Persons> getPersonsByStationNumber(String stationNumber){
+        return firestationRepository.getPersonsByStationNumber(stationNumber);
+    }*/
+
+    @Override
+    public Firestations findByAddress(String address) {
+        return firestationRepository.findFirestationsByAddress(address);
+    }
+
+
 
 }

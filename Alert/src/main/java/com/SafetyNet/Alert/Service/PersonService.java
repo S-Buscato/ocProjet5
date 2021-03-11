@@ -1,7 +1,7 @@
 package com.SafetyNet.Alert.Service;
 
 import com.SafetyNet.Alert.Dto.Mapper.PersonMapper;
-import com.SafetyNet.Alert.Dto.PersonUpdateDTO;
+import com.SafetyNet.Alert.Dto.PersonDTO;
 import com.SafetyNet.Alert.Model.Persons;
 import com.SafetyNet.Alert.Repository.PersonRepository;
 import com.SafetyNet.Alert.Service.Iservice.IPersonService;
@@ -20,6 +20,13 @@ public class PersonService implements IPersonService {
 
     @Autowired
     PersonRepository personRepository;
+    @Autowired
+    MedicalrecordsService medicalrecordsService;
+    @Autowired
+    FirestationService firestationService;
+    @Autowired
+    CommonService commonService;
+
 
     @Override
     public List<Persons> findAll() {
@@ -34,17 +41,37 @@ public class PersonService implements IPersonService {
         return null;
     }
 
+    public List<PersonDTO> getAllPersons() {
+        return ((List<Persons>) personRepository
+                .findAll())
+                .stream()
+                .map(PersonMapper::convertPersonToPersonDto).collect(Collectors.toList());
+    }
+
     @Override
-    public Persons findByfirstNameAndLastName(String firstName, String lastName) {
+    public PersonDTO findByfirstNameAndLastName(String firstName, String lastName) {
         try {
-            Persons p = personRepository.findByfirstNameAndLastName(firstName, lastName);
-            return p;
+            return PersonMapper.convertPersonToPersonDto(personRepository.findByfirstNameAndLastName(firstName, lastName));
+//            Persons p = personRepository.findByfirstNameAndLastName(firstName, lastName);
+//            return p;
         } catch (Exception e) {
 
         }
 
         return null;
     }
+
+    @Override
+    public List<Persons> findByAddress(String address) {
+        try {
+            List<Persons> ret = StreamSupport.stream(personRepository.findByAddress(address).spliterator(),
+                    false).collect(Collectors.toList());
+            return ret;
+
+        } catch (Exception e) {
+
+        }
+        return null;    }
 
     @Override
     public Iterable<Persons> saveAll(List<Persons> lstPerson) {
@@ -75,16 +102,22 @@ public class PersonService implements IPersonService {
     }
 
     @Override
-    public Persons save(Persons person) {
-            return personRepository.save(person);
-
+    public PersonDTO save(Persons person) {
+            personRepository.save(person);
+            PersonDTO personDToSaved = findByfirstNameAndLastName(person.getFirstName(), person.getLastName());
+            return findById(personDToSaved.getId()).isPresent()? PersonMapper.convertPersonToPersonDto(findById(personDToSaved.getId()).get()) : null;
     }
 
     @Override
-    public Persons update(PersonUpdateDTO personDto, Long id) {
+    public PersonDTO update(PersonDTO personDto, Long id) {
+        PersonDTO personsToUpdate = PersonMapper.convertPersonUpdateDtoToPersonDto(personDto);
+        personsToUpdate.setId(id);
+        Persons persons = personRepository.findById(id).get();
+        personsToUpdate.setFirstName(persons.getFirstName());
+        personsToUpdate.setLastName(persons.getLastName());
         try {
-            Persons p = personRepository.findById(id).isPresent() ? personRepository.findById(id).get() : null;
-            return save(PersonMapper.INSTANCE.personUpdateDtoToPersonUpdate(personDto, p));
+            return save(PersonMapper.convertPersonDtoToPerson(personsToUpdate));
+           // return save(PersonMapper.INSTANCE.personUpdateDtoToPersonUpdate(personDto, p));
         } catch (Exception e) {
 
         }
@@ -92,7 +125,7 @@ public class PersonService implements IPersonService {
     }
 
     public Long deleteOneByfirstnameAndLastname(String firstName, String lastName) {
-        Persons p = this.findByfirstNameAndLastName(firstName, lastName);
+        PersonDTO p = this.findByfirstNameAndLastName(firstName, lastName);
         try {
             return this.deleteById(p.getId());
         } catch (
@@ -100,4 +133,5 @@ public class PersonService implements IPersonService {
         }
         return null;
     }
+
 }

@@ -24,14 +24,15 @@ import java.util.List;
 @Service
 public class JsonReaderService {
 
-    @Autowired
-    PersonService personService;
 
     @Autowired
     FirestationService firestationService;
 
     @Autowired
     MedicalrecordsService medicalrecordsService;
+
+    @Autowired
+    PersonService personService;
 
     public void process() throws IOException, ParseException {
         InputStreamReader inputStreamReader = new InputStreamReader(new FileInputStream("data.json"));

@@ -2,11 +2,10 @@ package com.SafetyNet.Alert.Controller;
 
 import com.SafetyNet.Alert.Dto.FirestationDTO;
 import com.SafetyNet.Alert.Dto.Mapper.FirestationMapper;
-
 import com.SafetyNet.Alert.Model.Firestations;
+import com.SafetyNet.Alert.Service.CommonService;
 import com.SafetyNet.Alert.Service.FirestationService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.annotation.Id;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -22,7 +21,7 @@ public class FirestationController {
     FirestationService firestationService;
 
 
-    @GetMapping("/firestation")
+    @GetMapping("/firestations")
     public ResponseEntity<List<FirestationDTO>> getAllFirestations() {
         try {
             return ResponseEntity.ok(FirestationMapper.INSTANCE.firestationToFirestationsDTO(firestationService.findAll()));
@@ -43,6 +42,9 @@ public class FirestationController {
             return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
+
+
+
     @DeleteMapping(value = "firestation/delete/{id}") // SUPPRESSION Par ID ou Adresse
     public ResponseEntity<Long> deleteOnebyId(@PathVariable Long id) {
         try {
