@@ -5,10 +5,10 @@ import com.SafetyNet.Alert.Model.Persons;
 
 public class ChildrenByAddressMapper {
 
-    public static ChildrenByAddressDTO convertPersonToChildrenByAddressDTO(Persons persons){
+/*    public static ChildrenByAddressDTO convertPersonToChildrenByAddressDTO(Persons persons){
         ChildrenByAddressDTO childrenByAddressDTO = new ChildrenByAddressDTO();
         childrenByAddressDTO.setFirstName(persons.getFirstName() == null? "" : persons.getFirstName());
         childrenByAddressDTO.setLastName(persons.getLastName() == null? "" : persons.getLastName());
         return childrenByAddressDTO;
-    }
+    }*/
 }

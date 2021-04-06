@@ -7,9 +7,10 @@ import com.SafetyNet.Alert.Model.Firestations;
 import com.SafetyNet.Alert.Model.Medicalrecords;
 import com.SafetyNet.Alert.Model.Persons;
 import com.SafetyNet.Alert.Repository.FirestationRepository;
-import com.SafetyNet.Alert.Repository.MedicalserviceRepository;
+import com.SafetyNet.Alert.Repository.MedicalRecordsRepository;
 import com.SafetyNet.Alert.Repository.PersonRepository;
 import com.SafetyNet.Alert.Service.Iservice.ICommonService;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -20,50 +21,60 @@ import java.time.Period;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 
+
 @Service
 public class CommonService implements ICommonService {
     @Autowired
-    MedicalserviceRepository medicalserviceRepository;
+    MedicalRecordsRepository medicalRecordsRepository;
     @Autowired
     FirestationRepository firestationRepository;
     @Autowired
     PersonRepository personRepository;
 
+    @Autowired
+    DtoMapper dtoMapper;
+
+
+    static Logger logger = Logger.getLogger(CommonService.class);
+
     public int calculAge(Date date){
-        if(LocalDate.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy")).equals(date)){
-            return 0;
-        }else{
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy");
+        logger.debug("calcul age");
         return Period.between(LocalDate.parse(simpleDateFormat.format(date), DateTimeFormatter.ofPattern("dd/MM/yyyy")), LocalDate.now()).getYears();
-        }
     }
 
     public Date getBirthdate(Persons person) throws ParseException {
         String birthdate;
-        if(medicalserviceRepository.getBirhdate(person.getFirstName(), person.getLastName()) != null){
-            birthdate = medicalserviceRepository.getBirhdate(person.getFirstName(), person.getLastName());
+        if(medicalRecordsRepository.getBirhdate(person.getFirstName(), person.getLastName()) != null){
+            logger.debug(person.getFirstName() + " " + person.getLastName() + " : date de naissance connue");
+            birthdate = medicalRecordsRepository.getBirhdate(person.getFirstName(), person.getLastName());
         }
         else{
-           birthdate = LocalDate.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+            logger.debug(person.getFirstName() + " " + person.getLastName() +  " : pas de date de naissance connue");
+            birthdate = LocalDate.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
         }
         return new SimpleDateFormat("dd/MM/yyyy").parse(birthdate);
     }
 
     @Override
     public List<Persons> getPersonsByStationNumber(String stationNumber){
+        logger.debug("getPersonsByStationNumber return PersonsList");
         return firestationRepository.getPersonsByStationNumber(stationNumber);
     }
 
     @Override
     public Firestations findByAddress(String address) {
+        logger.debug("findByAddress return Firestations");
         return firestationRepository.findFirestationsByAddress(address);
     }
 
     public Medicalrecords findMedicalRecordsOfAPerson(Persons p){
         Medicalrecords medicalrecords = new Medicalrecords();
-        if(medicalserviceRepository.findByfirstNameAndLastName(p.getFirstName(), p.getLastName()) != null){
-            medicalrecords = medicalserviceRepository.findByfirstNameAndLastName(p.getFirstName(), p.getLastName());
+        if(medicalRecordsRepository.findByfirstNameAndLastName(p.getFirstName(), p.getLastName()) != null){
+            logger.debug("findMedicalRecordsOfAPerson a Person medicalRecords was found");
+            medicalrecords = medicalRecordsRepository.findByfirstNameAndLastName(p.getFirstName(), p.getLastName());
         }else{
+            logger.debug("findMedicalRecordsOfAPerson a Person medicalRecords was not found");
             medicalrecords.setFirstName(p.getFirstName());
             medicalrecords.setLastName(p.getLastName());
         }
@@ -72,6 +83,7 @@ public class CommonService implements ICommonService {
 
 
     public Set<String> getPhoneNumberByStationNumber(String stationNumber) {
+        logger.debug("getPhoneNumberByStationNumber return a set of String phones numbers");
         List<Persons> personsList = firestationRepository.getPersonsByStationNumber(stationNumber);
         Set<String> phoneNumberList = new HashSet<String>();
         for (Persons p : personsList) {
@@ -81,30 +93,43 @@ public class CommonService implements ICommonService {
         return phoneNumberList;
     }
 
+    public PersonsByAddressDTO getPersonByAddressDtoConvert(Persons person, Medicalrecords medicalrecords){
+        logger.debug("getPersonByAddressDtoConvert return a personByAddressDtoConverted");
+        PersonsByAddressDTO personsByAddressDTO = new PersonsByAddressDTO();
+        if(person != null & medicalrecords != null){
+            return dtoMapper.convertPersonToPersonForStationDTO(person, medicalrecords);
+        }
+        return  personsByAddressDTO;
+    }
+
+
     public List<PersonsByAddressDTO> getPersonsAndFireStationNumber(String address) throws ParseException {
         List<Persons> personsList = personRepository.findByAddress(address);
         List<PersonsByAddressDTO> personsByAddressDTOList = new ArrayList<>();
-
+        logger.debug("getPersonsAndFireStationNumber : from an adress get persons and find firestation, medicalrecords and calcul age");
         for (Persons person : personsList) {
             Firestations firestations = firestationRepository.findFirestationsByAddress(address);
 
             Medicalrecords medicalrecords = this.findMedicalRecordsOfAPerson(person);
 
-            PersonsByAddressDTO personsByAddressDTO = PersonByAddressMapper.
-                    convertPersonToPersonForStationDTO(person, medicalrecords);
+            PersonsByAddressDTO personsByAddressDTO = this.getPersonByAddressDtoConvert(person, medicalrecords);
 
             personsByAddressDTO.setStationNumber(firestations.getStation());
 
             personsByAddressDTO.setAge(this.calculAge(this.getBirthdate(person)));
+
             personsByAddressDTOList.add(personsByAddressDTO);
         }
+        logger.debug("getPersonsAndFireStationNumber return a PersonsByAddressDTO List");
         return personsByAddressDTOList;
     }
 
     public List<HouseholdDTO> householdByStationNumber(List<String> stations) throws ParseException {
         Set<HouseholdDTO> householdDTOList = new HashSet<>();
+        logger.debug("householdByStationNumber get a person list from stationNumber");
         for (String i : stations){
             List<Persons> personsList = firestationRepository.getPersonsByStationNumber(i);
+            logger.debug("householdByStationNumber : for each station address get person, set address and set station number of an housholdDTO");
             for (Persons persons:personsList) {
                 HouseholdDTO householdDTO = new HouseholdDTO();
                 householdDTO.setAddress(persons.getAddress());
@@ -112,14 +137,15 @@ public class CommonService implements ICommonService {
                 householdDTOList.add(householdDTO);
             }
         }
+        logger.debug("householdByStationNumber : for each householdDTO create a set of personsByAddressDTOList");
         for(HouseholdDTO h : householdDTOList){
             List<Persons> personsList = personRepository.findByAddress(h.getAddress());
             Set<PersonsByAddressDTO> personsByAddressDTOList = new HashSet<>();
+            logger.debug("householdByStationNumber : for each personsByAddressDTOList find medicalRecords and calcul Age and add all in household list");
             for (Persons p : personsList){
-
                     Medicalrecords medicalrecords = this.findMedicalRecordsOfAPerson(p);
 
-                    PersonsByAddressDTO personsByAddressDTO = PersonByAddressMapper.
+                    PersonsByAddressDTO personsByAddressDTO = dtoMapper.
                             convertPersonToPersonForStationDTO(p, medicalrecords);
 
                     personsByAddressDTO.setAge(this.calculAge(this.getBirthdate(p)));
@@ -131,6 +157,7 @@ public class CommonService implements ICommonService {
             }
         }
         List<HouseholdDTO> householdDTOS = new ArrayList<>(householdDTOList) ;
+        logger.debug("householdByStationNumber return a Household List");
         return  householdDTOS;
     }
 
@@ -140,7 +167,7 @@ public class CommonService implements ICommonService {
         List<Persons> personsList = this.getPersonsByStationNumber(stationNumber);
 
         for (Persons person : personsList) {
-            PersonForStationDTO personForStationDTO = PersonForSationMapper.
+            PersonForStationDTO personForStationDTO = dtoMapper.
                     convertPersonToPersonForStationDTO(person);
 
             int age = this.calculAge(this.getBirthdate(person));
@@ -166,9 +193,9 @@ public class CommonService implements ICommonService {
         List<PersonInfoDTO>  personInfoDTOS = new ArrayList<>();
 
         for (Persons p : personsList){
-            //TODO : attention si on vire le dossier medical
             Medicalrecords medicalrecords = this.findMedicalRecordsOfAPerson(p);
-            PersonInfoDTO personInfoDTO = PersonInfoMapper.convertPersonToPersonInfoDto(p, medicalrecords);
+            PersonInfoDTO personInfoDTO = dtoMapper.
+                    convertPersonToPersonInfoDto(p, medicalrecords);
             personInfoDTO.setAge(this.calculAge(this.getBirthdate(p)));
             personInfoDTOS.add(personInfoDTO);
         }
@@ -184,16 +211,14 @@ public class CommonService implements ICommonService {
             int age = this.calculAge(this.getBirthdate(person));
             if( age < PersonData.AGE_MAJORITE){
 
-                ChildrenByAddressDTO childrenByAddressDTO = ChildrenByAddressMapper
-                        .convertPersonToChildrenByAddressDTO(person);
+                ChildrenByAddressDTO childrenByAddressDTO = dtoMapper.convertPersonToChildrenByAddressDTO(person);
                 childrenByAddressDTO.setAge(age);
 
                 List<Persons> persons = personRepository.findByAddress(address);
                 List<FamilyMemberDTO> familyMemberDTOS = new ArrayList<>();
                 for (Persons p : persons) {
                     if(!p.getFirstName().equals(childrenByAddressDTO.getFirstName())){
-                        FamilyMemberDTO familyMemberDTO = FamilyMemberMapper
-                                .convertPersonToFamillyMemberDTO(p);
+                        FamilyMemberDTO familyMemberDTO = dtoMapper.convertPersonToFamillyMemberDTO(p);
                         familyMemberDTOS.add(familyMemberDTO);
                     }
                 }

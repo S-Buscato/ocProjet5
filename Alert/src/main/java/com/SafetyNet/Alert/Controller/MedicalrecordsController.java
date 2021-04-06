@@ -3,9 +3,8 @@ package com.SafetyNet.Alert.Controller;
 
 import com.SafetyNet.Alert.Dto.Mapper.MedicalrecordsMapper;
 import com.SafetyNet.Alert.Dto.MedicalRecordsDTO;
-import com.SafetyNet.Alert.Dto.MedicalRecordsUpdateDTO;
-import com.SafetyNet.Alert.Model.Medicalrecords;
 import com.SafetyNet.Alert.Service.MedicalrecordsService;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -20,12 +19,15 @@ public class MedicalrecordsController {
     @Autowired
     MedicalrecordsService medicalrecordsService;
 
+    static Logger logger = Logger.getLogger(MedicalrecordsController.class);
 
     @GetMapping("/medicalrecords")
-    public ResponseEntity<List<MedicalRecordsDTO>> getAllFirestations() {
+    public ResponseEntity<List<MedicalRecordsDTO>> getAllMedicalRecords() {
         try {
+            logger.info("api//medicalrecords (get all medicalrecords) => ok");
             return ResponseEntity.ok(MedicalrecordsMapper.INSTANCE.medicalrecordsToMedicalrecordsDTO(medicalrecordsService.findAll()));
         } catch (Exception e) {
+            logger.error("api//medicalrecords (get all medicalrecords) => error : "+ e.getMessage());
             return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
@@ -64,7 +66,7 @@ public class MedicalrecordsController {
         }
     }
 
-    @PutMapping(value = "/medicalrecords/update/{id}")
+   /* @PutMapping(value = "/medicalrecords/update/{id}")
     public ResponseEntity<Medicalrecords> updateMedicalRecords(@RequestBody MedicalRecordsUpdateDTO medicalRecordsUpdateDTO, @PathVariable Long id) {
         try {
             medicalRecordsUpdateDTO.setId(id);
@@ -72,5 +74,5 @@ public class MedicalrecordsController {
         } catch (Exception e) {
             return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
         }
-    }
+    }*/
 }

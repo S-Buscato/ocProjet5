@@ -7,7 +7,9 @@ import java.util.List;
 import java.util.Optional;
 
 public interface IPersonService  {
+/*
     List<Persons> findAll();
+*/
     Optional<Persons> findById(Long id);
     Long deleteById(Long id);
     PersonDTO save(Persons person);

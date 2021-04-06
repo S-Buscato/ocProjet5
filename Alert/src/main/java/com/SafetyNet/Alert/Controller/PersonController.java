@@ -45,8 +45,11 @@ public class PersonController {
     @DeleteMapping(value = "person/delete")
     public ResponseEntity<Long> getOneByLastnameFirstname(@RequestParam String firstName, @RequestParam String lastName) {
         try {
-            return new ResponseEntity<>(personService.deleteOneByfirstnameAndLastname(firstName, lastName),
-                    HttpStatus.OK);
+            Long id = personService.deleteOneByfirstnameAndLastname(firstName, lastName);
+            return  id == 0?
+                    ResponseEntity.status(HttpStatus.NOT_FOUND).body(id)
+                    :
+                    ResponseEntity.status(HttpStatus.OK).body(id);
 
         } catch (Exception e) {
             return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
@@ -68,7 +71,9 @@ public class PersonController {
     @PutMapping(value = "/person/update/{id}")
     public ResponseEntity<PersonDTO> updatePerson(@RequestBody PersonDTO personDTO, @PathVariable Long id) {
         try {
-            return ResponseEntity.status(HttpStatus.ACCEPTED).body(personService.update(personDTO, id));
+            PersonDTO update = personService.update(personDTO, id);
+            return ResponseEntity.status(HttpStatus.ACCEPTED).body(update);
+
         } catch (Exception e) {
             return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
         }

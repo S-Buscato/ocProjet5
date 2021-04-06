@@ -1,0 +1,296 @@
+INFO    2021-03-29 21:29:14,108 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add persons in BDD ok
+INFO    2021-03-29 21:29:14,171 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add persons in BDD ok
+INFO    2021-03-29 21:29:14,172 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add persons in BDD ok
+INFO    2021-03-29 21:29:14,172 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add persons in BDD ok
+INFO    2021-03-29 21:29:14,172 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add persons in BDD ok
+INFO    2021-03-29 21:29:14,172 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add persons in BDD ok
+INFO    2021-03-29 21:29:14,172 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add persons in BDD ok
+INFO    2021-03-29 21:29:14,173 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add persons in BDD ok
+INFO    2021-03-29 21:29:14,173 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add persons in BDD ok
+INFO    2021-03-29 21:29:14,173 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add persons in BDD ok
+INFO    2021-03-29 21:29:14,173 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add persons in BDD ok
+INFO    2021-03-29 21:29:14,173 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add persons in BDD ok
+INFO    2021-03-29 21:29:14,173 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add persons in BDD ok
+INFO    2021-03-29 21:29:14,173 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add persons in BDD ok
+INFO    2021-03-29 21:29:14,173 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add persons in BDD ok
+INFO    2021-03-29 21:29:14,174 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add persons in BDD ok
+INFO    2021-03-29 21:29:14,175 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add persons in BDD ok
+INFO    2021-03-29 21:29:14,175 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add persons in BDD ok
+INFO    2021-03-29 21:29:14,175 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add persons in BDD ok
+INFO    2021-03-29 21:29:14,176 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add persons in BDD ok
+INFO    2021-03-29 21:29:14,176 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add persons in BDD ok
+INFO    2021-03-29 21:29:14,176 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add persons in BDD ok
+INFO    2021-03-29 21:29:14,176 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add persons in BDD ok
+INFO    2021-03-29 21:29:14,177 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add firestation in BDD ok
+INFO    2021-03-29 21:29:14,178 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add firestation in BDD ok
+INFO    2021-03-29 21:29:14,178 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add firestation in BDD ok
+INFO    2021-03-29 21:29:14,178 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add firestation in BDD ok
+INFO    2021-03-29 21:29:14,178 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add firestation in BDD ok
+INFO    2021-03-29 21:29:14,178 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add firestation in BDD ok
+INFO    2021-03-29 21:29:14,178 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add firestation in BDD ok
+INFO    2021-03-29 21:29:14,178 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add firestation in BDD ok
+INFO    2021-03-29 21:29:14,178 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add firestation in BDD ok
+INFO    2021-03-29 21:29:14,179 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add firestation in BDD ok
+INFO    2021-03-29 21:29:14,179 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add firestation in BDD ok
+INFO    2021-03-29 21:29:14,179 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add firestation in BDD ok
+INFO    2021-03-29 21:29:14,179 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add firestation in BDD ok
+INFO    2021-03-29 21:29:14,189 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add medicalrecords in BDD ok
+INFO    2021-03-29 21:29:14,190 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add medicalrecords in BDD ok
+INFO    2021-03-29 21:29:14,190 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add medicalrecords in BDD ok
+INFO    2021-03-29 21:29:14,190 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add medicalrecords in BDD ok
+INFO    2021-03-29 21:29:14,190 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add medicalrecords in BDD ok
+INFO    2021-03-29 21:29:14,191 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add medicalrecords in BDD ok
+INFO    2021-03-29 21:29:14,191 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add medicalrecords in BDD ok
+INFO    2021-03-29 21:29:14,191 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add medicalrecords in BDD ok
+INFO    2021-03-29 21:29:14,191 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add medicalrecords in BDD ok
+INFO    2021-03-29 21:29:14,191 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add medicalrecords in BDD ok
+INFO    2021-03-29 21:29:14,192 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add medicalrecords in BDD ok
+INFO    2021-03-29 21:29:14,192 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add medicalrecords in BDD ok
+INFO    2021-03-29 21:29:14,192 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add medicalrecords in BDD ok
+INFO    2021-03-29 21:29:14,192 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add medicalrecords in BDD ok
+INFO    2021-03-29 21:29:14,193 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add medicalrecords in BDD ok
+INFO    2021-03-29 21:29:14,195 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add medicalrecords in BDD ok
+INFO    2021-03-29 21:29:14,195 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add medicalrecords in BDD ok
+INFO    2021-03-29 21:29:14,195 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add medicalrecords in BDD ok
+INFO    2021-03-29 21:29:14,195 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add medicalrecords in BDD ok
+INFO    2021-03-29 21:29:14,195 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add medicalrecords in BDD ok
+INFO    2021-03-29 21:29:14,195 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add medicalrecords in BDD ok
+INFO    2021-03-29 21:29:14,196 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add medicalrecords in BDD ok
+INFO    2021-03-29 21:29:14,196 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add medicalrecords in BDD ok
+INFO    2021-03-29 21:33:47,632 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add persons in BDD ok
+INFO    2021-03-29 21:33:47,646 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add firestation in BDD ok
+INFO    2021-03-29 21:33:47,726 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add medicalrecords in BDD ok
+ERROR   2021-03-29 21:40:20,802 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Error reading persons : null
+INFO    2021-03-29 21:40:20,876 [main] com.SafetyNet.Alert.Util.JsonReaderService  - read firestation ok
+INFO    2021-03-29 21:40:20,891 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add medicalrecords in BDD ok
+INFO    2021-03-29 21:40:20,927 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add persons in BDD ok
+INFO    2021-03-29 21:40:21,005 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add firestation in BDD ok
+INFO    2021-03-29 21:40:21,054 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add medicalrecords in BDD ok
+ERROR   2021-03-29 21:42:03,372 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Error reading persons : 
+java.lang.NullPointerException
+	at com.SafetyNet.Alert.Util.JsonReaderService.readListPersonFromJsonObject(JsonReaderService.java:109)
+	at com.SafetyNet.Alert.Util.JsonReaderService.process(JsonReaderService.java:62)
+	at com.SafetyNet.Alert.AlertApplication.run(AlertApplication.java:20)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:804)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:788)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at com.SafetyNet.Alert.AlertApplication.main(AlertApplication.java:12)
+INFO    2021-03-29 21:42:03,434 [main] com.SafetyNet.Alert.Util.JsonReaderService  - read firestation ok
+INFO    2021-03-29 21:42:03,449 [main] com.SafetyNet.Alert.Util.JsonReaderService  - read medicalrecords ok
+INFO    2021-03-29 21:42:03,494 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add persons in BDD ok
+INFO    2021-03-29 21:42:03,655 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add firestation in BDD ok
+INFO    2021-03-29 21:42:03,740 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add medicalrecords in BDD ok
+ERROR   2021-03-29 21:44:17,544 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Error reading persons : null
+INFO    2021-03-29 21:44:17,628 [main] com.SafetyNet.Alert.Util.JsonReaderService  - read firestation ok
+INFO    2021-03-29 21:44:17,640 [main] com.SafetyNet.Alert.Util.JsonReaderService  - read medicalrecords ok
+INFO    2021-03-29 21:44:17,674 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add persons in BDD ok
+INFO    2021-03-29 21:44:17,740 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add firestation in BDD ok
+INFO    2021-03-29 21:44:17,789 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add medicalrecords in BDD ok
+ERROR   2021-03-29 21:45:03,010 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Error reading persons : null Stack Strace : [Ljava.lang.StackTraceElement;@1d2d4d7a
+INFO    2021-03-29 21:45:03,075 [main] com.SafetyNet.Alert.Util.JsonReaderService  - read firestation ok
+INFO    2021-03-29 21:45:03,085 [main] com.SafetyNet.Alert.Util.JsonReaderService  - read medicalrecords ok
+INFO    2021-03-29 21:45:03,110 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add persons in BDD ok
+INFO    2021-03-29 21:45:03,162 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add firestation in BDD ok
+INFO    2021-03-29 21:45:03,207 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add medicalrecords in BDD ok
+INFO    2021-03-29 21:50:53,129 [main] com.SafetyNet.Alert.Util.JsonReaderService  - read persons ok
+INFO    2021-03-29 21:50:53,138 [main] com.SafetyNet.Alert.Util.JsonReaderService  - read firestation ok
+INFO    2021-03-29 21:50:53,187 [main] com.SafetyNet.Alert.Util.JsonReaderService  - read medicalrecords ok
+INFO    2021-03-29 21:50:53,437 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add persons in BDD ok
+INFO    2021-03-29 21:50:53,456 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add firestation in BDD ok
+INFO    2021-03-29 21:50:53,575 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add medicalrecords in BDD ok
+INFO    2021-03-29 21:51:13,272 [http-nio-9001-exec-2] com.SafetyNet.Alert.Controller.MedicalrecordsController  - api//medicalrecords => ok
+INFO    2021-03-29 21:52:02,724 [main] com.SafetyNet.Alert.Util.JsonReaderService  - read persons ok
+INFO    2021-03-29 21:52:02,728 [main] com.SafetyNet.Alert.Util.JsonReaderService  - read firestation ok
+INFO    2021-03-29 21:52:02,738 [main] com.SafetyNet.Alert.Util.JsonReaderService  - read medicalrecords ok
+INFO    2021-03-29 21:52:02,821 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add persons in BDD ok
+INFO    2021-03-29 21:52:02,829 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add firestation in BDD ok
+INFO    2021-03-29 21:52:02,866 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add medicalrecords in BDD ok
+INFO    2021-03-29 21:52:08,288 [http-nio-9001-exec-2] com.SafetyNet.Alert.Controller.MedicalrecordsController  - api//medicalrecords => ok
+INFO    2021-03-29 22:21:40,043 [main] com.SafetyNet.Alert.Util.JsonReaderService  - read persons ok
+INFO    2021-03-29 22:21:40,045 [main] com.SafetyNet.Alert.Util.JsonReaderService  - read firestation ok
+INFO    2021-03-29 22:21:40,056 [main] com.SafetyNet.Alert.Util.JsonReaderService  - read medicalrecords ok
+INFO    2021-03-29 22:21:40,140 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add persons in BDD ok
+INFO    2021-03-29 22:21:40,146 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add firestation in BDD ok
+INFO    2021-03-29 22:21:40,189 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add medicalrecords in BDD ok
+DEBUG   2021-03-29 22:21:46,367 [http-nio-9001-exec-2] com.SafetyNet.Alert.Service.CommonService  - calcul age is ok
+DEBUG   2021-03-29 22:21:46,374 [http-nio-9001-exec-2] com.SafetyNet.Alert.Service.CommonService  - calcul age is ok
+DEBUG   2021-03-29 22:21:46,375 [http-nio-9001-exec-2] com.SafetyNet.Alert.Service.CommonService  - calcul age is ok
+INFO    2021-03-29 22:22:25,111 [main] com.SafetyNet.Alert.Util.JsonReaderService  - read persons ok
+INFO    2021-03-29 22:22:25,113 [main] com.SafetyNet.Alert.Util.JsonReaderService  - read firestation ok
+INFO    2021-03-29 22:22:25,123 [main] com.SafetyNet.Alert.Util.JsonReaderService  - read medicalrecords ok
+INFO    2021-03-29 22:22:25,198 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add persons in BDD ok
+INFO    2021-03-29 22:22:25,205 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add firestation in BDD ok
+INFO    2021-03-29 22:22:25,242 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add medicalrecords in BDD ok
+DEBUG   2021-03-29 22:22:30,159 [http-nio-9001-exec-3] com.SafetyNet.Alert.Service.CommonService  - calcul age is ok
+DEBUG   2021-03-29 22:22:30,164 [http-nio-9001-exec-3] com.SafetyNet.Alert.Service.CommonService  - calcul age is ok
+DEBUG   2021-03-29 22:22:30,165 [http-nio-9001-exec-3] com.SafetyNet.Alert.Service.CommonService  - calcul age is ok
+DEBUG   2021-03-29 22:22:52,551 [http-nio-9001-exec-4] com.SafetyNet.Alert.Service.CommonService  - calcul age is ok
+DEBUG   2021-03-29 22:22:52,559 [http-nio-9001-exec-4] com.SafetyNet.Alert.Service.CommonService  - calcul age is ok
+DEBUG   2021-03-29 22:22:52,577 [http-nio-9001-exec-4] com.SafetyNet.Alert.Service.CommonService  - calcul age is ok
+INFO    2021-03-29 22:25:23,592 [main] com.SafetyNet.Alert.Util.JsonReaderService  - read persons ok
+INFO    2021-03-29 22:25:23,601 [main] com.SafetyNet.Alert.Util.JsonReaderService  - read firestation ok
+INFO    2021-03-29 22:25:23,611 [main] com.SafetyNet.Alert.Util.JsonReaderService  - read medicalrecords ok
+INFO    2021-03-29 22:25:23,890 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add persons in BDD ok
+INFO    2021-03-29 22:25:23,899 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add firestation in BDD ok
+INFO    2021-03-29 22:25:23,953 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add medicalrecords in BDD ok
+DEBUG   2021-03-29 22:25:34,951 [http-nio-9001-exec-3] com.SafetyNet.Alert.Service.CommonService  - Brian : pas de date de naissance connue
+DEBUG   2021-03-29 22:25:34,967 [http-nio-9001-exec-3] com.SafetyNet.Alert.Service.CommonService  - calcul age is ok
+DEBUG   2021-03-29 22:25:34,977 [http-nio-9001-exec-3] com.SafetyNet.Alert.Service.CommonService  - Shawna : date de naissance connue
+DEBUG   2021-03-29 22:25:34,981 [http-nio-9001-exec-3] com.SafetyNet.Alert.Service.CommonService  - calcul age is ok
+DEBUG   2021-03-29 22:25:34,983 [http-nio-9001-exec-3] com.SafetyNet.Alert.Service.CommonService  - Kendrik : date de naissance connue
+DEBUG   2021-03-29 22:25:34,984 [http-nio-9001-exec-3] com.SafetyNet.Alert.Service.CommonService  - calcul age is ok
+INFO    2021-03-29 22:27:46,119 [main] com.SafetyNet.Alert.Util.JsonReaderService  - read persons ok
+INFO    2021-03-29 22:27:46,122 [main] com.SafetyNet.Alert.Util.JsonReaderService  - read firestation ok
+INFO    2021-03-29 22:27:46,130 [main] com.SafetyNet.Alert.Util.JsonReaderService  - read medicalrecords ok
+INFO    2021-03-29 22:27:46,245 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add persons in BDD ok
+INFO    2021-03-29 22:27:46,255 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add firestation in BDD ok
+INFO    2021-03-29 22:27:46,329 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add medicalrecords in BDD ok
+DEBUG   2021-03-29 22:27:59,578 [http-nio-9001-exec-3] com.SafetyNet.Alert.Service.CommonService  - Brian Stelzer : pas de date de naissance connue
+DEBUG   2021-03-29 22:27:59,592 [http-nio-9001-exec-3] com.SafetyNet.Alert.Service.CommonService  - calcul age is ok
+DEBUG   2021-03-29 22:27:59,598 [http-nio-9001-exec-3] com.SafetyNet.Alert.Service.CommonService  - Shawna Stelzer : date de naissance connue
+DEBUG   2021-03-29 22:27:59,601 [http-nio-9001-exec-3] com.SafetyNet.Alert.Service.CommonService  - calcul age is ok
+DEBUG   2021-03-29 22:27:59,604 [http-nio-9001-exec-3] com.SafetyNet.Alert.Service.CommonService  - Kendrik Stelzer : date de naissance connue
+DEBUG   2021-03-29 22:27:59,606 [http-nio-9001-exec-3] com.SafetyNet.Alert.Service.CommonService  - calcul age is ok
+DEBUG   2021-03-29 22:28:50,390 [http-nio-9001-exec-5] com.SafetyNet.Alert.Service.CommonService  - Brian Stelzer : pas de date de naissance connue
+DEBUG   2021-03-29 22:28:50,391 [http-nio-9001-exec-5] com.SafetyNet.Alert.Service.CommonService  - calcul age is ok
+DEBUG   2021-03-29 22:28:50,393 [http-nio-9001-exec-5] com.SafetyNet.Alert.Service.CommonService  - Shawna Stelzer : date de naissance connue
+DEBUG   2021-03-29 22:28:50,393 [http-nio-9001-exec-5] com.SafetyNet.Alert.Service.CommonService  - calcul age is ok
+DEBUG   2021-03-29 22:28:50,405 [http-nio-9001-exec-5] com.SafetyNet.Alert.Service.CommonService  - Kendrik Stelzer : date de naissance connue
+DEBUG   2021-03-29 22:28:50,406 [http-nio-9001-exec-5] com.SafetyNet.Alert.Service.CommonService  - calcul age is ok
+INFO    2021-03-30 20:27:59,802 [main] com.SafetyNet.Alert.Util.JsonReaderService  - read persons ok
+INFO    2021-03-30 20:27:59,811 [main] com.SafetyNet.Alert.Util.JsonReaderService  - read firestation ok
+INFO    2021-03-30 20:27:59,832 [main] com.SafetyNet.Alert.Util.JsonReaderService  - read medicalrecords ok
+INFO    2021-03-30 20:28:00,000 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add persons in BDD ok
+INFO    2021-03-30 20:28:00,018 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add firestation in BDD ok
+INFO    2021-03-30 20:28:00,106 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add medicalrecords in BDD ok
+INFO    2021-03-30 20:31:15,370 [main] com.SafetyNet.Alert.Util.JsonReaderService  - read persons ok
+INFO    2021-03-30 20:31:15,377 [main] com.SafetyNet.Alert.Util.JsonReaderService  - read firestation ok
+INFO    2021-03-30 20:31:15,399 [main] com.SafetyNet.Alert.Util.JsonReaderService  - read medicalrecords ok
+INFO    2021-03-30 20:31:15,561 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add persons in BDD ok
+INFO    2021-03-30 20:31:15,574 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add firestation in BDD ok
+INFO    2021-03-30 20:31:15,666 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add medicalrecords in BDD ok
+INFO    2021-03-30 20:38:37,413 [main] com.SafetyNet.Alert.Util.JsonReaderService  - read persons ok
+INFO    2021-03-30 20:38:37,420 [main] com.SafetyNet.Alert.Util.JsonReaderService  - read firestation ok
+INFO    2021-03-30 20:38:37,442 [main] com.SafetyNet.Alert.Util.JsonReaderService  - read medicalrecords ok
+INFO    2021-03-30 20:38:37,881 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add persons in BDD ok
+INFO    2021-03-30 20:38:37,917 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add firestation in BDD ok
+INFO    2021-03-30 20:38:38,017 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add medicalrecords in BDD ok
+INFO    2021-03-30 20:40:04,815 [http-nio-9001-exec-1] com.SafetyNet.Alert.Controller.MedicalrecordsController  - api//medicalrecords (get all medicalrecords) => ok
+DEBUG   2021-03-30 20:40:26,069 [http-nio-9001-exec-3] com.SafetyNet.Alert.Service.CommonService  - Brian Stelzer : date de naissance connue
+DEBUG   2021-03-30 20:40:26,149 [http-nio-9001-exec-3] com.SafetyNet.Alert.Service.CommonService  - calcul age is ok
+DEBUG   2021-03-30 20:40:26,187 [http-nio-9001-exec-3] com.SafetyNet.Alert.Service.CommonService  - Shawna Stelzer : date de naissance connue
+DEBUG   2021-03-30 20:40:26,201 [http-nio-9001-exec-3] com.SafetyNet.Alert.Service.CommonService  - calcul age is ok
+DEBUG   2021-03-30 20:40:26,218 [http-nio-9001-exec-3] com.SafetyNet.Alert.Service.CommonService  - Kendrik Stelzer : date de naissance connue
+DEBUG   2021-03-30 20:40:26,220 [http-nio-9001-exec-3] com.SafetyNet.Alert.Service.CommonService  - calcul age is ok
+DEBUG   2021-03-30 20:41:56,300 [http-nio-9001-exec-7] com.SafetyNet.Alert.Service.CommonService  - Brian Stelzer : pas de date de naissance connue
+DEBUG   2021-03-30 20:41:56,305 [http-nio-9001-exec-7] com.SafetyNet.Alert.Service.CommonService  - calcul age is ok
+DEBUG   2021-03-30 20:41:56,375 [http-nio-9001-exec-7] com.SafetyNet.Alert.Service.CommonService  - Shawna Stelzer : date de naissance connue
+DEBUG   2021-03-30 20:41:56,378 [http-nio-9001-exec-7] com.SafetyNet.Alert.Service.CommonService  - calcul age is ok
+DEBUG   2021-03-30 20:41:56,401 [http-nio-9001-exec-7] com.SafetyNet.Alert.Service.CommonService  - Kendrik Stelzer : date de naissance connue
+DEBUG   2021-03-30 20:41:56,407 [http-nio-9001-exec-7] com.SafetyNet.Alert.Service.CommonService  - calcul age is ok
+INFO    2021-04-01 20:59:17,055 [main] com.SafetyNet.Alert.Util.JsonReaderService  - read persons ok
+INFO    2021-04-01 20:59:17,059 [main] com.SafetyNet.Alert.Util.JsonReaderService  - read firestation ok
+INFO    2021-04-01 20:59:17,067 [main] com.SafetyNet.Alert.Util.JsonReaderService  - read medicalrecords ok
+INFO    2021-04-01 20:59:17,138 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add persons in BDD ok
+INFO    2021-04-01 20:59:17,146 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add firestation in BDD ok
+INFO    2021-04-01 20:59:17,179 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add medicalrecords in BDD ok
+INFO    2021-04-01 21:02:05,396 [main] com.SafetyNet.Alert.Util.JsonReaderService  - read persons ok
+INFO    2021-04-01 21:02:05,397 [main] com.SafetyNet.Alert.Util.JsonReaderService  - read firestation ok
+INFO    2021-04-01 21:02:05,404 [main] com.SafetyNet.Alert.Util.JsonReaderService  - read medicalrecords ok
+INFO    2021-04-01 21:02:05,460 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add persons in BDD ok
+INFO    2021-04-01 21:02:05,467 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add firestation in BDD ok
+INFO    2021-04-01 21:02:05,497 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add medicalrecords in BDD ok
+INFO    2021-04-01 21:02:05,497 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Mode Run = reading data.json...
+INFO    2021-04-01 21:03:40,962 [main] com.SafetyNet.Alert.Util.JsonReaderService  - read persons ok
+INFO    2021-04-01 21:03:40,966 [main] com.SafetyNet.Alert.Util.JsonReaderService  - read firestation ok
+INFO    2021-04-01 21:03:40,974 [main] com.SafetyNet.Alert.Util.JsonReaderService  - read medicalrecords ok
+INFO    2021-04-01 21:03:41,025 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add persons in BDD ok
+INFO    2021-04-01 21:03:41,033 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add firestation in BDD ok
+INFO    2021-04-01 21:03:41,062 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add medicalrecords in BDD ok
+INFO    2021-04-01 21:04:27,817 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running AlertApplication => reading data.json...
+INFO    2021-04-01 21:04:27,867 [main] com.SafetyNet.Alert.Util.JsonReaderService  - read persons ok
+INFO    2021-04-01 21:04:27,867 [main] com.SafetyNet.Alert.Util.JsonReaderService  - read firestation ok
+INFO    2021-04-01 21:04:27,875 [main] com.SafetyNet.Alert.Util.JsonReaderService  - read medicalrecords ok
+INFO    2021-04-01 21:04:27,938 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add persons in BDD ok
+INFO    2021-04-01 21:04:27,942 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add firestation in BDD ok
+INFO    2021-04-01 21:04:27,979 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add medicalrecords in BDD ok
+DEBUG   2021-04-01 21:33:45,913 [http-nio-9001-exec-1] com.SafetyNet.Alert.Service.CommonService  - Brian Stelzer : date de naissance connue
+DEBUG   2021-04-01 21:33:45,933 [http-nio-9001-exec-1] com.SafetyNet.Alert.Service.CommonService  - calcul age is ok
+DEBUG   2021-04-01 21:33:45,941 [http-nio-9001-exec-1] com.SafetyNet.Alert.Service.CommonService  - Shawna Stelzer : date de naissance connue
+DEBUG   2021-04-01 21:33:45,941 [http-nio-9001-exec-1] com.SafetyNet.Alert.Service.CommonService  - calcul age is ok
+DEBUG   2021-04-01 21:33:45,945 [http-nio-9001-exec-1] com.SafetyNet.Alert.Service.CommonService  - Kendrik Stelzer : date de naissance connue
+DEBUG   2021-04-01 21:33:45,945 [http-nio-9001-exec-1] com.SafetyNet.Alert.Service.CommonService  - calcul age is ok
+INFO    2021-04-01 21:34:58,561 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running AlertApplication => reading data.json...
+INFO    2021-04-01 21:34:58,611 [main] com.SafetyNet.Alert.Util.JsonReaderService  - read persons ok
+INFO    2021-04-01 21:34:58,611 [main] com.SafetyNet.Alert.Util.JsonReaderService  - read firestation ok
+INFO    2021-04-01 21:34:58,619 [main] com.SafetyNet.Alert.Util.JsonReaderService  - read medicalrecords ok
+INFO    2021-04-01 21:34:58,681 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add persons in BDD ok
+INFO    2021-04-01 21:34:58,686 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add firestation in BDD ok
+INFO    2021-04-01 21:34:58,719 [main] com.SafetyNet.Alert.Util.JsonReaderService  - add medicalrecords in BDD ok
+DEBUG   2021-04-01 21:35:02,111 [http-nio-9001-exec-1] com.SafetyNet.Alert.Service.CommonService  - getPersonsAndFireStationNumber : from an adress get persons and find firestation, medicalrecords and calcul age
+DEBUG   2021-04-01 21:35:02,127 [http-nio-9001-exec-1] com.SafetyNet.Alert.Service.CommonService  - findMedicalRecordsOfAPerson a Person medicalRecords was found
+DEBUG   2021-04-01 21:35:02,131 [http-nio-9001-exec-1] com.SafetyNet.Alert.Service.CommonService  - Brian Stelzer : date de naissance connue
+DEBUG   2021-04-01 21:35:02,139 [http-nio-9001-exec-1] com.SafetyNet.Alert.Service.CommonService  - calcul age is ok
+DEBUG   2021-04-01 21:35:02,143 [http-nio-9001-exec-1] com.SafetyNet.Alert.Service.CommonService  - findMedicalRecordsOfAPerson a Person medicalRecords was found
+DEBUG   2021-04-01 21:35:02,143 [http-nio-9001-exec-1] com.SafetyNet.Alert.Service.CommonService  - Shawna Stelzer : date de naissance connue
+DEBUG   2021-04-01 21:35:02,143 [http-nio-9001-exec-1] com.SafetyNet.Alert.Service.CommonService  - calcul age is ok
+DEBUG   2021-04-01 21:35:02,143 [http-nio-9001-exec-1] com.SafetyNet.Alert.Service.CommonService  - findMedicalRecordsOfAPerson a Person medicalRecords was found
+DEBUG   2021-04-01 21:35:02,147 [http-nio-9001-exec-1] com.SafetyNet.Alert.Service.CommonService  - Kendrik Stelzer : date de naissance connue
+DEBUG   2021-04-01 21:35:02,147 [http-nio-9001-exec-1] com.SafetyNet.Alert.Service.CommonService  - calcul age is ok
+DEBUG   2021-04-01 21:35:02,147 [http-nio-9001-exec-1] com.SafetyNet.Alert.Service.CommonService  - getPersonsAndFireStationNumber return a PersonsByAddressDTO List
+DEBUG   2021-04-01 21:35:45,144 [http-nio-9001-exec-3] com.SafetyNet.Alert.Service.CommonService  - getPhoneNumberByStationNumber return a set of String phones numbers
+DEBUG   2021-04-01 21:36:00,798 [http-nio-9001-exec-2] com.SafetyNet.Alert.Service.CommonService  - getPersonsByStationNumber return PersonsList
+DEBUG   2021-04-01 21:36:00,802 [http-nio-9001-exec-2] com.SafetyNet.Alert.Service.CommonService  - Peter Duncan : date de naissance connue
+DEBUG   2021-04-01 21:36:00,802 [http-nio-9001-exec-2] com.SafetyNet.Alert.Service.CommonService  - calcul age is ok
+DEBUG   2021-04-01 21:36:00,802 [http-nio-9001-exec-2] com.SafetyNet.Alert.Service.CommonService  - Reginold Walker : date de naissance connue
+DEBUG   2021-04-01 21:36:00,802 [http-nio-9001-exec-2] com.SafetyNet.Alert.Service.CommonService  - calcul age is ok
+DEBUG   2021-04-01 21:36:00,814 [http-nio-9001-exec-2] com.SafetyNet.Alert.Service.CommonService  - Jamie Peters : date de naissance connue
+DEBUG   2021-04-01 21:36:00,814 [http-nio-9001-exec-2] com.SafetyNet.Alert.Service.CommonService  - calcul age is ok
+DEBUG   2021-04-01 21:36:00,814 [http-nio-9001-exec-2] com.SafetyNet.Alert.Service.CommonService  - Brian Stelzer : date de naissance connue
+DEBUG   2021-04-01 21:36:00,814 [http-nio-9001-exec-2] com.SafetyNet.Alert.Service.CommonService  - calcul age is ok
+DEBUG   2021-04-01 21:36:00,818 [http-nio-9001-exec-2] com.SafetyNet.Alert.Service.CommonService  - Shawna Stelzer : date de naissance connue
+DEBUG   2021-04-01 21:36:00,818 [http-nio-9001-exec-2] com.SafetyNet.Alert.Service.CommonService  - calcul age is ok
+DEBUG   2021-04-01 21:36:00,818 [http-nio-9001-exec-2] com.SafetyNet.Alert.Service.CommonService  - Kendrik Stelzer : date de naissance connue
+DEBUG   2021-04-01 21:36:00,818 [http-nio-9001-exec-2] com.SafetyNet.Alert.Service.CommonService  - calcul age is ok
+DEBUG   2021-04-01 21:36:18,537 [http-nio-9001-exec-5] com.SafetyNet.Alert.Service.CommonService  - Brian Stelzer : date de naissance connue
+DEBUG   2021-04-01 21:36:18,537 [http-nio-9001-exec-5] com.SafetyNet.Alert.Service.CommonService  - calcul age is ok
+DEBUG   2021-04-01 21:36:18,537 [http-nio-9001-exec-5] com.SafetyNet.Alert.Service.CommonService  - Shawna Stelzer : date de naissance connue
+DEBUG   2021-04-01 21:36:18,537 [http-nio-9001-exec-5] com.SafetyNet.Alert.Service.CommonService  - calcul age is ok
+DEBUG   2021-04-01 21:36:18,541 [http-nio-9001-exec-5] com.SafetyNet.Alert.Service.CommonService  - Kendrik Stelzer : date de naissance connue
+DEBUG   2021-04-01 21:36:18,541 [http-nio-9001-exec-5] com.SafetyNet.Alert.Service.CommonService  - calcul age is ok
+DEBUG   2021-04-01 21:36:30,492 [http-nio-9001-exec-6] com.SafetyNet.Alert.Service.CommonService  - householdByStationNumber get a person list from stationNumber
+DEBUG   2021-04-01 21:36:30,496 [http-nio-9001-exec-6] com.SafetyNet.Alert.Service.CommonService  - householdByStationNumber : for each person set address and set station number of an housholdDTO
+DEBUG   2021-04-01 21:36:30,496 [http-nio-9001-exec-6] com.SafetyNet.Alert.Service.CommonService  - householdByStationNumber : for each householdDTO create a set of personsByAddressDTOList
+DEBUG   2021-04-01 21:36:30,496 [http-nio-9001-exec-6] com.SafetyNet.Alert.Service.CommonService  - householdByStationNumber : for each personsByAddressDTOList find medicalRecords and calcul Age and add all in household list
+DEBUG   2021-04-01 21:36:30,496 [http-nio-9001-exec-6] com.SafetyNet.Alert.Service.CommonService  - findMedicalRecordsOfAPerson a Person medicalRecords was found
+DEBUG   2021-04-01 21:36:30,496 [http-nio-9001-exec-6] com.SafetyNet.Alert.Service.CommonService  - Peter Duncan : date de naissance connue
+DEBUG   2021-04-01 21:36:30,500 [http-nio-9001-exec-6] com.SafetyNet.Alert.Service.CommonService  - calcul age is ok
+DEBUG   2021-04-01 21:36:30,500 [http-nio-9001-exec-6] com.SafetyNet.Alert.Service.CommonService  - householdByStationNumber : for each personsByAddressDTOList find medicalRecords and calcul Age and add all in household list
+DEBUG   2021-04-01 21:36:30,500 [http-nio-9001-exec-6] com.SafetyNet.Alert.Service.CommonService  - findMedicalRecordsOfAPerson a Person medicalRecords was found
+DEBUG   2021-04-01 21:36:30,500 [http-nio-9001-exec-6] com.SafetyNet.Alert.Service.CommonService  - Brian Stelzer : date de naissance connue
+DEBUG   2021-04-01 21:36:30,504 [http-nio-9001-exec-6] com.SafetyNet.Alert.Service.CommonService  - calcul age is ok
+DEBUG   2021-04-01 21:36:30,504 [http-nio-9001-exec-6] com.SafetyNet.Alert.Service.CommonService  - findMedicalRecordsOfAPerson a Person medicalRecords was found
+DEBUG   2021-04-01 21:36:30,508 [http-nio-9001-exec-6] com.SafetyNet.Alert.Service.CommonService  - Shawna Stelzer : date de naissance connue
+DEBUG   2021-04-01 21:36:30,508 [http-nio-9001-exec-6] com.SafetyNet.Alert.Service.CommonService  - calcul age is ok
+DEBUG   2021-04-01 21:36:30,508 [http-nio-9001-exec-6] com.SafetyNet.Alert.Service.CommonService  - findMedicalRecordsOfAPerson a Person medicalRecords was found
+DEBUG   2021-04-01 21:36:30,512 [http-nio-9001-exec-6] com.SafetyNet.Alert.Service.CommonService  - Kendrik Stelzer : date de naissance connue
+DEBUG   2021-04-01 21:36:30,512 [http-nio-9001-exec-6] com.SafetyNet.Alert.Service.CommonService  - calcul age is ok
+DEBUG   2021-04-01 21:36:30,516 [http-nio-9001-exec-6] com.SafetyNet.Alert.Service.CommonService  - householdByStationNumber : for each personsByAddressDTOList find medicalRecords and calcul Age and add all in household list
+DEBUG   2021-04-01 21:36:30,516 [http-nio-9001-exec-6] com.SafetyNet.Alert.Service.CommonService  - findMedicalRecordsOfAPerson a Person medicalRecords was found
+DEBUG   2021-04-01 21:36:30,516 [http-nio-9001-exec-6] com.SafetyNet.Alert.Service.CommonService  - Reginold Walker : date de naissance connue
+DEBUG   2021-04-01 21:36:30,516 [http-nio-9001-exec-6] com.SafetyNet.Alert.Service.CommonService  - calcul age is ok
+DEBUG   2021-04-01 21:36:30,516 [http-nio-9001-exec-6] com.SafetyNet.Alert.Service.CommonService  - findMedicalRecordsOfAPerson a Person medicalRecords was found
+DEBUG   2021-04-01 21:36:30,516 [http-nio-9001-exec-6] com.SafetyNet.Alert.Service.CommonService  - Jamie Peters : date de naissance connue
+DEBUG   2021-04-01 21:36:30,520 [http-nio-9001-exec-6] com.SafetyNet.Alert.Service.CommonService  - calcul age is ok
+DEBUG   2021-04-01 21:36:30,520 [http-nio-9001-exec-6] com.SafetyNet.Alert.Service.CommonService  - householdByStationNumber return a Household List
+DEBUG   2021-04-01 21:37:51,564 [http-nio-9001-exec-9] com.SafetyNet.Alert.Service.CommonService  - findMedicalRecordsOfAPerson a Person medicalRecords was found
+DEBUG   2021-04-01 21:37:51,568 [http-nio-9001-exec-9] com.SafetyNet.Alert.Service.CommonService  - Brian Stelzer : date de naissance connue
+DEBUG   2021-04-01 21:37:51,568 [http-nio-9001-exec-9] com.SafetyNet.Alert.Service.CommonService  - calcul age is ok
+DEBUG   2021-04-01 21:37:51,568 [http-nio-9001-exec-9] com.SafetyNet.Alert.Service.CommonService  - findMedicalRecordsOfAPerson a Person medicalRecords was found
+DEBUG   2021-04-01 21:37:51,572 [http-nio-9001-exec-9] com.SafetyNet.Alert.Service.CommonService  - Shawna Stelzer : date de naissance connue
+DEBUG   2021-04-01 21:37:51,572 [http-nio-9001-exec-9] com.SafetyNet.Alert.Service.CommonService  - calcul age is ok
+DEBUG   2021-04-01 21:37:51,572 [http-nio-9001-exec-9] com.SafetyNet.Alert.Service.CommonService  - findMedicalRecordsOfAPerson a Person medicalRecords was found
+DEBUG   2021-04-01 21:37:51,572 [http-nio-9001-exec-9] com.SafetyNet.Alert.Service.CommonService  - Kendrik Stelzer : date de naissance connue
+DEBUG   2021-04-01 21:37:51,576 [http-nio-9001-exec-9] com.SafetyNet.Alert.Service.CommonService  - calcul age is ok

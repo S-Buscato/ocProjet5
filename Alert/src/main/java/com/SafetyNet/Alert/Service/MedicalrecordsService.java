@@ -1,9 +1,11 @@
 package com.SafetyNet.Alert.Service;
 
 import com.SafetyNet.Alert.Dto.Mapper.MedicalrecordsMapper;
+import com.SafetyNet.Alert.Dto.MedicalRecordsDTO;
 import com.SafetyNet.Alert.Dto.MedicalRecordsUpdateDTO;
 import com.SafetyNet.Alert.Model.Medicalrecords;
-import com.SafetyNet.Alert.Repository.MedicalserviceRepository;
+import com.SafetyNet.Alert.Model.Persons;
+import com.SafetyNet.Alert.Repository.MedicalRecordsRepository;
 import com.SafetyNet.Alert.Service.Iservice.IMedicalrecordsService;
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,12 +22,12 @@ import java.util.stream.StreamSupport;
 public class MedicalrecordsService implements IMedicalrecordsService {
 
     @Autowired
-    MedicalserviceRepository medicalserviceRepository;
+    MedicalRecordsRepository medicalRecordsRepository;
 
     @Override
     public List<Medicalrecords> findAll() {
         try {
-            List<Medicalrecords> ret = StreamSupport.stream(medicalserviceRepository.findAll().spliterator(),
+            List<Medicalrecords> ret = StreamSupport.stream(medicalRecordsRepository.findAll().spliterator(),
                     false).collect(Collectors.toList());
             return ret;
 
@@ -39,7 +41,7 @@ public class MedicalrecordsService implements IMedicalrecordsService {
     @Override
     public Optional<Medicalrecords> findById(Long id) {
         try {
-            return medicalserviceRepository.findById(id);
+            return medicalRecordsRepository.findById(id);
         } catch (Exception e) {
 
         }
@@ -51,7 +53,7 @@ public class MedicalrecordsService implements IMedicalrecordsService {
     @Override
     public Long deleteById(Long id) {
         try {
-            medicalserviceRepository.deleteById(id);
+            medicalRecordsRepository.deleteById(id);
             return id;
         } catch (Exception e) {
 
@@ -61,31 +63,37 @@ public class MedicalrecordsService implements IMedicalrecordsService {
 
     @Override
     public Medicalrecords save(Medicalrecords medicalrecords) {
-        return medicalserviceRepository.save(medicalrecords);
+        return medicalRecordsRepository.save(medicalrecords);
 
     }
 
 
     @Override
     public Iterable<Medicalrecords> saveAll(List<Medicalrecords> medicalrecordsList) {
-        return medicalserviceRepository.saveAll(medicalrecordsList);
+        return medicalRecordsRepository.saveAll(medicalrecordsList);
     }
 
-    @Override
-    public Medicalrecords update(MedicalRecordsUpdateDTO medicalRecordsUpdateDTO, Long id) {
+/*    @Override
+    public Medicalrecords update(MedicalRecordsDTO medicalRecordsDTO, Long id) {
         try {
-            Medicalrecords m = medicalserviceRepository.findById(id).isPresent() ? medicalserviceRepository.findById(id).get() : null;
-            return save(MedicalrecordsMapper.INSTANCE.medicalRecordsUpdateDtoToMedicalRecordsUpdate(medicalRecordsUpdateDTO, m));
+            MedicalRecordsDTO medicalRecordsUpdateDTO = MedicalrecordsMapper.INSTANCE.convertMedicalRecordsUpdateDtoToMedicalRecordsDTO(medicalRecordsDTO);
+            personsToUpdate.setId(id);
+            Persons persons = personRepository.findById(id).get();
+            personsToUpdate.setFirstName(persons.getFirstName());
+            personsToUpdate.setLastName(persons.getLastName());
+            Medicalrecords m = medicalRecordsRepository.findById(id).isPresent() ? medicalRecordsRepository.findById(id).get() : null;
+
+            return save(MedicalrecordsMapper.INSTANCE.convertMedicalRecordsUpdateDtoToMedicalRecordsDTO(medicalRecordsUpdateDTO, m));
         } catch (Exception e) {
 
         }
         return null;
-    }
+    }*/
 
     @Override
     public Medicalrecords findByfirstnameAndLastname(String firstName, String lastName) {
         try {
-            Medicalrecords m = medicalserviceRepository.findByfirstNameAndLastName(firstName, lastName);
+            Medicalrecords m = medicalRecordsRepository.findByfirstNameAndLastName(firstName, lastName);
             return m;
         } catch (Exception e) {
 

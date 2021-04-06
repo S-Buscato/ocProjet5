@@ -3,8 +3,8 @@ package com.SafetyNet.Alert.Controller;
 import com.SafetyNet.Alert.Dto.FirestationDTO;
 import com.SafetyNet.Alert.Dto.Mapper.FirestationMapper;
 import com.SafetyNet.Alert.Model.Firestations;
-import com.SafetyNet.Alert.Service.CommonService;
 import com.SafetyNet.Alert.Service.FirestationService;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -20,6 +20,8 @@ public class FirestationController {
     @Autowired
     FirestationService firestationService;
 
+    static Logger logger = Logger.getLogger(Firestations.class);
+
 
     @GetMapping("/firestations")
     public ResponseEntity<List<FirestationDTO>> getAllFirestations() {
@@ -32,12 +34,12 @@ public class FirestationController {
 
 
     @GetMapping(value = "firestation/{id}")
-    public ResponseEntity<FirestationDTO> getOneById(@PathVariable Long id) {
+    public ResponseEntity getOneById(@PathVariable Long id) {
         try {
             return firestationService.findById(id).isPresent() ?
                     ResponseEntity.ok(FirestationMapper.INSTANCE.firestationToFirestationDTO(firestationService.findById(id).get()))
                     :
-                    ResponseEntity.badRequest().body(null);
+                    new ResponseEntity<>("Station inexistante",HttpStatus.NOT_FOUND);
         } catch (Exception e) {
             return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
         }
@@ -46,10 +48,13 @@ public class FirestationController {
 
 
     @DeleteMapping(value = "firestation/delete/{id}") // SUPPRESSION Par ID ou Adresse
-    public ResponseEntity<Long> deleteOnebyId(@PathVariable Long id) {
+    public ResponseEntity deleteOnebyId(@PathVariable Long id) {
         try {
-            return new ResponseEntity<>(firestationService.deleteById(id),
-                    HttpStatus.OK);
+            Long idResponse = firestationService.deleteById(id);
+            return  idResponse == id?
+                    new ResponseEntity<>(idResponse,HttpStatus.OK)
+                    :
+                    new ResponseEntity<>("Station inexistante",HttpStatus.NOT_FOUND);
 
         } catch (Exception e) {
             return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);

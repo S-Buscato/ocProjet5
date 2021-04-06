@@ -1,0 +1,4 @@
+DROP ALL OBJECTS;
+DROP TABLE IF EXISTS medicalrecords;
+DROP TABLE IF EXISTS firestations;
+DROP TABLE IF EXISTS persons;

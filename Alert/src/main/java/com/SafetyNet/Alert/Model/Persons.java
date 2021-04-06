@@ -27,6 +27,4 @@ public class Persons {
     private String zip;
     private String phone;
     private String email;
-
-
 }
