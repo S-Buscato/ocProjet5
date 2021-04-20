@@ -33,6 +33,18 @@
       </list>
     </option>
   </component>
+  <component name="ProjectPlainTextFileTypeManager">
+    <file url="file://$PROJECT_DIR$/Alert/src/test/java/index.html" />
+    <file url="file://$PROJECT_DIR$/Alert/src/test/java/index_SORT_BY_BLOCK.html" />
+    <file url="file://$PROJECT_DIR$/Alert/src/test/java/index_SORT_BY_BLOCK_DESC.html" />
+    <file url="file://$PROJECT_DIR$/Alert/src/test/java/index_SORT_BY_CLASS.html" />
+    <file url="file://$PROJECT_DIR$/Alert/src/test/java/index_SORT_BY_CLASS_DESC.html" />
+    <file url="file://$PROJECT_DIR$/Alert/src/test/java/index_SORT_BY_LINE.html" />
+    <file url="file://$PROJECT_DIR$/Alert/src/test/java/index_SORT_BY_LINE_DESC.html" />
+    <file url="file://$PROJECT_DIR$/Alert/src/test/java/index_SORT_BY_METHOD.html" />
+    <file url="file://$PROJECT_DIR$/Alert/src/test/java/index_SORT_BY_METHOD_DESC.html" />
+    <file url="file://$PROJECT_DIR$/Alert/src/test/java/index_SORT_BY_NAME_DESC.html" />
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_15" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$" />
   </component>

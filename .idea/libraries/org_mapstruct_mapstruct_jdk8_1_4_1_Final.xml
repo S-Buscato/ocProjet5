@@ -1,9 +1,7 @@
 <component name="libraryTable">
   <library name="org.mapstruct:mapstruct-jdk8:1.4.1.Final" type="repository">
     <properties maven-id="org.mapstruct:mapstruct-jdk8:1.4.1.Final" />
-    <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-jdk8/1.4.1.Final/mapstruct-jdk8-1.4.1.Final.jar!/" />
-    </CLASSES>
+    <CLASSES />
     <JAVADOC />
     <SOURCES />
   </library>
