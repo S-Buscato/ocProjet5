@@ -226,7 +226,7 @@ public class CommonService implements ICommonService {
                 childrenByAddressDTOS.add(childrenByAddressDTO);
             }
         }
-        return childrenByAddressDTOS;
+        return !childrenByAddressDTOS.equals(null)? childrenByAddressDTOS:null ;
     }
 
 

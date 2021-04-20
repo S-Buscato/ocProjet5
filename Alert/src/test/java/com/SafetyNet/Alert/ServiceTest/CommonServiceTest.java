@@ -2,7 +2,6 @@ package com.SafetyNet.Alert.ServiceTest;
 
 import com.SafetyNet.Alert.Dto.*;
 import com.SafetyNet.Alert.Dto.Mapper.DtoMapper;
-import com.SafetyNet.Alert.Dto.Mapper.PersonByAddressMapper;
 import com.SafetyNet.Alert.Model.Firestations;
 import com.SafetyNet.Alert.Model.Medicalrecords;
 import com.SafetyNet.Alert.Model.Persons;
@@ -27,9 +26,6 @@ import java.util.*;
 
 import static org.mockito.Mockito.*;
 
-//@AutoConfigureMockMvc
-//@ActiveProfiles("test")
-//@AutoConfigureTestDatabase
 @SpringBootTest
 public class CommonServiceTest {
 
@@ -163,9 +159,9 @@ public class CommonServiceTest {
         verify(firestationRepository, times(1)).getPersonsByStationNumber("1");
     }
 
+    //@PrepareForTest(PersonByAddressMapper.class)
     @Test
     @DisplayName("get persons and FireStation Number by address Succes")
-    @PrepareForTest(PersonByAddressMapper.class)
     public void testGetPersonsAndFireStationNumber() throws ParseException {
 
         List<Persons> personsList = new ArrayList<>();
@@ -255,7 +251,12 @@ public class CommonServiceTest {
         when(dtoMapper.convertPersonToPersonForStationDTO(persons)).thenReturn(personForStationDTO);
 
         PersonByStationDTO personByStationDTO = commonService.personsByStationNumber(stationNumber);
+        personByStationDTO.addOneAdult();
+        personByStationDTO.addOneChildren();
         Assertions.assertEquals(1, personByStationDTO.getPersonsForStationNumber().size());
+        Assertions.assertEquals(1, personByStationDTO.getAdultNumber());
+        Assertions.assertEquals(1, personByStationDTO.getChildrenNumber());
+
 
         verify(firestationRepository, times(1)).getPersonsByStationNumber("1");
         verify(dtoMapper, times(1)).convertPersonToPersonForStationDTO(persons);

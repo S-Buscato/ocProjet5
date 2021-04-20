@@ -2,7 +2,10 @@ package com.SafetyNet.Alert.DtoMapperTest;
 
 
 import com.SafetyNet.Alert.Dto.*;
-import com.SafetyNet.Alert.Dto.Mapper.*;
+import com.SafetyNet.Alert.Dto.Mapper.DtoMapper;
+import com.SafetyNet.Alert.Dto.Mapper.FirestationMapper;
+import com.SafetyNet.Alert.Dto.Mapper.MedicalrecordsMapper;
+import com.SafetyNet.Alert.Dto.Mapper.PersonMapper;
 import com.SafetyNet.Alert.Model.Firestations;
 import com.SafetyNet.Alert.Model.Medicalrecords;
 import com.SafetyNet.Alert.Model.Persons;
@@ -14,7 +17,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.ActiveProfiles;
 
 import java.util.ArrayList;
@@ -25,9 +27,6 @@ import java.util.List;
 @ActiveProfiles("test")
 @AutoConfigureTestDatabase
 public class DtoMapperTest {
-
-    @Autowired
-    PersonByAddressMapper personByAddressMapper;
 
     @Autowired
     DtoMapper dtoMapper;
@@ -115,6 +114,51 @@ public class DtoMapperTest {
     }
 
     @Test
+    @DisplayName("test convert Person to PersonForSationDTO")
+    void testConvertPersonToPersonForStationDTO(){
+
+        Persons mockPerson1 = new Persons();
+        mockPerson1.setFirstName("John");
+        mockPerson1.setLastName("Doe");
+        mockPerson1.setPhone("0123456789");
+        mockPerson1.setAddress("rue des invisibles");
+
+
+        PersonForStationDTO personForStationDTO =  dtoMapper.convertPersonToPersonForStationDTO(mockPerson1);
+
+        Assertions.assertEquals("John", personForStationDTO.getFirstName());
+        Assertions.assertEquals("Doe", personForStationDTO.getLastName());
+    }
+
+    @Test
+    @DisplayName("test convert Person to PersonInfoDTO")
+    void testConvertPersonToPersonInfoDto(){
+
+        Persons mockPerson1 = new Persons();
+
+        Medicalrecords medicalrecords = new Medicalrecords();
+        List<String> medications = new ArrayList<>();
+        List<String> allergies = new ArrayList<>();
+
+        medicalrecords.setId(1);
+        medicalrecords.setFirstName("John");
+        medicalrecords.setLastName("Doe");
+        medicalrecords.setBirthdate("08/03/1976");
+        medicalrecords.setMedications(medications);
+        medicalrecords.setAllergies(allergies);
+
+        mockPerson1.setFirstName("John");
+        mockPerson1.setLastName("Doe");
+        mockPerson1.setAddress("rue des invisibles");
+        mockPerson1.setEmail("john.doe@nomail.com");
+
+        PersonInfoDTO personInfoDTO =  dtoMapper.convertPersonToPersonInfoDto(mockPerson1, medicalrecords);
+
+        Assertions.assertEquals("John", personInfoDTO.getFirstName());
+        Assertions.assertEquals("Doe", personInfoDTO.getLastName());
+    }
+
+    @Test
     @DisplayName("test convert Person to PersonDTO")
     void testConvertPersonToPersonDto(){
 
@@ -184,6 +228,27 @@ public class DtoMapperTest {
     }
 
     @Test
+    @DisplayName("test convert medicalrecords to MedicalRecordsDTO")
+    void testConvertmedicalrecordsToMedicalrecordsDTO(){
+
+        Medicalrecords medicalrecords = new Medicalrecords();
+        List<String> medications = new ArrayList<>();
+        List<String> allergies = new ArrayList<>();
+
+        medicalrecords.setId(1);
+        medicalrecords.setFirstName("John");
+        medicalrecords.setLastName("Doe");
+        medicalrecords.setBirthdate("08/03/1976");
+        medicalrecords.setMedications(medications);
+        medicalrecords.setAllergies(allergies);
+
+        MedicalRecordsDTO medicalRecordsDTO = MedicalrecordsMapper.INSTANCE.medicalrecordsToMedicalrecordsDTO(medicalrecords);
+
+        Assertions.assertEquals("John", medicalRecordsDTO.getFirstName());
+        Assertions.assertEquals("Doe", medicalRecordsDTO.getLastName());
+    }
+
+    @Test
     @DisplayName("test convert Firestation to FirestationDTO")
     void testConvertFirestationToFirestationDTO(){
         Firestations firestations = new Firestations();
@@ -226,5 +291,92 @@ public class DtoMapperTest {
 
         Assertions.assertEquals(2, firestationDTOList.size());
     }
+
+    @Test
+    @DisplayName("test convert medicalrecordsUpdateDTO to MedicalRecordsDTO")
+    void testConvertmedicalrecordsUpdateDTOToMedicalrecordsDTO(){
+        List<String> medications = new ArrayList<>();
+        List<String> allergies = new ArrayList<>();
+
+        medications.add("paracetamol:500");
+        allergies.add("chat");
+        allergies.add("chien");
+
+        MedicalRecordsDTO medicalRecordsDTO = new MedicalRecordsDTO();
+        MedicalRecordsDTO medicalRecordsUpdateDTO = new MedicalRecordsDTO();
+
+        medicalRecordsDTO.setId(1);
+        medicalRecordsDTO.setFirstName("John");
+        medicalRecordsDTO.setLastName("Doe");
+        medicalRecordsDTO.setBirthdate("08/03/1976");
+        medicalRecordsDTO.setAllergies(allergies);
+        medicalRecordsDTO.setMedications(medications);
+
+        medicalRecordsUpdateDTO.setBirthdate("08/03/1980");
+        medicalRecordsUpdateDTO.setMedications(medications);
+        medicalRecordsUpdateDTO.setAllergies(allergies);
+
+        medicalRecordsDTO = MedicalrecordsMapper.INSTANCE.convertMedicalRecordsUpdateDtoToMedicalRecordsDTO(medicalRecordsUpdateDTO);
+
+        System.out.println(medicalRecordsDTO);
+        Assertions.assertEquals(null, medicalRecordsDTO.getFirstName());
+        Assertions.assertEquals(null, medicalRecordsDTO.getLastName());
+        Assertions.assertEquals("08/03/1980", medicalRecordsDTO.getBirthdate());
+
+    }
+
+    @Test
+    @DisplayName("test convert medicalrecords to MedicalRecordsDTO List")
+    void testConvertMedicalrecordsListToMedicalrecordsDTOList(){
+
+        List<Medicalrecords> medicalrecordsList = new ArrayList<>();
+
+        Medicalrecords medicalrecords = new Medicalrecords();
+        List<String> medications = new ArrayList<>();
+        List<String> allergies = new ArrayList<>();
+        medications.add("paracetamol:500");
+        allergies.add("chat");
+        allergies.add("chien");
+
+        medicalrecords.setId(1);
+        medicalrecords.setFirstName("John");
+        medicalrecords.setLastName("Doe");
+        medicalrecords.setBirthdate("08/03/1976");
+        medicalrecords.setMedications(medications);
+        medicalrecords.setAllergies(allergies);
+
+        medicalrecordsList.add(medicalrecords);
+
+        List<MedicalRecordsDTO> medicalRecordsDTOS = MedicalrecordsMapper.INSTANCE.medicalrecordsToMedicalrecordsDTO(medicalrecordsList);
+
+        Assertions.assertEquals(1, medicalRecordsDTOS.size());
+        Assertions.assertEquals("Doe", medicalRecordsDTOS.get(0).getLastName());
+    }
+    @Test
+    @DisplayName("test convert medicalrecordsDTO to MedicalRecords")
+    void testConvertMedicalrecordsDTOtomedicalrecords(){
+
+        MedicalRecordsDTO medicalRecordsDTO = new MedicalRecordsDTO();
+        List<String> medications = new ArrayList<>();
+        List<String> allergies = new ArrayList<>();
+
+        medications.add("paracetamol:500");
+        allergies.add("chat");
+        allergies.add("chien");
+
+        medicalRecordsDTO.setId(1);
+        medicalRecordsDTO.setFirstName("John");
+        medicalRecordsDTO.setLastName("Doe");
+        medicalRecordsDTO.setBirthdate("08/03/1976");
+        medicalRecordsDTO.setMedications(medications);
+        medicalRecordsDTO.setAllergies(allergies);
+
+        Medicalrecords medicalrecords = MedicalrecordsMapper.INSTANCE.MedicalrecordsDTOtomedicalrecords(medicalRecordsDTO);
+
+        Assertions.assertEquals("John", medicalrecords.getFirstName());
+        Assertions.assertEquals("Doe", medicalrecords.getLastName());
+    }
+
+
 
 }

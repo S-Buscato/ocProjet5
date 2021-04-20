@@ -1,14 +1,17 @@
 package com.SafetyNet.Alert.Dto.Mapper;
 
 import com.SafetyNet.Alert.Dto.MedicalRecordsDTO;
-import com.SafetyNet.Alert.Dto.MedicalRecordsUpdateDTO;
 import com.SafetyNet.Alert.Model.Medicalrecords;
-import org.mapstruct.*;
+import org.mapstruct.BeanMapping;
+import org.mapstruct.Mapper;
+import org.mapstruct.NullValuePropertyMappingStrategy;
 import org.mapstruct.factory.Mappers;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Mapper(componentModel="spring")
+@Service
 public interface MedicalrecordsMapper {
 
     MedicalrecordsMapper INSTANCE = Mappers.getMapper(MedicalrecordsMapper.class);
@@ -23,5 +26,5 @@ public interface MedicalrecordsMapper {
     List<MedicalRecordsDTO> medicalrecordsToMedicalrecordsDTO(List<Medicalrecords> medicalrecords);
 
     @BeanMapping(nullValuePropertyMappingStrategy = NullValuePropertyMappingStrategy.IGNORE)
-    Medicalrecords convertMedicalRecordsUpdateDtoToMedicalRecordsDTO(MedicalRecordsUpdateDTO medicalRecordsUpdateDTO);
+    MedicalRecordsDTO convertMedicalRecordsUpdateDtoToMedicalRecordsDTO(MedicalRecordsDTO medicalRecordsDTO );
 }

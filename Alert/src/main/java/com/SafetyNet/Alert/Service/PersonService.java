@@ -15,7 +15,6 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
-@Data
 @Service
 public class PersonService implements IPersonService {
 
@@ -25,7 +24,7 @@ public class PersonService implements IPersonService {
     @Autowired
     PersonMapper personMapper;
 
-    static Logger logger = Logger.getLogger(CommonService.class);
+    static Logger logger = Logger.getLogger(PersonService.class);
 
 
 /*    @Override
@@ -43,14 +42,14 @@ public class PersonService implements IPersonService {
 
     public List<PersonDTO> getAllPersons() {
         try{
-            logger.info("get all persons success");
+            logger.info("Persons findAll success");
             return ((List<Persons>) personRepository
                     .findAll())
                     .stream()
                     .map(PersonMapper::convertPersonToPersonDto).collect(Collectors.toList());
 
         }catch (Exception e){
-            logger.warn("persons get all not found");
+            logger.warn("Persons findAll error : " + e);
             return null;
         }
     }
@@ -58,12 +57,12 @@ public class PersonService implements IPersonService {
     @Override
     public PersonDTO findByfirstNameAndLastName(String firstName, String lastName) {
         try {
-            logger.info("person found : " + firstName + " " +  lastName);
+            logger.info("Persons find by LastName and FirstName success : " + firstName + " " +  lastName);
             return personMapper.convertPersonToPersonDto(personRepository.findByfirstNameAndLastName(firstName, lastName));
 //            Persons p = personRepository.findByfirstNameAndLastName(firstName, lastName);
 //            return p;
         } catch (Exception e) {
-            logger.warn("person not found : " + firstName + " " +  lastName);
+            logger.warn("Personsfind by LastName and FirstName error : " + firstName + " " +  lastName +" -- " + e);
             return null;
         }
     }
@@ -73,11 +72,11 @@ public class PersonService implements IPersonService {
         try {
             List<Persons> ret = StreamSupport.stream(personRepository.findByAddress(address).spliterator(),
                     false).collect(Collectors.toList());
-            logger.info("address found : " + address);
+            logger.info("Persons find by Address success : " + address);
             return ret;
 
         } catch (Exception e) {
-            logger.warn("address not found : " + address);
+            logger.warn("Persons find by Address error : " + address + " -- " + e);
             return null;
         }
     }
@@ -85,10 +84,10 @@ public class PersonService implements IPersonService {
     @Override
     public Iterable<Persons> saveAll(List<Persons> lstPerson) {
         try {
-            logger.info("save persons list succes");
+            logger.info("Persons save all success");
             return personRepository.saveAll(lstPerson);
         }catch (Exception e){
-            logger.warn("save persons list error : " + e);
+            logger.warn("Persons save all error : " + e);
             return null;
         }
     }
@@ -97,10 +96,10 @@ public class PersonService implements IPersonService {
     @Override
     public Optional<Persons> findById(Long id) {
         try {
-            logger.info("person id found : " + id);
+            logger.info("Persons find by id success : " + id);
             return personRepository.findById(id);
         } catch (Exception e) {
-            logger.warn("persons not found : " + id);
+            logger.warn("Persons find by id error : " + id +" -- " + e);
             return null;
         }
     }
@@ -110,17 +109,23 @@ public class PersonService implements IPersonService {
     public Long deleteById(Long id) {
         try {
             personRepository.deleteById(id);
-            logger.info("id persons to delete found : " + id);
+            logger.info("Persons Repository deleteById : " + id);
             return id;
         } catch (Exception e) {
-            logger.warn("id persons to delete not found : " + id);
+            logger.warn("Persons Repository delete by id not found : " + id  + " -- " + e);
             return null;
         }
     }
 
     @Override
     public PersonDTO save(Persons person) {
-        return personMapper.convertPersonToPersonDto(personRepository.save(person));
+        try {
+            logger.info("Persons Repository save person success" );
+            return personMapper.convertPersonToPersonDto(personRepository.save(person));
+        }catch (Exception e){
+            logger.warn("Persons Repository save error : " + e);
+            return null;
+        }
     }
 
     @Override
@@ -131,10 +136,10 @@ public class PersonService implements IPersonService {
         personsToUpdate.setFirstName(persons.getFirstName());
         personsToUpdate.setLastName(persons.getLastName());
         try {
-            logger.info("id persons to update found : " + personDto + " id : " + id);
+            logger.info("Persons update found : " + personDto + " id : " + id);
             return save(personMapper.convertPersonDtoToPerson(personsToUpdate));
         } catch (Exception e) {
-            logger.warn("id persons to update not found : " + personDto + " id : " + id);
+            logger.warn("Persons update not found : " + personDto + " id : " + id);
             return null;
         }
     }
@@ -142,10 +147,13 @@ public class PersonService implements IPersonService {
     public Long deleteOneByfirstnameAndLastname(String firstName, String lastName) {
         PersonDTO p = this.findByfirstNameAndLastName(firstName, lastName);
         try{
-            logger.info("persons to delete found : " + firstName + " " + lastName);
-            return this.deleteById(p.getId());
+            Long id = this.deleteById(p.getId());
+            if(id != null){
+                logger.info("Persons to delete found : " + firstName + " " + lastName);
+            }
+            return id;
         }catch (Exception e){
-            logger.warn("persons to delete not found : " + firstName + " " + lastName);
+            logger.warn("Persons to delete not found : " + firstName + " " + lastName);
             return 0L;
         }
     }

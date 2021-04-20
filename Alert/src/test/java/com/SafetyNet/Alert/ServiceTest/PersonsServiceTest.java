@@ -56,6 +56,24 @@ class PersonServiceTest {
     }
 
     @Test
+    @DisplayName("test Persons Find by id not exists Succes")
+    void testPersonsFindById() {
+        Persons persons = new Persons();
+        persons.setId(1);
+        persons.setFirstName("John");
+        persons.setLastName("Doe");
+        persons.setAddress("rue des invisibles");
+        persons.setZip("33300");
+        persons.setEmail("john.doe@nomail.com");
+        persons.setCity("frogcity");
+        persons.setPhone("000111222333");
+        when(personRepository.findById(1L)).thenReturn(Optional.of(persons));
+
+        Assertions.assertNotNull(personService.findById(1L));
+        verify(personRepository, times(1)).findById(1L);
+    }
+
+    @Test
     @DisplayName("test Find by firstName & lastName not exists Succes")
     void testFindbyFirstNameAndLastNameNotExist() {
 
@@ -99,41 +117,39 @@ class PersonServiceTest {
     @DisplayName("test update one Person Success")
     void testUpdatePerson() {
 
-        Persons persons = new Persons();
-        persons.setId(1);
-        persons.setFirstName("John");
-        persons.setLastName("Doe");
-        persons.setAddress("rue des invisibles");
-        persons.setZip("33300");
-        persons.setEmail("john.doe@nomail.com");
-        persons.setCity("frogcity");
-        persons.setPhone("000111222333");
+        PersonDTO personDTO = new PersonDTO();
+        personDTO.setId(1);
+        personDTO.setFirstName("John");
+        personDTO.setLastName("Doe");
+        personDTO.setAddress("rue des invisibles");
+        personDTO.setZip("33300");
+        personDTO.setEmail("john.doe@nomail.com");
+        personDTO.setCity("frogcity");
+        personDTO.setPhone("000111222333");
 
-        PersonDTO persons2 = new PersonDTO();
-        persons2.setFirstName("Jack");
-        persons2.setLastName("Sparrow");
+        Persons persons2 = new Persons();
+        persons2.setId(1);
+        persons2.setFirstName("John");
+        persons2.setLastName("Doe");
         persons2.setAddress("Bvd des Caraïbes");
         persons2.setZip("33300");
         persons2.setEmail("jack.D@nomail.com");
         persons2.setCity("Blackbird");
         persons2.setPhone("0102020202");
 
-
-        PersonDTO personToUpdate = persons2;
-        personToUpdate.setId(1);
-        personToUpdate.setFirstName(persons.getFirstName());
-        personToUpdate.setLastName(persons.getLastName());
-
         Long id = 1L;
 
-        when(personRepository.findById(id)).thenReturn(Optional.of(persons));
-        when(personRepository.save(personMapper.convertPersonDtoToPerson(persons2))).thenReturn(personMapper.convertPersonDtoToPerson(personToUpdate));
 
-        Assertions.assertEquals("John", personService.update(persons2, id).getFirstName());
-        Assertions.assertEquals("Doe", personService.update(persons2, id).getLastName());
-        Assertions.assertEquals("Blackbird", personService.update(persons2, id).getCity());
+        when(personRepository.findById(id)).thenReturn(Optional.of(persons2));
+        when(personRepository.save(PersonMapper.convertPersonDtoToPerson(personDTO))).thenReturn(persons2);
 
-        verify(personRepository, times(3)).save(eq(personMapper.convertPersonDtoToPerson(personToUpdate)));
+
+        PersonDTO p = personService.update(personDTO, id);
+        Assertions.assertEquals("John", p.getFirstName());
+        Assertions.assertEquals("Doe", p.getLastName());
+        Assertions.assertEquals("Blackbird", p.getCity());
+
+        verify(personRepository, times(1)).save(personMapper.convertPersonDtoToPerson(personDTO));
     }
 
     @Test
@@ -204,6 +220,30 @@ class PersonServiceTest {
         verify(personRepository, times(1)).deleteById(eq(id));
     }
 
+    @Test
+    @DisplayName("test delete one By LastName and Firstname")
+    void testDeleteByFirstNameAndLastName() {
+        Long id = 1L;
+
+        final Persons persons = new Persons();
+        persons.setId(1);
+        persons.setFirstName("John");
+        persons.setLastName("Doe");
+        persons.setAddress("rue des invisibles");
+        persons.setZip("33300");
+        persons.setEmail("john.doe@nomail.com");
+        persons.setCity("frogcity");
+        persons.setPhone("000111222333");
+
+        Optional<Persons> optionalEntityType = Optional.of(persons);
+
+        when(personRepository.findByfirstNameAndLastName("John","Doe")).thenReturn(persons);
+
+        when(personRepository.findById(id)).thenReturn(optionalEntityType);
+
+        Assertions.assertEquals(personService.deleteOneByfirstnameAndLastname("John","Doe").longValue(), persons.getId());
+        verify(personRepository, times(1)).deleteById(id);
+    }
     @Test
     @DisplayName("test Person findByAddress Success")
     void testPersonFindByAddress() {
@@ -276,7 +316,7 @@ class PersonServiceTest {
 
         Iterator<PersonDTO> i = personDTOlst.iterator();
 
-        Assertions.assertEquals(personService.getAllPersons().iterator().next(), i.next());
+        Assertions.assertEquals(i.next().getLastName(), personService.getAllPersons().iterator().next().getLastName());
         verify(personRepository, times(1)).findAll();
     }
 

@@ -1,19 +1,13 @@
 package com.SafetyNet.Alert.Dto.Mapper;
 
+
 import com.SafetyNet.Alert.Dto.PersonDTO;
-import com.SafetyNet.Alert.Dto.PersonUpdateDTO;
 import com.SafetyNet.Alert.Model.Persons;
-import org.mapstruct.BeanMapping;
+import org.springframework.stereotype.Service;
+
 /*
 import org.mapstruct.Mapper;
 */
-import org.mapstruct.MappingTarget;
-import org.mapstruct.NullValuePropertyMappingStrategy;
-import org.mapstruct.factory.Mappers;
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
-
-import java.util.List;
 
 /*
 @Mapper(componentModel="spring")
@@ -32,9 +26,7 @@ public class PersonMapper {
 
     @BeanMapping(nullValuePropertyMappingStrategy = NullValuePropertyMappingStrategy.IGNORE)
     List<PersonDTO> personToPersonsDTO(List<Persons> persons);
-
-    @BeanMapping(nullValuePropertyMappingStrategy = NullValuePropertyMappingStrategy.IGNORE)
-    Persons personUpdateDtoToPersonUpdate(PersonUpdateDTO person,  @MappingTarget Persons entity);*/
+ */
 
     public static PersonDTO convertPersonToPersonDto(Persons persons){
         PersonDTO personDTO = new PersonDTO();

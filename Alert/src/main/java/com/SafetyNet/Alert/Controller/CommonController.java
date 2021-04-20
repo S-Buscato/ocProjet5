@@ -26,9 +26,9 @@ public class CommonController {
     @GetMapping(value = "childAlert")
     public ResponseEntity<List<ChildrenByAddressDTO>> getChildrenByAddress(@RequestParam String address) {
         try {
+            ResponseEntity resp = ResponseEntity.ok(commonService.getChildByAddress(address));
             logger.info("Api/childAlert ok");
-            return ResponseEntity.ok(commonService.getChildByAddress(address));
-
+            return resp;
         } catch (Exception e) {
             logger.error("Api/childAlert error  : " + e);
             return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
@@ -38,8 +38,9 @@ public class CommonController {
     @GetMapping(value = "communityEmail")
     public ResponseEntity<List<String>> getAllCitizenEmail(@RequestParam String city) {
         try {
+            ResponseEntity resp = ResponseEntity.ok(commonService.getAllCitizenEmail(city));
             logger.info("Api/communityEmail ok");
-            return ResponseEntity.ok(commonService.getAllCitizenEmail(city));
+            return  resp;
 
         } catch (Exception e) {
             logger.error("Api/communityEmail error : " + e);
@@ -50,8 +51,9 @@ public class CommonController {
     @GetMapping(value = "firestation")
     public ResponseEntity<PersonByStationDTO> getPersonsListFromStationNumber(@RequestParam String stationNumber) {
         try {
+            ResponseEntity resp = ResponseEntity.ok(commonService.personsByStationNumber(stationNumber));
             logger.info("Api/firestation ok");
-            return ResponseEntity.ok(commonService.personsByStationNumber(stationNumber));
+            return resp;
 
         } catch (Exception e) {
             logger.error("Api/firestation error : " + e);
@@ -62,8 +64,9 @@ public class CommonController {
     @GetMapping(value = "phoneAlert")
     public ResponseEntity<Set<String>> getPhoneNumberFromStationNumber(@RequestParam String firestation) {
         try {
+            ResponseEntity resp =  ResponseEntity.ok(commonService.getPhoneNumberByStationNumber(firestation));
             logger.info("Api/phoneAlert ok");
-            return ResponseEntity.ok(commonService.getPhoneNumberByStationNumber(firestation));
+            return resp;
 
         } catch (Exception e) {
             logger.error("Api/phoneAlert error : " + e);
@@ -74,8 +77,9 @@ public class CommonController {
     @GetMapping(value = "personInfo")
     public ResponseEntity<List<PersonInfoDTO>> getPersonInfoByFirstNameAndLastName(@RequestParam String firstName, String lastName) {
         try {
+            ResponseEntity resp = ResponseEntity.ok(commonService.getPersonInfoByFirstNameAndLastName(firstName, lastName));
             logger.info("Api/personInfo ok");
-            return ResponseEntity.ok(commonService.getPersonInfoByFirstNameAndLastName(firstName, lastName));
+            return resp;
 
         } catch (Exception e) {
             logger.error("Api/personInfo error : " + e);
@@ -86,11 +90,12 @@ public class CommonController {
     @GetMapping(value = "flood/stations")
     public ResponseEntity<List<HouseholdDTO>> getHouseholdByStation(@RequestParam List<String> stations) {
         try {
-            logger.info("Api/flood/station ok");
-            return ResponseEntity.ok(commonService.householdByStationNumber(stations));
+            ResponseEntity resp = ResponseEntity.ok(commonService.householdByStationNumber(stations));
+            logger.info("Api/flood/stations ok");
+            return resp;
 
         } catch (Exception e) {
-            logger.error("Api/flood/station error : " + e);
+            logger.error("Api/flood/stations error : " + e);
             return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
@@ -98,8 +103,9 @@ public class CommonController {
     @GetMapping(value = "fire")
     public ResponseEntity<List<PersonsByAddressDTO>> getPersonsAndFirestationNumberByAddress(@RequestParam String address) {
         try {
+            ResponseEntity resp = ResponseEntity.ok(commonService.getPersonsAndFireStationNumber(address));
             logger.info("Api/fire ok");
-            return ResponseEntity.ok(commonService.getPersonsAndFireStationNumber(address));
+            return resp;
 
         } catch (Exception e) {
             logger.error("Api/fire error : " + e);

@@ -26,8 +26,11 @@ public class FirestationController {
     @GetMapping("/firestations")
     public ResponseEntity<List<FirestationDTO>> getAllFirestations() {
         try {
-            return ResponseEntity.ok(FirestationMapper.INSTANCE.firestationToFirestationsDTO(firestationService.findAll()));
+            ResponseEntity  resp = ResponseEntity.ok(FirestationMapper.INSTANCE.firestationToFirestationsDTO(firestationService.findAll()));
+            logger.info("Api/firestations/ GetAll OK");
+            return resp;
         } catch (Exception e) {
+            logger.error("Api/firestations error  : " + e);
             return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
@@ -36,11 +39,18 @@ public class FirestationController {
     @GetMapping(value = "firestation/{id}")
     public ResponseEntity getOneById(@PathVariable Long id) {
         try {
-            return firestationService.findById(id).isPresent() ?
-                    ResponseEntity.ok(FirestationMapper.INSTANCE.firestationToFirestationDTO(firestationService.findById(id).get()))
-                    :
-                    new ResponseEntity<>("Station inexistante",HttpStatus.NOT_FOUND);
+            if(firestationService.findById(id).isPresent()){
+                ResponseEntity  resp = ResponseEntity.ok(FirestationMapper.INSTANCE.firestationToFirestationDTO(firestationService.findById(id).get()));
+                logger.info("Api/firestation/id getId OK");
+                return resp;
+
+            }else{
+                ResponseEntity  resp = new ResponseEntity<>("Station inexistante",HttpStatus.NOT_FOUND);
+                logger.info("Api/firestation/id getId NotFound : " + id);
+                return resp;
+            }
         } catch (Exception e) {
+            logger.error("Api/firestation/firestation/id error  : " + e);
             return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
@@ -51,12 +61,17 @@ public class FirestationController {
     public ResponseEntity deleteOnebyId(@PathVariable Long id) {
         try {
             Long idResponse = firestationService.deleteById(id);
-            return  idResponse == id?
-                    new ResponseEntity<>(idResponse,HttpStatus.OK)
-                    :
-                    new ResponseEntity<>("Station inexistante",HttpStatus.NOT_FOUND);
-
+            if(idResponse == id){
+                ResponseEntity  resp =  new ResponseEntity<>(idResponse,HttpStatus.OK);
+                logger.info("Api/firestation/delete/id OK");
+                return  resp;
+            }else{
+                ResponseEntity  resp =  new ResponseEntity<>("Station inexistante",HttpStatus.NOT_FOUND);
+                logger.info("Api/firestation/delete/id => NotFound");
+                return  resp;
+            }
         } catch (Exception e) {
+            logger.error("Api/firestation/delete/id error  : " + e);
             return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
@@ -66,8 +81,11 @@ public class FirestationController {
     public ResponseEntity<FirestationDTO> addFirestation(@RequestBody FirestationDTO firestationDTO) {
         try {
             firestationService.save(FirestationMapper.INSTANCE.firestationDTOtoFirestation(firestationDTO));
-            return ResponseEntity.status(HttpStatus.CREATED).body(firestationDTO);
+            ResponseEntity  resp = ResponseEntity.status(HttpStatus.CREATED).body(firestationDTO);
+            logger.info("Api/firestation/add OK");
+            return resp;
         } catch (Exception e) {
+            logger.error("Api/firestation/add error  : " + e);
             return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
@@ -76,8 +94,11 @@ public class FirestationController {
     public ResponseEntity<Firestations> updateFirestation(@RequestBody FirestationDTO firestationDTO, @PathVariable Long id) {
         try {
             firestationDTO.setId(id);
-            return ResponseEntity.status(HttpStatus.ACCEPTED).body(firestationService.update(firestationDTO, id));
+            ResponseEntity  resp = ResponseEntity.status(HttpStatus.ACCEPTED).body(firestationService.update(firestationDTO, id));
+            logger.info("Api/firestation/update/id OK");
+            return resp;
         } catch (Exception e) {
+            logger.error("Api/firestation/update/id error  : " + e);
             return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }

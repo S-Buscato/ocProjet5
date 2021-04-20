@@ -48,7 +48,7 @@ public class JsonReaderService {
 
         if(Files.isDirectory(resourceDirectoryRun)){
             logger.info("Running AlertApplication => reading data.json...");
-            String rootPath = (Files.isDirectory(resourceDirectoryTest))? absolutePathTest :absolutePathRun;
+            String rootPath = (Files.isDirectory(resourceDirectoryTest))? absolutePathTest : absolutePathRun;
             System.out.println(rootPath);
             this.getData(rootPath);
         }else{
