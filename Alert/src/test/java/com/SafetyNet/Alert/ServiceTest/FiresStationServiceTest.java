@@ -80,6 +80,25 @@ class FiresStationServiceTest {
     }
 
     @Test
+    @DisplayName("test add one FireStation return Error Success")
+    void testAddFirestationReturnError() {
+
+        Exception e = new IllegalArgumentException();
+        Firestations firestations = new Firestations();
+        firestations.setId(1);
+        firestations.setStation("1");
+        firestations.setAddress("rue des invisibles");
+
+        when(firestationRepository.save(firestations)).thenThrow(e);
+
+        Firestations f = firestationService.save(firestations);
+
+        Assertions.assertNull(f.getAddress());
+
+        verify(firestationRepository, times(1)).save(eq(firestations));
+    }
+
+    @Test
     @DisplayName("test update one Firestation Success")
     void testUpdateFirestation() {
         FirestationDTO firestationDTO = new FirestationDTO();
@@ -103,6 +122,36 @@ class FiresStationServiceTest {
         Firestations f = firestationService.update(firestationDTO, id);
 
         Assertions.assertEquals("rue des Pirates", f.getAddress());
+
+        verify(firestationRepository, times(1)).save(eq(firestations));
+    }
+
+    @Test
+    @DisplayName("test update one Firestation return error Success")
+    void testUpdateFirestationReturnError() {
+        Exception e = new IllegalArgumentException();
+
+        FirestationDTO firestationDTO = new FirestationDTO();
+        firestationDTO.setStation("1");
+        firestationDTO.setAddress("rue des Pirates");
+
+
+        Firestations firestations = new Firestations();
+        firestations.setId(1);
+        firestations.setStation("1");
+        firestations.setAddress("rue des invisibles");
+
+        Long id = 1L;
+
+        when(firestationRepository.findById(id)).thenReturn(Optional.of(firestations));
+        when(firestationRepository
+                .save(firestationMapper
+                        .firestationUpdateDtoToFirestationUpdate(firestationDTO, firestations)))
+                .thenThrow(e);
+
+        Firestations f = firestationService.update(firestationDTO, id);
+
+        Assertions.assertNull( f.getAddress());
 
         verify(firestationRepository, times(1)).save(eq(firestations));
     }
@@ -136,12 +185,31 @@ class FiresStationServiceTest {
     }
 
     @Test
-    @DisplayName("test save All Firestation Error")
-    void testSaveAllFirestationError() {
-        when(firestationRepository.saveAll(null)).thenReturn(null);
+    @DisplayName("test add 2 firestation return Error Success")
+    void testAdd2FirestationReturnError() {
+        Exception e = new IllegalArgumentException();
 
-        Assertions.assertTrue(firestationService.saveAll(null) == null);
-        verify(firestationRepository, times(1)).saveAll(eq(null));
+        List<Firestations> firestationsList = new ArrayList<>();
+
+        Firestations firestations = new Firestations();
+        firestations.setId(1);
+        firestations.setStation("1");
+        firestations.setAddress("rue des invisibles");
+
+        Firestations firestations2 = new Firestations();
+
+        firestations2.setId(2);
+        firestations2.setStation("1");
+        firestations2.setAddress("rue des Geeks");
+
+        firestationsList.add(firestations);
+        firestationsList.add(firestations2);
+
+        when(firestationRepository.saveAll(firestationsList)).thenThrow(e);
+
+        Assertions.assertNull(firestationService.saveAll(firestationsList));
+        verify(firestationRepository, times(1)).saveAll(eq(firestationsList));
+
     }
 
     @Test
@@ -161,6 +229,26 @@ class FiresStationServiceTest {
         Assertions.assertEquals(firestations.getId(), firestationService.deleteById(id).longValue());
         verify(firestationRepository, times(1)).deleteById(eq(id));
     }
+
+   /* @Test
+    @DisplayName("test delete one By Id return erro Success")
+    void testDeleteByIdReturnError() {
+        Exception e = new IllegalArgumentException();
+
+        final Firestations firestations = new Firestations();
+        firestations.setId(1);
+        firestations.setStation("1");
+        firestations.setAddress("rue des invisibles");
+
+        Optional<Firestations> optionalEntityType = Optional.of(firestations);
+
+        when(firestationRepository.findById(anyLong())).thenReturn(optionalEntityType).thenThrow(e);
+
+        Long id = firestationService.deleteById(1L);
+
+        Assertions.assertNull(id);
+        verify(firestationRepository, times(1)).deleteById(eq(1L));
+    }*/
 
     @Test
     @DisplayName("test FindById not exists Success")
@@ -187,6 +275,19 @@ class FiresStationServiceTest {
         when(firestationRepository.findFirestationsByAddress("rue des invisibles")).thenReturn(firestations);
 
         Assertions.assertEquals(firestations, firestationService.findByAddress(address));
+        verify(firestationRepository, times(1)).findFirestationsByAddress(address);
+    }
+
+    @Test
+    @DisplayName("test Firestation findByAddress return error Success")
+    void testFirestationFindByAddressReturnError() {
+        Exception e = new IllegalArgumentException();
+
+        String address = "rue des invisibles";
+
+        when(firestationRepository.findFirestationsByAddress("rue des invisibles")).thenThrow(e);
+
+        Assertions.assertNull(firestationService.findByAddress(address));
         verify(firestationRepository, times(1)).findFirestationsByAddress(address);
     }
 

@@ -11415,3 +11415,727 @@ INFO    2021-04-20 21:50:14,619 [main] com.SafetyNet.Alert.Util.JsonReaderServic
 INFO    2021-04-20 21:50:14,839 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations save one success
 INFO    2021-04-20 21:50:14,858 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations update success
 INFO    2021-04-20 21:50:14,862 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations save one success
+INFO    2021-04-20 22:25:41,164 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-20 22:25:41,861 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations save one success
+INFO    2021-04-20 22:25:41,958 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations delete by id success
+INFO    2021-04-20 22:25:41,966 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations find by id success
+INFO    2021-04-20 22:25:48,435 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-20 22:25:48,490 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations save one success
+INFO    2021-04-20 22:25:48,499 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations update success
+INFO    2021-04-20 22:25:48,510 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations save one success
+INFO    2021-04-20 22:25:51,162 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-20 22:25:51,179 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations save one success
+INFO    2021-04-20 22:25:51,179 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations find by id success
+INFO    2021-04-20 22:25:52,859 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-20 22:25:52,892 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations find by address success
+INFO    2021-04-20 22:25:52,910 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations find by id success
+INFO    2021-04-20 22:25:52,915 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations find by address success
+INFO    2021-04-20 22:25:52,924 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations save all success
+INFO    2021-04-20 22:25:52,932 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations save one success
+ERROR   2021-04-20 22:25:52,940 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - get all Firestation error : java.lang.NullPointerException
+INFO    2021-04-20 22:25:52,948 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations find by id success
+ERROR   2021-04-20 22:25:52,949 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestation find by id error : java.lang.IllegalArgumentException
+INFO    2021-04-20 22:25:52,957 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations delete by id success
+INFO    2021-04-20 22:25:52,964 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations update success
+INFO    2021-04-20 22:25:52,965 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations save one success
+INFO    2021-04-20 22:25:52,972 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - get all Firestations success
+INFO    2021-04-20 22:25:52,978 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations save all success
+INFO    2021-04-20 22:25:54,440 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-20 22:25:54,449 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - MedicalRecords update found : com.SafetyNet.Alert.Dto.MedicalRecordsDTO@7b6d88d1 id : 1
+INFO    2021-04-20 22:25:54,449 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords save success
+INFO    2021-04-20 22:25:54,458 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords find by Id success
+INFO    2021-04-20 22:25:54,464 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords find by FirstName and LastName success
+INFO    2021-04-20 22:25:54,470 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords findAll success
+INFO    2021-04-20 22:25:54,476 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords find by FirstName and LastName success
+INFO    2021-04-20 22:25:54,481 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords find by FirstName and LastName success
+INFO    2021-04-20 22:25:54,481 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords delete by LastName and FirstName success
+INFO    2021-04-20 22:25:54,481 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords delete by Id success
+INFO    2021-04-20 22:25:54,486 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords delete by Id success
+WARN    2021-04-20 22:25:54,492 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords findAll error : java.lang.NullPointerException
+INFO    2021-04-20 22:25:54,497 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords save all success
+INFO    2021-04-20 22:25:54,502 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords save success
+INFO    2021-04-20 22:25:54,509 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords save all success
+INFO    2021-04-20 22:25:54,515 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords find by Id success
+INFO    2021-04-20 22:25:55,925 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+DEBUG   2021-04-20 22:25:55,930 [main] com.SafetyNet.Alert.Service.CommonService  - findByAddress return Firestations
+DEBUG   2021-04-20 22:25:55,941 [main] com.SafetyNet.Alert.Service.CommonService  - getPersonsByStationNumber return PersonsList
+DEBUG   2021-04-20 22:25:55,941 [main] com.SafetyNet.Alert.Service.CommonService  - John Doe : pas de date de naissance connue
+DEBUG   2021-04-20 22:25:55,953 [main] com.SafetyNet.Alert.Service.CommonService  - calcul age
+DEBUG   2021-04-20 22:25:55,963 [main] com.SafetyNet.Alert.Service.CommonService  - getPersonsAndFireStationNumber : from an adress get persons and find firestation, medicalrecords and calcul age
+DEBUG   2021-04-20 22:25:55,963 [main] com.SafetyNet.Alert.Service.CommonService  - findMedicalRecordsOfAPerson a Person medicalRecords was found
+DEBUG   2021-04-20 22:25:55,963 [main] com.SafetyNet.Alert.Service.CommonService  - getPersonByAddressDtoConvert return a personByAddressDtoConverted
+DEBUG   2021-04-20 22:25:55,963 [main] com.SafetyNet.Alert.Service.CommonService  - John Doe : pas de date de naissance connue
+DEBUG   2021-04-20 22:25:55,964 [main] com.SafetyNet.Alert.Service.CommonService  - calcul age
+DEBUG   2021-04-20 22:25:55,964 [main] com.SafetyNet.Alert.Service.CommonService  - getPersonsAndFireStationNumber return a PersonsByAddressDTO List
+DEBUG   2021-04-20 22:25:55,971 [main] com.SafetyNet.Alert.Service.CommonService  - getPersonsByStationNumber return PersonsList
+DEBUG   2021-04-20 22:25:55,971 [main] com.SafetyNet.Alert.Service.CommonService  - getPersonsByStationNumber return PersonsList
+DEBUG   2021-04-20 22:25:55,977 [main] com.SafetyNet.Alert.Service.CommonService  - calcul age
+DEBUG   2021-04-20 22:25:55,984 [main] com.SafetyNet.Alert.Service.CommonService  - householdByStationNumber get a person list from stationNumber
+DEBUG   2021-04-20 22:25:55,985 [main] com.SafetyNet.Alert.Service.CommonService  - householdByStationNumber : for each station address get person, set address and set station number of an housholdDTO
+DEBUG   2021-04-20 22:25:55,985 [main] com.SafetyNet.Alert.Service.CommonService  - householdByStationNumber : for each householdDTO create a set of personsByAddressDTOList
+DEBUG   2021-04-20 22:25:55,985 [main] com.SafetyNet.Alert.Service.CommonService  - householdByStationNumber : for each personsByAddressDTOList find medicalRecords and calcul Age and add all in household list
+DEBUG   2021-04-20 22:25:55,985 [main] com.SafetyNet.Alert.Service.CommonService  - findMedicalRecordsOfAPerson a Person medicalRecords was found
+DEBUG   2021-04-20 22:25:55,985 [main] com.SafetyNet.Alert.Service.CommonService  - John Doe : pas de date de naissance connue
+DEBUG   2021-04-20 22:25:55,986 [main] com.SafetyNet.Alert.Service.CommonService  - calcul age
+DEBUG   2021-04-20 22:25:55,986 [main] com.SafetyNet.Alert.Service.CommonService  - householdByStationNumber return a Household List
+DEBUG   2021-04-20 22:25:55,994 [main] com.SafetyNet.Alert.Service.CommonService  - John Doe : date de naissance connue
+DEBUG   2021-04-20 22:25:56,008 [main] com.SafetyNet.Alert.Service.CommonService  - getPhoneNumberByStationNumber return a set of String phones numbers
+DEBUG   2021-04-20 22:25:56,014 [main] com.SafetyNet.Alert.Service.CommonService  - findMedicalRecordsOfAPerson a Person medicalRecords was found
+DEBUG   2021-04-20 22:25:56,014 [main] com.SafetyNet.Alert.Service.CommonService  - findMedicalRecordsOfAPerson a Person medicalRecords was found
+DEBUG   2021-04-20 22:25:56,023 [main] com.SafetyNet.Alert.Service.CommonService  - findMedicalRecordsOfAPerson a Person medicalRecords was found
+DEBUG   2021-04-20 22:25:56,023 [main] com.SafetyNet.Alert.Service.CommonService  - John Doe : pas de date de naissance connue
+DEBUG   2021-04-20 22:25:56,023 [main] com.SafetyNet.Alert.Service.CommonService  - calcul age
+DEBUG   2021-04-20 22:25:56,032 [main] com.SafetyNet.Alert.Service.CommonService  - John Doe : pas de date de naissance connue
+DEBUG   2021-04-20 22:25:56,033 [main] com.SafetyNet.Alert.Service.CommonService  - calcul age
+INFO    2021-04-20 22:25:57,313 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-20 22:25:57,318 [main] com.SafetyNet.Alert.Service.PersonService  - Persons findAll success
+INFO    2021-04-20 22:25:57,324 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by Address success : rue des invisibles
+INFO    2021-04-20 22:25:57,324 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by Address success : rue des invisibles
+INFO    2021-04-20 22:25:57,329 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by LastName and FirstName success : John Doe
+INFO    2021-04-20 22:25:57,329 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by LastName and FirstName success : John Doe
+INFO    2021-04-20 22:25:57,330 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by LastName and FirstName success : John Doe
+WARN    2021-04-20 22:25:57,334 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by Address error : mauvaise adresse -- java.lang.NullPointerException
+INFO    2021-04-20 22:25:57,340 [main] com.SafetyNet.Alert.Service.PersonService  - Persons findAll success
+WARN    2021-04-20 22:25:57,340 [main] com.SafetyNet.Alert.Service.PersonService  - Persons findAll error : java.lang.NullPointerException
+INFO    2021-04-20 22:25:57,345 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by LastName and FirstName success : John Doe
+WARN    2021-04-20 22:25:57,345 [main] com.SafetyNet.Alert.Service.PersonService  - Personsfind by LastName and FirstName error : John Doe -- java.lang.NullPointerException
+INFO    2021-04-20 22:25:57,349 [main] com.SafetyNet.Alert.Service.PersonService  - Persons update found : com.SafetyNet.Alert.Dto.PersonDTO@65314e4 id : 1
+INFO    2021-04-20 22:25:57,349 [main] com.SafetyNet.Alert.Service.PersonService  - Persons Repository save person success
+INFO    2021-04-20 22:25:57,353 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by id success : 1
+INFO    2021-04-20 22:25:57,361 [main] com.SafetyNet.Alert.Service.PersonService  - Persons save all success
+INFO    2021-04-20 22:25:57,365 [main] com.SafetyNet.Alert.Service.PersonService  - Persons Repository save person success
+INFO    2021-04-20 22:25:57,366 [main] com.SafetyNet.Alert.Service.PersonService  - Persons Repository save person success
+INFO    2021-04-20 22:25:57,372 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by LastName and FirstName success : John Doe
+INFO    2021-04-20 22:25:57,373 [main] com.SafetyNet.Alert.Service.PersonService  - Persons Repository deleteById : 1
+INFO    2021-04-20 22:25:57,373 [main] com.SafetyNet.Alert.Service.PersonService  - Persons to delete found : John Doe
+INFO    2021-04-20 22:25:57,379 [main] com.SafetyNet.Alert.Service.PersonService  - Persons Repository deleteById : 1
+INFO    2021-04-20 22:25:57,384 [main] com.SafetyNet.Alert.Service.PersonService  - Persons save all success
+INFO    2021-04-20 22:25:58,743 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+ERROR   2021-04-20 22:25:58,830 [main] com.SafetyNet.Alert.Controller.MedicalrecordsController  - api/medicalrecords/delete => error : null
+ERROR   2021-04-20 22:25:58,865 [main] com.SafetyNet.Alert.Controller.MedicalrecordsController  - api//medicalrecords (get all medicalrecords) => error : null
+INFO    2021-04-20 22:25:58,879 [main] com.SafetyNet.Alert.Controller.MedicalrecordsController  - api/medicalrecords/delete => Ok
+INFO    2021-04-20 22:25:58,902 [main] com.SafetyNet.Alert.Controller.MedicalrecordsController  - api/medicalrecords (get all medicalrecords) => ok
+ERROR   2021-04-20 22:25:58,999 [main] com.SafetyNet.Alert.Controller.MedicalrecordsController  - api/medicalrecords/id => error : null
+INFO    2021-04-20 22:25:59,077 [main] com.SafetyNet.Alert.Controller.MedicalrecordsController  - api/medicalrecords/update/id => ok
+ERROR   2021-04-20 22:25:59,088 [main] com.SafetyNet.Alert.Controller.MedicalrecordsController  - api/medicalrecords/update/id => error : null
+INFO    2021-04-20 22:25:59,100 [main] com.SafetyNet.Alert.Controller.MedicalrecordsController  - api/medicalrecords/add => ok
+ERROR   2021-04-20 22:25:59,109 [main] com.SafetyNet.Alert.Controller.MedicalrecordsController  - api/medicalrecords/add => error : null
+ERROR   2021-04-20 22:25:59,117 [main] com.SafetyNet.Alert.Controller.MedicalrecordsController  - api/medicalrecords/delete => error : null
+INFO    2021-04-20 22:25:59,126 [main] com.SafetyNet.Alert.Controller.MedicalrecordsController  - api/medicalrecords/id => ok
+INFO    2021-04-20 22:26:00,422 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+ERROR   2021-04-20 22:26:00,431 [main] com.SafetyNet.Alert.Model.Firestations  - Api/firestation/firestation/id error  : java.lang.IllegalArgumentException
+ERROR   2021-04-20 22:26:00,440 [main] com.SafetyNet.Alert.Model.Firestations  - Api/firestations error  : java.lang.IllegalArgumentException
+INFO    2021-04-20 22:26:00,451 [main] com.SafetyNet.Alert.Model.Firestations  - Api/firestation/add OK
+INFO    2021-04-20 22:26:00,478 [main] com.SafetyNet.Alert.Model.Firestations  - Api/firestation/delete/id OK
+ERROR   2021-04-20 22:26:00,492 [main] com.SafetyNet.Alert.Model.Firestations  - Api/firestation/update/id error  : java.lang.IllegalArgumentException
+ERROR   2021-04-20 22:26:00,503 [main] com.SafetyNet.Alert.Model.Firestations  - Api/firestation/add error  : java.lang.IllegalArgumentException
+INFO    2021-04-20 22:26:00,511 [main] com.SafetyNet.Alert.Model.Firestations  - Api/firestations/ GetAll OK
+INFO    2021-04-20 22:26:00,519 [main] com.SafetyNet.Alert.Model.Firestations  - Api/firestation/delete/id => NotFound
+ERROR   2021-04-20 22:26:00,528 [main] com.SafetyNet.Alert.Model.Firestations  - Api/firestation/delete/id error  : java.lang.IllegalArgumentException
+INFO    2021-04-20 22:26:00,535 [main] com.SafetyNet.Alert.Model.Firestations  - Api/firestation/update/id OK
+INFO    2021-04-20 22:26:00,544 [main] com.SafetyNet.Alert.Model.Firestations  - Api/firestation/id getId OK
+INFO    2021-04-20 22:26:01,850 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-20 22:26:03,248 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-20 22:26:03,256 [main] com.SafetyNet.Alert.Controller.PersonController  - api/person (getAll) => ok
+ERROR   2021-04-20 22:26:03,266 [main] com.SafetyNet.Alert.Controller.PersonController  - api/person (getAll) => error : java.lang.IllegalArgumentException
+ERROR   2021-04-20 22:26:03,277 [main] com.SafetyNet.Alert.Controller.PersonController  - api/person/add => error : java.lang.IllegalArgumentException
+INFO    2021-04-20 22:26:03,288 [main] com.SafetyNet.Alert.Controller.PersonController  - api/person/update/id => ok
+INFO    2021-04-20 22:26:03,297 [main] com.SafetyNet.Alert.Controller.PersonController  - api/person/delete => NotFound
+ERROR   2021-04-20 22:26:03,307 [main] com.SafetyNet.Alert.Controller.PersonController  - api/person/update/id => error : java.lang.IllegalArgumentException
+INFO    2021-04-20 22:26:03,319 [main] com.SafetyNet.Alert.Controller.PersonController  - api/person/add => ok
+ERROR   2021-04-20 22:26:03,331 [main] com.SafetyNet.Alert.Controller.PersonController  - api/person => error : java.lang.IllegalArgumentException
+INFO    2021-04-20 22:26:03,341 [main] com.SafetyNet.Alert.Controller.PersonController  - api/person/delete => ok
+INFO    2021-04-20 22:26:04,859 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-20 22:26:04,863 [main] com.SafetyNet.Alert.Service.PersonService  - Persons Repository save person success
+INFO    2021-04-20 22:26:04,873 [main] com.SafetyNet.Alert.Service.PersonService  - Persons update found : com.SafetyNet.Alert.Dto.PersonDTO@3a571436 id : 1
+INFO    2021-04-20 22:26:04,874 [main] com.SafetyNet.Alert.Service.PersonService  - Persons Repository save person success
+INFO    2021-04-20 22:26:04,898 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by id success : 1
+INFO    2021-04-20 22:26:06,703 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-20 22:26:06,713 [main] com.SafetyNet.Alert.Service.PersonService  - Persons Repository save person success
+INFO    2021-04-20 22:26:06,720 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by id success : 1
+INFO    2021-04-20 22:26:08,251 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-20 22:26:08,257 [main] com.SafetyNet.Alert.Service.PersonService  - Persons Repository save person success
+INFO    2021-04-20 22:26:08,261 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by LastName and FirstName success : John Doe
+INFO    2021-04-20 22:26:08,275 [main] com.SafetyNet.Alert.Service.PersonService  - Persons Repository deleteById : 1
+INFO    2021-04-20 22:26:08,275 [main] com.SafetyNet.Alert.Service.PersonService  - Persons to delete found : John Doe
+INFO    2021-04-20 22:26:08,275 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by id success : 1
+INFO    2021-04-20 22:26:09,526 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+ERROR   2021-04-20 22:26:09,540 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/flood/stations error : java.lang.IllegalArgumentException
+INFO    2021-04-20 22:26:09,551 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/childAlert ok
+ERROR   2021-04-20 22:26:09,571 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/communityEmail error : java.lang.IllegalArgumentException
+ERROR   2021-04-20 22:26:09,580 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/phoneAlert error : java.lang.IllegalArgumentException
+ERROR   2021-04-20 22:26:09,592 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/childAlert error  : java.lang.IllegalArgumentException
+INFO    2021-04-20 22:26:09,603 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/phoneAlert ok
+ERROR   2021-04-20 22:26:09,612 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/fire error : java.lang.IllegalArgumentException
+ERROR   2021-04-20 22:26:09,621 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/firestation error : java.lang.IllegalArgumentException
+INFO    2021-04-20 22:26:09,638 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/communityEmail ok
+INFO    2021-04-20 22:26:09,648 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/flood/stations ok
+INFO    2021-04-20 22:26:09,661 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/firestation ok
+INFO    2021-04-20 22:26:09,680 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/personInfo ok
+INFO    2021-04-20 22:26:09,694 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/fire ok
+ERROR   2021-04-20 22:26:09,706 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/personInfo error : java.lang.IllegalArgumentException
+INFO    2021-04-20 22:26:11,097 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-20 22:26:11,105 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords save success
+INFO    2021-04-20 22:26:11,152 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - MedicalRecords update found : com.SafetyNet.Alert.Dto.MedicalRecordsDTO@23ea8293 id : 1
+INFO    2021-04-20 22:26:11,152 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords save success
+INFO    2021-04-20 22:26:12,425 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-20 22:26:12,430 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords save success
+INFO    2021-04-20 22:26:12,443 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords find by FirstName and LastName success
+INFO    2021-04-20 22:26:12,443 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords delete by LastName and FirstName success
+INFO    2021-04-20 22:26:12,453 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords delete by Id success
+INFO    2021-04-20 22:26:12,453 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords find by Id success
+INFO    2021-04-20 22:26:13,927 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-20 22:26:13,931 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords save success
+INFO    2021-04-20 22:26:13,936 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords find by Id success
+INFO    2021-04-22 22:12:00,287 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-22 22:18:50,156 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+ERROR   2021-04-22 22:18:50,256 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestation save one error : java.lang.IllegalArgumentException
+INFO    2021-04-22 22:23:32,983 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+ERROR   2021-04-22 22:23:33,074 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestation save one error : java.lang.IllegalArgumentException
+INFO    2021-04-22 23:00:07,332 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-22 23:00:08,781 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations save one success
+INFO    2021-04-22 23:00:08,878 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations delete by id success
+INFO    2021-04-22 23:00:08,889 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations find by id success
+INFO    2021-04-22 23:00:15,009 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-22 23:00:15,097 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations save one success
+INFO    2021-04-22 23:00:15,124 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations update success
+INFO    2021-04-22 23:00:15,160 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations save one success
+INFO    2021-04-22 23:00:20,743 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-22 23:00:20,791 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations save one success
+INFO    2021-04-22 23:00:20,791 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations find by id success
+INFO    2021-04-22 23:00:24,837 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-22 23:00:24,895 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations find by address success
+INFO    2021-04-22 23:00:24,943 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations find by id success
+INFO    2021-04-22 23:00:24,957 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations find by address success
+INFO    2021-04-22 23:00:24,972 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations save all success
+INFO    2021-04-22 23:00:24,987 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations save one success
+ERROR   2021-04-22 23:00:25,010 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestation save one error : java.lang.IllegalArgumentException
+ERROR   2021-04-22 23:00:25,036 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - get all Firestation error : java.lang.NullPointerException
+INFO    2021-04-22 23:00:25,044 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations find by id success
+ERROR   2021-04-22 23:00:25,044 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestation find by id error : java.lang.IllegalArgumentException
+INFO    2021-04-22 23:00:25,057 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations delete by id success
+INFO    2021-04-22 23:00:25,075 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations update success
+INFO    2021-04-22 23:00:25,075 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations save one success
+INFO    2021-04-22 23:00:25,092 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - get all Firestations success
+INFO    2021-04-22 23:00:25,107 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations save all success
+INFO    2021-04-22 23:00:28,970 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-22 23:00:28,990 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - MedicalRecords update found : com.SafetyNet.Alert.Dto.MedicalRecordsDTO@4ca6e265 id : 1
+INFO    2021-04-22 23:00:28,990 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords save success
+INFO    2021-04-22 23:00:29,009 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords find by Id success
+INFO    2021-04-22 23:00:29,028 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords find by FirstName and LastName success
+INFO    2021-04-22 23:00:29,043 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords findAll success
+INFO    2021-04-22 23:00:29,055 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords find by FirstName and LastName success
+INFO    2021-04-22 23:00:29,067 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords find by FirstName and LastName success
+INFO    2021-04-22 23:00:29,067 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords delete by LastName and FirstName success
+INFO    2021-04-22 23:00:29,068 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords delete by Id success
+INFO    2021-04-22 23:00:29,075 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords delete by Id success
+WARN    2021-04-22 23:00:29,088 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords findAll error : java.lang.NullPointerException
+INFO    2021-04-22 23:00:29,101 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords save all success
+INFO    2021-04-22 23:00:29,109 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords save success
+INFO    2021-04-22 23:00:29,122 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords save all success
+INFO    2021-04-22 23:00:29,128 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords find by Id success
+INFO    2021-04-22 23:00:32,637 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+DEBUG   2021-04-22 23:00:32,646 [main] com.SafetyNet.Alert.Service.CommonService  - findByAddress return Firestations
+DEBUG   2021-04-22 23:00:32,673 [main] com.SafetyNet.Alert.Service.CommonService  - getPersonsByStationNumber return PersonsList
+DEBUG   2021-04-22 23:00:32,673 [main] com.SafetyNet.Alert.Service.CommonService  - John Doe : pas de date de naissance connue
+DEBUG   2021-04-22 23:00:32,702 [main] com.SafetyNet.Alert.Service.CommonService  - calcul age
+DEBUG   2021-04-22 23:00:32,720 [main] com.SafetyNet.Alert.Service.CommonService  - getPersonsAndFireStationNumber : from an adress get persons and find firestation, medicalrecords and calcul age
+DEBUG   2021-04-22 23:00:32,720 [main] com.SafetyNet.Alert.Service.CommonService  - findMedicalRecordsOfAPerson a Person medicalRecords was found
+DEBUG   2021-04-22 23:00:32,720 [main] com.SafetyNet.Alert.Service.CommonService  - getPersonByAddressDtoConvert return a personByAddressDtoConverted
+DEBUG   2021-04-22 23:00:32,721 [main] com.SafetyNet.Alert.Service.CommonService  - John Doe : pas de date de naissance connue
+DEBUG   2021-04-22 23:00:32,721 [main] com.SafetyNet.Alert.Service.CommonService  - calcul age
+DEBUG   2021-04-22 23:00:32,721 [main] com.SafetyNet.Alert.Service.CommonService  - getPersonsAndFireStationNumber return a PersonsByAddressDTO List
+DEBUG   2021-04-22 23:00:32,737 [main] com.SafetyNet.Alert.Service.CommonService  - getPersonsByStationNumber return PersonsList
+DEBUG   2021-04-22 23:00:32,737 [main] com.SafetyNet.Alert.Service.CommonService  - getPersonsByStationNumber return PersonsList
+DEBUG   2021-04-22 23:00:32,752 [main] com.SafetyNet.Alert.Service.CommonService  - calcul age
+DEBUG   2021-04-22 23:00:32,759 [main] com.SafetyNet.Alert.Service.CommonService  - householdByStationNumber get a person list from stationNumber
+DEBUG   2021-04-22 23:00:32,760 [main] com.SafetyNet.Alert.Service.CommonService  - householdByStationNumber : for each station address get person, set address and set station number of an housholdDTO
+DEBUG   2021-04-22 23:00:32,760 [main] com.SafetyNet.Alert.Service.CommonService  - householdByStationNumber : for each householdDTO create a set of personsByAddressDTOList
+DEBUG   2021-04-22 23:00:32,761 [main] com.SafetyNet.Alert.Service.CommonService  - householdByStationNumber : for each personsByAddressDTOList find medicalRecords and calcul Age and add all in household list
+DEBUG   2021-04-22 23:00:32,761 [main] com.SafetyNet.Alert.Service.CommonService  - findMedicalRecordsOfAPerson a Person medicalRecords was found
+DEBUG   2021-04-22 23:00:32,761 [main] com.SafetyNet.Alert.Service.CommonService  - John Doe : pas de date de naissance connue
+DEBUG   2021-04-22 23:00:32,762 [main] com.SafetyNet.Alert.Service.CommonService  - calcul age
+DEBUG   2021-04-22 23:00:32,762 [main] com.SafetyNet.Alert.Service.CommonService  - householdByStationNumber return a Household List
+DEBUG   2021-04-22 23:00:32,776 [main] com.SafetyNet.Alert.Service.CommonService  - John Doe : date de naissance connue
+DEBUG   2021-04-22 23:00:32,803 [main] com.SafetyNet.Alert.Service.CommonService  - getPhoneNumberByStationNumber return a set of String phones numbers
+DEBUG   2021-04-22 23:00:32,812 [main] com.SafetyNet.Alert.Service.CommonService  - findMedicalRecordsOfAPerson a Person medicalRecords was found
+DEBUG   2021-04-22 23:00:32,815 [main] com.SafetyNet.Alert.Service.CommonService  - findMedicalRecordsOfAPerson a Person medicalRecords was found
+DEBUG   2021-04-22 23:00:32,837 [main] com.SafetyNet.Alert.Service.CommonService  - findMedicalRecordsOfAPerson a Person medicalRecords was found
+DEBUG   2021-04-22 23:00:32,838 [main] com.SafetyNet.Alert.Service.CommonService  - John Doe : pas de date de naissance connue
+DEBUG   2021-04-22 23:00:32,838 [main] com.SafetyNet.Alert.Service.CommonService  - calcul age
+DEBUG   2021-04-22 23:00:32,862 [main] com.SafetyNet.Alert.Service.CommonService  - John Doe : pas de date de naissance connue
+DEBUG   2021-04-22 23:00:32,863 [main] com.SafetyNet.Alert.Service.CommonService  - calcul age
+INFO    2021-04-22 23:00:36,888 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-22 23:00:36,900 [main] com.SafetyNet.Alert.Service.PersonService  - Persons findAll success
+INFO    2021-04-22 23:00:36,908 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by Address success : rue des invisibles
+INFO    2021-04-22 23:00:36,908 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by Address success : rue des invisibles
+INFO    2021-04-22 23:00:36,922 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by LastName and FirstName success : John Doe
+INFO    2021-04-22 23:00:36,922 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by LastName and FirstName success : John Doe
+INFO    2021-04-22 23:00:36,922 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by LastName and FirstName success : John Doe
+WARN    2021-04-22 23:00:36,934 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by Address error : mauvaise adresse -- java.lang.NullPointerException
+INFO    2021-04-22 23:00:36,940 [main] com.SafetyNet.Alert.Service.PersonService  - Persons findAll success
+WARN    2021-04-22 23:00:36,940 [main] com.SafetyNet.Alert.Service.PersonService  - Persons findAll error : java.lang.NullPointerException
+INFO    2021-04-22 23:00:36,955 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by LastName and FirstName success : John Doe
+WARN    2021-04-22 23:00:36,956 [main] com.SafetyNet.Alert.Service.PersonService  - Personsfind by LastName and FirstName error : John Doe -- java.lang.NullPointerException
+INFO    2021-04-22 23:00:36,969 [main] com.SafetyNet.Alert.Service.PersonService  - Persons update found : com.SafetyNet.Alert.Dto.PersonDTO@741cb82c id : 1
+INFO    2021-04-22 23:00:36,970 [main] com.SafetyNet.Alert.Service.PersonService  - Persons Repository save person success
+INFO    2021-04-22 23:00:36,976 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by id success : 1
+INFO    2021-04-22 23:00:36,992 [main] com.SafetyNet.Alert.Service.PersonService  - Persons save all success
+INFO    2021-04-22 23:00:37,006 [main] com.SafetyNet.Alert.Service.PersonService  - Persons Repository save person success
+INFO    2021-04-22 23:00:37,006 [main] com.SafetyNet.Alert.Service.PersonService  - Persons Repository save person success
+INFO    2021-04-22 23:00:37,024 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by LastName and FirstName success : John Doe
+INFO    2021-04-22 23:00:37,024 [main] com.SafetyNet.Alert.Service.PersonService  - Persons Repository deleteById : 1
+INFO    2021-04-22 23:00:37,024 [main] com.SafetyNet.Alert.Service.PersonService  - Persons to delete found : John Doe
+INFO    2021-04-22 23:00:37,040 [main] com.SafetyNet.Alert.Service.PersonService  - Persons Repository deleteById : 1
+INFO    2021-04-22 23:00:37,054 [main] com.SafetyNet.Alert.Service.PersonService  - Persons save all success
+INFO    2021-04-22 23:00:40,037 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+ERROR   2021-04-22 23:00:40,241 [main] com.SafetyNet.Alert.Controller.MedicalrecordsController  - api/medicalrecords/delete => error : null
+ERROR   2021-04-22 23:00:40,307 [main] com.SafetyNet.Alert.Controller.MedicalrecordsController  - api//medicalrecords (get all medicalrecords) => error : null
+INFO    2021-04-22 23:00:40,336 [main] com.SafetyNet.Alert.Controller.MedicalrecordsController  - api/medicalrecords/delete => Ok
+INFO    2021-04-22 23:00:40,391 [main] com.SafetyNet.Alert.Controller.MedicalrecordsController  - api/medicalrecords (get all medicalrecords) => ok
+ERROR   2021-04-22 23:00:40,616 [main] com.SafetyNet.Alert.Controller.MedicalrecordsController  - api/medicalrecords/id => error : null
+INFO    2021-04-22 23:00:40,804 [main] com.SafetyNet.Alert.Controller.MedicalrecordsController  - api/medicalrecords/update/id => ok
+ERROR   2021-04-22 23:00:40,832 [main] com.SafetyNet.Alert.Controller.MedicalrecordsController  - api/medicalrecords/update/id => error : null
+INFO    2021-04-22 23:00:40,854 [main] com.SafetyNet.Alert.Controller.MedicalrecordsController  - api/medicalrecords/add => ok
+ERROR   2021-04-22 23:00:40,871 [main] com.SafetyNet.Alert.Controller.MedicalrecordsController  - api/medicalrecords/add => error : null
+ERROR   2021-04-22 23:00:40,886 [main] com.SafetyNet.Alert.Controller.MedicalrecordsController  - api/medicalrecords/delete => error : null
+INFO    2021-04-22 23:00:40,902 [main] com.SafetyNet.Alert.Controller.MedicalrecordsController  - api/medicalrecords/id => ok
+INFO    2021-04-22 23:00:44,453 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+ERROR   2021-04-22 23:00:44,468 [main] com.SafetyNet.Alert.Model.Firestations  - Api/firestation/firestation/id error  : java.lang.IllegalArgumentException
+ERROR   2021-04-22 23:00:44,487 [main] com.SafetyNet.Alert.Model.Firestations  - Api/firestations error  : java.lang.IllegalArgumentException
+INFO    2021-04-22 23:00:44,505 [main] com.SafetyNet.Alert.Model.Firestations  - Api/firestation/add OK
+INFO    2021-04-22 23:00:44,534 [main] com.SafetyNet.Alert.Model.Firestations  - Api/firestation/delete/id OK
+ERROR   2021-04-22 23:00:44,552 [main] com.SafetyNet.Alert.Model.Firestations  - Api/firestation/update/id error  : java.lang.IllegalArgumentException
+ERROR   2021-04-22 23:00:44,571 [main] com.SafetyNet.Alert.Model.Firestations  - Api/firestation/add error  : java.lang.IllegalArgumentException
+INFO    2021-04-22 23:00:44,585 [main] com.SafetyNet.Alert.Model.Firestations  - Api/firestations/ GetAll OK
+INFO    2021-04-22 23:00:44,603 [main] com.SafetyNet.Alert.Model.Firestations  - Api/firestation/delete/id => NotFound
+ERROR   2021-04-22 23:00:44,625 [main] com.SafetyNet.Alert.Model.Firestations  - Api/firestation/delete/id error  : java.lang.IllegalArgumentException
+INFO    2021-04-22 23:00:44,654 [main] com.SafetyNet.Alert.Model.Firestations  - Api/firestation/update/id OK
+INFO    2021-04-22 23:00:44,674 [main] com.SafetyNet.Alert.Model.Firestations  - Api/firestation/id getId OK
+INFO    2021-04-22 23:00:48,489 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-22 23:00:50,865 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-22 23:00:50,873 [main] com.SafetyNet.Alert.Controller.PersonController  - api/person (getAll) => ok
+ERROR   2021-04-22 23:00:50,887 [main] com.SafetyNet.Alert.Controller.PersonController  - api/person (getAll) => error : java.lang.IllegalArgumentException
+ERROR   2021-04-22 23:00:50,907 [main] com.SafetyNet.Alert.Controller.PersonController  - api/person/add => error : java.lang.IllegalArgumentException
+INFO    2021-04-22 23:00:50,923 [main] com.SafetyNet.Alert.Controller.PersonController  - api/person/update/id => ok
+INFO    2021-04-22 23:00:50,940 [main] com.SafetyNet.Alert.Controller.PersonController  - api/person/delete => NotFound
+ERROR   2021-04-22 23:00:50,955 [main] com.SafetyNet.Alert.Controller.PersonController  - api/person/update/id => error : java.lang.IllegalArgumentException
+INFO    2021-04-22 23:00:50,973 [main] com.SafetyNet.Alert.Controller.PersonController  - api/person/add => ok
+ERROR   2021-04-22 23:00:50,999 [main] com.SafetyNet.Alert.Controller.PersonController  - api/person => error : java.lang.IllegalArgumentException
+INFO    2021-04-22 23:00:51,017 [main] com.SafetyNet.Alert.Controller.PersonController  - api/person/delete => ok
+INFO    2021-04-22 23:00:53,273 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-22 23:00:53,282 [main] com.SafetyNet.Alert.Service.PersonService  - Persons Repository save person success
+INFO    2021-04-22 23:00:53,291 [main] com.SafetyNet.Alert.Service.PersonService  - Persons update found : com.SafetyNet.Alert.Dto.PersonDTO@c5aa143 id : 1
+INFO    2021-04-22 23:00:53,291 [main] com.SafetyNet.Alert.Service.PersonService  - Persons Repository save person success
+INFO    2021-04-22 23:00:53,327 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by id success : 1
+INFO    2021-04-22 23:00:55,391 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-22 23:00:55,401 [main] com.SafetyNet.Alert.Service.PersonService  - Persons Repository save person success
+INFO    2021-04-22 23:00:55,410 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by id success : 1
+INFO    2021-04-22 23:00:57,354 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-22 23:00:57,366 [main] com.SafetyNet.Alert.Service.PersonService  - Persons Repository save person success
+INFO    2021-04-22 23:00:57,373 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by LastName and FirstName success : John Doe
+INFO    2021-04-22 23:00:57,388 [main] com.SafetyNet.Alert.Service.PersonService  - Persons Repository deleteById : 1
+INFO    2021-04-22 23:00:57,388 [main] com.SafetyNet.Alert.Service.PersonService  - Persons to delete found : John Doe
+INFO    2021-04-22 23:00:57,388 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by id success : 1
+INFO    2021-04-22 23:00:59,387 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+ERROR   2021-04-22 23:00:59,405 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/flood/stations error : java.lang.IllegalArgumentException
+INFO    2021-04-22 23:00:59,422 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/childAlert ok
+ERROR   2021-04-22 23:00:59,460 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/communityEmail error : java.lang.IllegalArgumentException
+ERROR   2021-04-22 23:00:59,477 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/phoneAlert error : java.lang.IllegalArgumentException
+ERROR   2021-04-22 23:00:59,488 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/childAlert error  : java.lang.IllegalArgumentException
+INFO    2021-04-22 23:00:59,503 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/phoneAlert ok
+ERROR   2021-04-22 23:00:59,520 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/fire error : java.lang.IllegalArgumentException
+ERROR   2021-04-22 23:00:59,544 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/firestation error : java.lang.IllegalArgumentException
+INFO    2021-04-22 23:00:59,565 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/communityEmail ok
+INFO    2021-04-22 23:00:59,585 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/flood/stations ok
+INFO    2021-04-22 23:00:59,615 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/firestation ok
+INFO    2021-04-22 23:00:59,639 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/personInfo ok
+INFO    2021-04-22 23:00:59,666 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/fire ok
+ERROR   2021-04-22 23:00:59,689 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/personInfo error : java.lang.IllegalArgumentException
+INFO    2021-04-22 23:01:02,112 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-22 23:01:02,117 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords save success
+INFO    2021-04-22 23:01:02,183 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - MedicalRecords update found : com.SafetyNet.Alert.Dto.MedicalRecordsDTO@2271265b id : 1
+INFO    2021-04-22 23:01:02,184 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords save success
+INFO    2021-04-22 23:01:04,348 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-22 23:01:04,354 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords save success
+INFO    2021-04-22 23:01:04,374 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords find by FirstName and LastName success
+INFO    2021-04-22 23:01:04,374 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords delete by LastName and FirstName success
+INFO    2021-04-22 23:01:04,385 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords delete by Id success
+INFO    2021-04-22 23:01:04,385 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords find by Id success
+INFO    2021-04-22 23:01:06,299 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-22 23:01:06,306 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords save success
+INFO    2021-04-22 23:01:06,319 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords find by Id success
+INFO    2021-04-25 21:32:19,504 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-25 21:32:19,578 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations update success
+ERROR   2021-04-25 21:32:19,580 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestation save one error : java.lang.IllegalArgumentException
+INFO    2021-04-25 21:34:47,908 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-25 21:34:47,974 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations save all success
+ERROR   2021-04-25 21:34:47,979 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestation save all error : java.lang.IllegalArgumentException
+INFO    2021-04-25 21:35:34,149 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-25 21:35:34,232 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations save all success
+ERROR   2021-04-25 21:35:34,235 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestation save all error : java.lang.IllegalArgumentException
+INFO    2021-04-25 21:36:31,417 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-25 21:36:31,476 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations save all success
+INFO    2021-04-25 21:39:07,910 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-25 21:39:07,970 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations find by address success
+ERROR   2021-04-25 21:39:07,975 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestation find by address error : java.lang.IllegalArgumentException
+INFO    2021-04-25 21:53:29,032 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-25 21:53:29,475 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations save one success
+INFO    2021-04-25 21:53:29,541 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations delete by id success
+INFO    2021-04-25 21:53:29,551 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations find by id success
+INFO    2021-04-25 21:53:33,294 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-25 21:53:33,331 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations save one success
+INFO    2021-04-25 21:53:33,342 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations update success
+INFO    2021-04-25 21:53:33,363 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations save one success
+INFO    2021-04-25 21:53:37,013 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-25 21:53:37,058 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations save one success
+INFO    2021-04-25 21:53:37,058 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations find by id success
+INFO    2021-04-25 21:53:40,568 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-25 21:53:40,629 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations find by address success
+INFO    2021-04-25 21:53:40,667 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations find by id success
+INFO    2021-04-25 21:53:40,681 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations find by address success
+ERROR   2021-04-25 21:53:40,682 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestation find by address error : java.lang.IllegalArgumentException
+INFO    2021-04-25 21:53:40,699 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations find by address success
+INFO    2021-04-25 21:53:40,713 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations save one success
+INFO    2021-04-25 21:53:40,730 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations update success
+ERROR   2021-04-25 21:53:40,730 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestation save one error : java.lang.IllegalArgumentException
+ERROR   2021-04-25 21:53:40,744 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestation save one error : java.lang.IllegalArgumentException
+ERROR   2021-04-25 21:53:40,782 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - get all Firestation error : java.lang.NullPointerException
+INFO    2021-04-25 21:53:40,795 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations find by id success
+ERROR   2021-04-25 21:53:40,796 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestation find by id error : java.lang.IllegalArgumentException
+INFO    2021-04-25 21:53:40,808 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations delete by id success
+INFO    2021-04-25 21:53:40,814 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations update success
+INFO    2021-04-25 21:53:40,814 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations save one success
+INFO    2021-04-25 21:53:40,828 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - get all Firestations success
+INFO    2021-04-25 21:53:40,844 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations save all success
+INFO    2021-04-25 21:53:40,855 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations save all success
+ERROR   2021-04-25 21:53:40,855 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestation save all error : java.lang.IllegalArgumentException
+INFO    2021-04-25 21:53:43,425 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-25 21:53:43,443 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - MedicalRecords update found : com.SafetyNet.Alert.Dto.MedicalRecordsDTO@12d76643 id : 1
+INFO    2021-04-25 21:53:43,443 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords save success
+INFO    2021-04-25 21:53:43,458 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords find by Id success
+INFO    2021-04-25 21:53:43,476 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords find by FirstName and LastName success
+INFO    2021-04-25 21:53:43,495 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords findAll success
+INFO    2021-04-25 21:53:43,510 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords find by FirstName and LastName success
+INFO    2021-04-25 21:53:43,523 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords find by FirstName and LastName success
+INFO    2021-04-25 21:53:43,524 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords delete by LastName and FirstName success
+INFO    2021-04-25 21:53:43,524 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords delete by Id success
+INFO    2021-04-25 21:53:43,532 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords delete by Id success
+WARN    2021-04-25 21:53:43,543 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords findAll error : java.lang.NullPointerException
+INFO    2021-04-25 21:53:43,549 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords save all success
+INFO    2021-04-25 21:53:43,561 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords save success
+INFO    2021-04-25 21:53:43,571 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords save all success
+INFO    2021-04-25 21:53:43,577 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords find by Id success
+INFO    2021-04-25 21:53:46,047 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+DEBUG   2021-04-25 21:53:46,063 [main] com.SafetyNet.Alert.Service.CommonService  - findByAddress return Firestations
+DEBUG   2021-04-25 21:53:46,086 [main] com.SafetyNet.Alert.Service.CommonService  - getPersonsByStationNumber return PersonsList
+DEBUG   2021-04-25 21:53:46,088 [main] com.SafetyNet.Alert.Service.CommonService  - John Doe : pas de date de naissance connue
+DEBUG   2021-04-25 21:53:46,108 [main] com.SafetyNet.Alert.Service.CommonService  - calcul age
+DEBUG   2021-04-25 21:53:46,127 [main] com.SafetyNet.Alert.Service.CommonService  - getPersonsAndFireStationNumber : from an adress get persons and find firestation, medicalrecords and calcul age
+DEBUG   2021-04-25 21:53:46,127 [main] com.SafetyNet.Alert.Service.CommonService  - findMedicalRecordsOfAPerson a Person medicalRecords was found
+DEBUG   2021-04-25 21:53:46,127 [main] com.SafetyNet.Alert.Service.CommonService  - getPersonByAddressDtoConvert return a personByAddressDtoConverted
+DEBUG   2021-04-25 21:53:46,128 [main] com.SafetyNet.Alert.Service.CommonService  - John Doe : pas de date de naissance connue
+DEBUG   2021-04-25 21:53:46,128 [main] com.SafetyNet.Alert.Service.CommonService  - calcul age
+DEBUG   2021-04-25 21:53:46,128 [main] com.SafetyNet.Alert.Service.CommonService  - getPersonsAndFireStationNumber return a PersonsByAddressDTO List
+DEBUG   2021-04-25 21:53:46,143 [main] com.SafetyNet.Alert.Service.CommonService  - getPersonsByStationNumber return PersonsList
+DEBUG   2021-04-25 21:53:46,143 [main] com.SafetyNet.Alert.Service.CommonService  - getPersonsByStationNumber return PersonsList
+DEBUG   2021-04-25 21:53:46,158 [main] com.SafetyNet.Alert.Service.CommonService  - calcul age
+DEBUG   2021-04-25 21:53:46,172 [main] com.SafetyNet.Alert.Service.CommonService  - householdByStationNumber get a person list from stationNumber
+DEBUG   2021-04-25 21:53:46,172 [main] com.SafetyNet.Alert.Service.CommonService  - householdByStationNumber : for each station address get person, set address and set station number of an housholdDTO
+DEBUG   2021-04-25 21:53:46,172 [main] com.SafetyNet.Alert.Service.CommonService  - householdByStationNumber : for each householdDTO create a set of personsByAddressDTOList
+DEBUG   2021-04-25 21:53:46,173 [main] com.SafetyNet.Alert.Service.CommonService  - householdByStationNumber : for each personsByAddressDTOList find medicalRecords and calcul Age and add all in household list
+DEBUG   2021-04-25 21:53:46,173 [main] com.SafetyNet.Alert.Service.CommonService  - findMedicalRecordsOfAPerson a Person medicalRecords was found
+DEBUG   2021-04-25 21:53:46,173 [main] com.SafetyNet.Alert.Service.CommonService  - John Doe : pas de date de naissance connue
+DEBUG   2021-04-25 21:53:46,173 [main] com.SafetyNet.Alert.Service.CommonService  - calcul age
+DEBUG   2021-04-25 21:53:46,174 [main] com.SafetyNet.Alert.Service.CommonService  - householdByStationNumber return a Household List
+DEBUG   2021-04-25 21:53:46,182 [main] com.SafetyNet.Alert.Service.CommonService  - John Doe : date de naissance connue
+DEBUG   2021-04-25 21:53:46,211 [main] com.SafetyNet.Alert.Service.CommonService  - getPhoneNumberByStationNumber return a set of String phones numbers
+DEBUG   2021-04-25 21:53:46,226 [main] com.SafetyNet.Alert.Service.CommonService  - findMedicalRecordsOfAPerson a Person medicalRecords was found
+DEBUG   2021-04-25 21:53:46,227 [main] com.SafetyNet.Alert.Service.CommonService  - findMedicalRecordsOfAPerson a Person medicalRecords was found
+DEBUG   2021-04-25 21:53:46,243 [main] com.SafetyNet.Alert.Service.CommonService  - findMedicalRecordsOfAPerson a Person medicalRecords was found
+DEBUG   2021-04-25 21:53:46,243 [main] com.SafetyNet.Alert.Service.CommonService  - John Doe : pas de date de naissance connue
+DEBUG   2021-04-25 21:53:46,243 [main] com.SafetyNet.Alert.Service.CommonService  - calcul age
+DEBUG   2021-04-25 21:53:46,263 [main] com.SafetyNet.Alert.Service.CommonService  - John Doe : pas de date de naissance connue
+DEBUG   2021-04-25 21:53:46,264 [main] com.SafetyNet.Alert.Service.CommonService  - calcul age
+INFO    2021-04-25 21:53:48,729 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-25 21:53:48,742 [main] com.SafetyNet.Alert.Service.PersonService  - Persons findAll success
+INFO    2021-04-25 21:53:48,757 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by Address success : rue des invisibles
+INFO    2021-04-25 21:53:48,757 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by Address success : rue des invisibles
+INFO    2021-04-25 21:53:48,770 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by LastName and FirstName success : John Doe
+INFO    2021-04-25 21:53:48,771 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by LastName and FirstName success : John Doe
+INFO    2021-04-25 21:53:48,771 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by LastName and FirstName success : John Doe
+WARN    2021-04-25 21:53:48,788 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by Address error : mauvaise adresse -- java.lang.NullPointerException
+INFO    2021-04-25 21:53:48,804 [main] com.SafetyNet.Alert.Service.PersonService  - Persons findAll success
+WARN    2021-04-25 21:53:48,804 [main] com.SafetyNet.Alert.Service.PersonService  - Persons findAll error : java.lang.NullPointerException
+INFO    2021-04-25 21:53:48,813 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by LastName and FirstName success : John Doe
+WARN    2021-04-25 21:53:48,813 [main] com.SafetyNet.Alert.Service.PersonService  - Personsfind by LastName and FirstName error : John Doe -- java.lang.NullPointerException
+INFO    2021-04-25 21:53:48,826 [main] com.SafetyNet.Alert.Service.PersonService  - Persons update found : com.SafetyNet.Alert.Dto.PersonDTO@6724f10e id : 1
+INFO    2021-04-25 21:53:48,826 [main] com.SafetyNet.Alert.Service.PersonService  - Persons Repository save person success
+INFO    2021-04-25 21:53:48,837 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by id success : 1
+INFO    2021-04-25 21:53:48,846 [main] com.SafetyNet.Alert.Service.PersonService  - Persons save all success
+INFO    2021-04-25 21:53:48,859 [main] com.SafetyNet.Alert.Service.PersonService  - Persons Repository save person success
+INFO    2021-04-25 21:53:48,860 [main] com.SafetyNet.Alert.Service.PersonService  - Persons Repository save person success
+INFO    2021-04-25 21:53:48,874 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by LastName and FirstName success : John Doe
+INFO    2021-04-25 21:53:48,874 [main] com.SafetyNet.Alert.Service.PersonService  - Persons Repository deleteById : 1
+INFO    2021-04-25 21:53:48,874 [main] com.SafetyNet.Alert.Service.PersonService  - Persons to delete found : John Doe
+INFO    2021-04-25 21:53:48,882 [main] com.SafetyNet.Alert.Service.PersonService  - Persons Repository deleteById : 1
+INFO    2021-04-25 21:53:48,894 [main] com.SafetyNet.Alert.Service.PersonService  - Persons save all success
+INFO    2021-04-25 21:53:51,343 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+ERROR   2021-04-25 21:53:51,509 [main] com.SafetyNet.Alert.Controller.MedicalrecordsController  - api/medicalrecords/delete => error : null
+ERROR   2021-04-25 21:53:51,568 [main] com.SafetyNet.Alert.Controller.MedicalrecordsController  - api//medicalrecords (get all medicalrecords) => error : null
+INFO    2021-04-25 21:53:51,596 [main] com.SafetyNet.Alert.Controller.MedicalrecordsController  - api/medicalrecords/delete => Ok
+INFO    2021-04-25 21:53:51,675 [main] com.SafetyNet.Alert.Controller.MedicalrecordsController  - api/medicalrecords (get all medicalrecords) => ok
+ERROR   2021-04-25 21:53:51,897 [main] com.SafetyNet.Alert.Controller.MedicalrecordsController  - api/medicalrecords/id => error : null
+INFO    2021-04-25 21:53:52,071 [main] com.SafetyNet.Alert.Controller.MedicalrecordsController  - api/medicalrecords/update/id => ok
+ERROR   2021-04-25 21:53:52,093 [main] com.SafetyNet.Alert.Controller.MedicalrecordsController  - api/medicalrecords/update/id => error : null
+INFO    2021-04-25 21:53:52,111 [main] com.SafetyNet.Alert.Controller.MedicalrecordsController  - api/medicalrecords/add => ok
+ERROR   2021-04-25 21:53:52,140 [main] com.SafetyNet.Alert.Controller.MedicalrecordsController  - api/medicalrecords/add => error : null
+ERROR   2021-04-25 21:53:52,161 [main] com.SafetyNet.Alert.Controller.MedicalrecordsController  - api/medicalrecords/delete => error : null
+INFO    2021-04-25 21:53:52,188 [main] com.SafetyNet.Alert.Controller.MedicalrecordsController  - api/medicalrecords/id => ok
+INFO    2021-04-25 21:53:54,729 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+ERROR   2021-04-25 21:53:54,743 [main] com.SafetyNet.Alert.Model.Firestations  - Api/firestation/firestation/id error  : java.lang.IllegalArgumentException
+ERROR   2021-04-25 21:53:54,758 [main] com.SafetyNet.Alert.Model.Firestations  - Api/firestations error  : java.lang.IllegalArgumentException
+INFO    2021-04-25 21:53:54,774 [main] com.SafetyNet.Alert.Model.Firestations  - Api/firestation/add OK
+INFO    2021-04-25 21:53:54,792 [main] com.SafetyNet.Alert.Model.Firestations  - Api/firestation/delete/id OK
+ERROR   2021-04-25 21:53:54,810 [main] com.SafetyNet.Alert.Model.Firestations  - Api/firestation/update/id error  : java.lang.IllegalArgumentException
+ERROR   2021-04-25 21:53:54,831 [main] com.SafetyNet.Alert.Model.Firestations  - Api/firestation/add error  : java.lang.IllegalArgumentException
+INFO    2021-04-25 21:53:54,843 [main] com.SafetyNet.Alert.Model.Firestations  - Api/firestations/ GetAll OK
+INFO    2021-04-25 21:53:54,867 [main] com.SafetyNet.Alert.Model.Firestations  - Api/firestation/delete/id => NotFound
+ERROR   2021-04-25 21:53:54,880 [main] com.SafetyNet.Alert.Model.Firestations  - Api/firestation/delete/id error  : java.lang.IllegalArgumentException
+INFO    2021-04-25 21:53:54,894 [main] com.SafetyNet.Alert.Model.Firestations  - Api/firestation/update/id OK
+INFO    2021-04-25 21:53:54,906 [main] com.SafetyNet.Alert.Model.Firestations  - Api/firestation/id getId OK
+INFO    2021-04-25 21:53:57,075 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-25 21:53:59,521 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-25 21:53:59,535 [main] com.SafetyNet.Alert.Controller.PersonController  - api/person (getAll) => ok
+ERROR   2021-04-25 21:53:59,560 [main] com.SafetyNet.Alert.Controller.PersonController  - api/person (getAll) => error : java.lang.IllegalArgumentException
+ERROR   2021-04-25 21:53:59,590 [main] com.SafetyNet.Alert.Controller.PersonController  - api/person/add => error : java.lang.IllegalArgumentException
+INFO    2021-04-25 21:53:59,610 [main] com.SafetyNet.Alert.Controller.PersonController  - api/person/update/id => ok
+INFO    2021-04-25 21:53:59,632 [main] com.SafetyNet.Alert.Controller.PersonController  - api/person/delete => NotFound
+ERROR   2021-04-25 21:53:59,644 [main] com.SafetyNet.Alert.Controller.PersonController  - api/person/update/id => error : java.lang.IllegalArgumentException
+INFO    2021-04-25 21:53:59,665 [main] com.SafetyNet.Alert.Controller.PersonController  - api/person/add => ok
+ERROR   2021-04-25 21:53:59,679 [main] com.SafetyNet.Alert.Controller.PersonController  - api/person => error : java.lang.IllegalArgumentException
+INFO    2021-04-25 21:53:59,696 [main] com.SafetyNet.Alert.Controller.PersonController  - api/person/delete => ok
+INFO    2021-04-25 21:54:01,775 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-25 21:54:01,781 [main] com.SafetyNet.Alert.Service.PersonService  - Persons Repository save person success
+INFO    2021-04-25 21:54:01,795 [main] com.SafetyNet.Alert.Service.PersonService  - Persons update found : com.SafetyNet.Alert.Dto.PersonDTO@6ddbb0e8 id : 1
+INFO    2021-04-25 21:54:01,796 [main] com.SafetyNet.Alert.Service.PersonService  - Persons Repository save person success
+INFO    2021-04-25 21:54:01,837 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by id success : 1
+INFO    2021-04-25 21:54:05,040 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-25 21:54:05,053 [main] com.SafetyNet.Alert.Service.PersonService  - Persons Repository save person success
+INFO    2021-04-25 21:54:05,061 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by id success : 1
+INFO    2021-04-25 21:54:07,125 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-25 21:54:07,136 [main] com.SafetyNet.Alert.Service.PersonService  - Persons Repository save person success
+INFO    2021-04-25 21:54:07,141 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by LastName and FirstName success : John Doe
+INFO    2021-04-25 21:54:07,160 [main] com.SafetyNet.Alert.Service.PersonService  - Persons Repository deleteById : 1
+INFO    2021-04-25 21:54:07,160 [main] com.SafetyNet.Alert.Service.PersonService  - Persons to delete found : John Doe
+INFO    2021-04-25 21:54:07,160 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by id success : 1
+INFO    2021-04-25 21:54:09,341 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+ERROR   2021-04-25 21:54:09,356 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/flood/stations error : java.lang.IllegalArgumentException
+INFO    2021-04-25 21:54:09,372 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/childAlert ok
+ERROR   2021-04-25 21:54:09,401 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/communityEmail error : java.lang.IllegalArgumentException
+ERROR   2021-04-25 21:54:09,420 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/phoneAlert error : java.lang.IllegalArgumentException
+ERROR   2021-04-25 21:54:09,435 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/childAlert error  : java.lang.IllegalArgumentException
+INFO    2021-04-25 21:54:09,446 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/phoneAlert ok
+ERROR   2021-04-25 21:54:09,466 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/fire error : java.lang.IllegalArgumentException
+ERROR   2021-04-25 21:54:09,480 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/firestation error : java.lang.IllegalArgumentException
+INFO    2021-04-25 21:54:09,504 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/communityEmail ok
+INFO    2021-04-25 21:54:09,522 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/flood/stations ok
+INFO    2021-04-25 21:54:09,554 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/firestation ok
+INFO    2021-04-25 21:54:09,588 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/personInfo ok
+INFO    2021-04-25 21:54:09,616 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/fire ok
+ERROR   2021-04-25 21:54:09,658 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/personInfo error : java.lang.IllegalArgumentException
+INFO    2021-04-25 21:54:11,790 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-25 21:54:11,802 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords save success
+INFO    2021-04-25 21:54:11,857 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - MedicalRecords update found : com.SafetyNet.Alert.Dto.MedicalRecordsDTO@7ed08d52 id : 1
+INFO    2021-04-25 21:54:11,857 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords save success
+INFO    2021-04-25 21:54:13,803 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-25 21:54:13,807 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords save success
+INFO    2021-04-25 21:54:13,823 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords find by FirstName and LastName success
+INFO    2021-04-25 21:54:13,823 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords delete by LastName and FirstName success
+INFO    2021-04-25 21:54:13,834 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords delete by Id success
+INFO    2021-04-25 21:54:13,834 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords find by Id success
+INFO    2021-04-25 21:54:15,677 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-25 21:54:15,686 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords save success
+INFO    2021-04-25 21:54:15,694 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords find by Id success
+INFO    2021-04-25 22:18:13,910 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+ERROR   2021-04-25 22:18:14,046 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestation save one error : java.lang.IllegalArgumentException
+INFO    2021-04-25 22:19:30,187 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+ERROR   2021-04-25 22:19:30,278 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestation save one error : java.lang.IllegalArgumentException
+INFO    2021-04-25 22:25:17,286 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+ERROR   2021-04-25 22:25:17,497 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/flood/stations error : java.lang.IllegalArgumentException
+INFO    2021-04-25 22:25:17,602 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/childAlert ok
+ERROR   2021-04-25 22:25:17,726 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/communityEmail error : java.lang.IllegalArgumentException
+ERROR   2021-04-25 22:25:17,743 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/phoneAlert error : java.lang.IllegalArgumentException
+ERROR   2021-04-25 22:25:17,755 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/childAlert error  : java.lang.IllegalArgumentException
+INFO    2021-04-25 22:25:17,771 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/phoneAlert ok
+ERROR   2021-04-25 22:25:17,788 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/fire error : java.lang.IllegalArgumentException
+ERROR   2021-04-25 22:25:17,803 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/firestation error : java.lang.IllegalArgumentException
+INFO    2021-04-25 22:25:17,819 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/communityEmail ok
+INFO    2021-04-25 22:25:17,834 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/flood/stations ok
+INFO    2021-04-25 22:25:17,854 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/firestation ok
+INFO    2021-04-25 22:25:17,880 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/personInfo ok
+INFO    2021-04-25 22:25:17,898 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/fire ok
+ERROR   2021-04-25 22:25:17,914 [main] com.SafetyNet.Alert.Controller.CommonController  - Api/personInfo error : java.lang.IllegalArgumentException
+INFO    2021-04-25 22:25:21,688 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+ERROR   2021-04-25 22:25:21,734 [main] com.SafetyNet.Alert.Model.Firestations  - Api/firestation/firestation/id error  : java.lang.IllegalArgumentException
+ERROR   2021-04-25 22:25:21,764 [main] com.SafetyNet.Alert.Model.Firestations  - Api/firestations error  : java.lang.IllegalArgumentException
+INFO    2021-04-25 22:25:21,898 [main] com.SafetyNet.Alert.Model.Firestations  - Api/firestation/add OK
+INFO    2021-04-25 22:25:21,929 [main] com.SafetyNet.Alert.Model.Firestations  - Api/firestation/delete/id OK
+ERROR   2021-04-25 22:25:21,951 [main] com.SafetyNet.Alert.Model.Firestations  - Api/firestation/update/id error  : java.lang.IllegalArgumentException
+ERROR   2021-04-25 22:25:21,972 [main] com.SafetyNet.Alert.Model.Firestations  - Api/firestation/add error  : java.lang.IllegalArgumentException
+INFO    2021-04-25 22:25:21,987 [main] com.SafetyNet.Alert.Model.Firestations  - Api/firestations/ GetAll OK
+INFO    2021-04-25 22:25:22,000 [main] com.SafetyNet.Alert.Model.Firestations  - Api/firestation/delete/id => NotFound
+ERROR   2021-04-25 22:25:22,015 [main] com.SafetyNet.Alert.Model.Firestations  - Api/firestation/delete/id error  : java.lang.IllegalArgumentException
+INFO    2021-04-25 22:25:22,034 [main] com.SafetyNet.Alert.Model.Firestations  - Api/firestation/update/id OK
+INFO    2021-04-25 22:25:22,050 [main] com.SafetyNet.Alert.Model.Firestations  - Api/firestation/id getId OK
+INFO    2021-04-25 22:25:25,864 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+ERROR   2021-04-25 22:25:25,891 [main] com.SafetyNet.Alert.Controller.MedicalrecordsController  - api/medicalrecords/delete => error : null
+ERROR   2021-04-25 22:25:25,911 [main] com.SafetyNet.Alert.Controller.MedicalrecordsController  - api//medicalrecords (get all medicalrecords) => error : null
+INFO    2021-04-25 22:25:25,928 [main] com.SafetyNet.Alert.Controller.MedicalrecordsController  - api/medicalrecords/delete => Ok
+INFO    2021-04-25 22:25:25,948 [main] com.SafetyNet.Alert.Controller.MedicalrecordsController  - api/medicalrecords (get all medicalrecords) => ok
+ERROR   2021-04-25 22:25:25,972 [main] com.SafetyNet.Alert.Controller.MedicalrecordsController  - api/medicalrecords/id => error : null
+INFO    2021-04-25 22:25:26,000 [main] com.SafetyNet.Alert.Controller.MedicalrecordsController  - api/medicalrecords/update/id => ok
+ERROR   2021-04-25 22:25:26,016 [main] com.SafetyNet.Alert.Controller.MedicalrecordsController  - api/medicalrecords/update/id => error : null
+INFO    2021-04-25 22:25:26,034 [main] com.SafetyNet.Alert.Controller.MedicalrecordsController  - api/medicalrecords/add => ok
+ERROR   2021-04-25 22:25:26,051 [main] com.SafetyNet.Alert.Controller.MedicalrecordsController  - api/medicalrecords/add => error : null
+ERROR   2021-04-25 22:25:26,067 [main] com.SafetyNet.Alert.Controller.MedicalrecordsController  - api/medicalrecords/delete => error : null
+INFO    2021-04-25 22:25:26,081 [main] com.SafetyNet.Alert.Controller.MedicalrecordsController  - api/medicalrecords/id => ok
+INFO    2021-04-25 22:25:28,958 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-25 22:25:28,980 [main] com.SafetyNet.Alert.Controller.PersonController  - api/person (getAll) => ok
+ERROR   2021-04-25 22:25:29,004 [main] com.SafetyNet.Alert.Controller.PersonController  - api/person (getAll) => error : java.lang.IllegalArgumentException
+ERROR   2021-04-25 22:25:29,029 [main] com.SafetyNet.Alert.Controller.PersonController  - api/person/add => error : java.lang.IllegalArgumentException
+INFO    2021-04-25 22:25:29,047 [main] com.SafetyNet.Alert.Controller.PersonController  - api/person/update/id => ok
+INFO    2021-04-25 22:25:29,063 [main] com.SafetyNet.Alert.Controller.PersonController  - api/person/delete => NotFound
+ERROR   2021-04-25 22:25:29,078 [main] com.SafetyNet.Alert.Controller.PersonController  - api/person/update/id => error : java.lang.IllegalArgumentException
+INFO    2021-04-25 22:25:29,095 [main] com.SafetyNet.Alert.Controller.PersonController  - api/person/add => ok
+ERROR   2021-04-25 22:25:29,106 [main] com.SafetyNet.Alert.Controller.PersonController  - api/person => error : java.lang.IllegalArgumentException
+INFO    2021-04-25 22:25:29,126 [main] com.SafetyNet.Alert.Controller.PersonController  - api/person/delete => ok
+INFO    2021-04-25 22:25:31,105 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-25 22:25:33,829 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+DEBUG   2021-04-25 22:25:33,846 [main] com.SafetyNet.Alert.Service.CommonService  - findByAddress return Firestations
+DEBUG   2021-04-25 22:25:33,858 [main] com.SafetyNet.Alert.Service.CommonService  - getPersonsByStationNumber return PersonsList
+DEBUG   2021-04-25 22:25:33,859 [main] com.SafetyNet.Alert.Service.CommonService  - John Doe : pas de date de naissance connue
+DEBUG   2021-04-25 22:25:33,926 [main] com.SafetyNet.Alert.Service.CommonService  - calcul age
+DEBUG   2021-04-25 22:25:33,948 [main] com.SafetyNet.Alert.Service.CommonService  - getPersonsAndFireStationNumber : from an adress get persons and find firestation, medicalrecords and calcul age
+DEBUG   2021-04-25 22:25:33,949 [main] com.SafetyNet.Alert.Service.CommonService  - findMedicalRecordsOfAPerson a Person medicalRecords was found
+DEBUG   2021-04-25 22:25:33,950 [main] com.SafetyNet.Alert.Service.CommonService  - getPersonByAddressDtoConvert return a personByAddressDtoConverted
+DEBUG   2021-04-25 22:25:33,950 [main] com.SafetyNet.Alert.Service.CommonService  - John Doe : pas de date de naissance connue
+DEBUG   2021-04-25 22:25:33,951 [main] com.SafetyNet.Alert.Service.CommonService  - calcul age
+DEBUG   2021-04-25 22:25:33,951 [main] com.SafetyNet.Alert.Service.CommonService  - getPersonsAndFireStationNumber return a PersonsByAddressDTO List
+DEBUG   2021-04-25 22:25:33,966 [main] com.SafetyNet.Alert.Service.CommonService  - getPersonsByStationNumber return PersonsList
+DEBUG   2021-04-25 22:25:33,966 [main] com.SafetyNet.Alert.Service.CommonService  - getPersonsByStationNumber return PersonsList
+DEBUG   2021-04-25 22:25:33,979 [main] com.SafetyNet.Alert.Service.CommonService  - calcul age
+DEBUG   2021-04-25 22:25:33,988 [main] com.SafetyNet.Alert.Service.CommonService  - householdByStationNumber get a person list from stationNumber
+DEBUG   2021-04-25 22:25:33,989 [main] com.SafetyNet.Alert.Service.CommonService  - householdByStationNumber : for each station address get person, set address and set station number of an housholdDTO
+DEBUG   2021-04-25 22:25:33,989 [main] com.SafetyNet.Alert.Service.CommonService  - householdByStationNumber : for each householdDTO create a set of personsByAddressDTOList
+DEBUG   2021-04-25 22:25:33,989 [main] com.SafetyNet.Alert.Service.CommonService  - householdByStationNumber : for each personsByAddressDTOList find medicalRecords and calcul Age and add all in household list
+DEBUG   2021-04-25 22:25:33,990 [main] com.SafetyNet.Alert.Service.CommonService  - findMedicalRecordsOfAPerson a Person medicalRecords was found
+DEBUG   2021-04-25 22:25:33,990 [main] com.SafetyNet.Alert.Service.CommonService  - John Doe : pas de date de naissance connue
+DEBUG   2021-04-25 22:25:33,991 [main] com.SafetyNet.Alert.Service.CommonService  - calcul age
+DEBUG   2021-04-25 22:25:33,991 [main] com.SafetyNet.Alert.Service.CommonService  - householdByStationNumber return a Household List
+DEBUG   2021-04-25 22:25:34,000 [main] com.SafetyNet.Alert.Service.CommonService  - John Doe : date de naissance connue
+DEBUG   2021-04-25 22:25:34,021 [main] com.SafetyNet.Alert.Service.CommonService  - getPhoneNumberByStationNumber return a set of String phones numbers
+DEBUG   2021-04-25 22:25:34,033 [main] com.SafetyNet.Alert.Service.CommonService  - findMedicalRecordsOfAPerson a Person medicalRecords was found
+DEBUG   2021-04-25 22:25:34,034 [main] com.SafetyNet.Alert.Service.CommonService  - findMedicalRecordsOfAPerson a Person medicalRecords was found
+DEBUG   2021-04-25 22:25:34,048 [main] com.SafetyNet.Alert.Service.CommonService  - findMedicalRecordsOfAPerson a Person medicalRecords was found
+DEBUG   2021-04-25 22:25:34,048 [main] com.SafetyNet.Alert.Service.CommonService  - John Doe : pas de date de naissance connue
+DEBUG   2021-04-25 22:25:34,049 [main] com.SafetyNet.Alert.Service.CommonService  - calcul age
+DEBUG   2021-04-25 22:25:34,063 [main] com.SafetyNet.Alert.Service.CommonService  - John Doe : pas de date de naissance connue
+DEBUG   2021-04-25 22:25:34,064 [main] com.SafetyNet.Alert.Service.CommonService  - calcul age
+INFO    2021-04-25 22:25:37,197 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-25 22:25:37,205 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations find by address success
+INFO    2021-04-25 22:25:37,215 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations find by id success
+INFO    2021-04-25 22:25:37,221 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations find by address success
+ERROR   2021-04-25 22:25:37,222 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestation find by address error : java.lang.IllegalArgumentException
+INFO    2021-04-25 22:25:37,239 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations find by address success
+INFO    2021-04-25 22:25:37,255 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations save one success
+INFO    2021-04-25 22:25:37,264 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations update success
+ERROR   2021-04-25 22:25:37,265 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestation save one error : java.lang.IllegalArgumentException
+ERROR   2021-04-25 22:25:37,274 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestation save one error : java.lang.IllegalArgumentException
+ERROR   2021-04-25 22:25:37,281 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - get all Firestation error : java.lang.NullPointerException
+INFO    2021-04-25 22:25:37,288 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations find by id success
+ERROR   2021-04-25 22:25:37,289 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestation find by id error : java.lang.IllegalArgumentException
+INFO    2021-04-25 22:25:37,300 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations delete by id success
+INFO    2021-04-25 22:25:37,311 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations update success
+INFO    2021-04-25 22:25:37,312 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations save one success
+INFO    2021-04-25 22:25:37,322 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - get all Firestations success
+INFO    2021-04-25 22:25:37,333 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations save all success
+INFO    2021-04-25 22:25:37,344 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations save all success
+ERROR   2021-04-25 22:25:37,345 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestation save all error : java.lang.IllegalArgumentException
+INFO    2021-04-25 22:25:39,173 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-25 22:25:39,183 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - MedicalRecords update found : com.SafetyNet.Alert.Dto.MedicalRecordsDTO@2dd627e0 id : 1
+INFO    2021-04-25 22:25:39,183 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords save success
+INFO    2021-04-25 22:25:39,192 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords find by Id success
+INFO    2021-04-25 22:25:39,200 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords find by FirstName and LastName success
+INFO    2021-04-25 22:25:39,208 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords findAll success
+INFO    2021-04-25 22:25:39,216 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords find by FirstName and LastName success
+INFO    2021-04-25 22:25:39,223 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords find by FirstName and LastName success
+INFO    2021-04-25 22:25:39,223 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords delete by LastName and FirstName success
+INFO    2021-04-25 22:25:39,223 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords delete by Id success
+INFO    2021-04-25 22:25:39,232 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords delete by Id success
+WARN    2021-04-25 22:25:39,241 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords findAll error : java.lang.NullPointerException
+INFO    2021-04-25 22:25:39,249 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords save all success
+INFO    2021-04-25 22:25:39,255 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords save success
+INFO    2021-04-25 22:25:39,263 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords save all success
+INFO    2021-04-25 22:25:39,269 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords find by Id success
+INFO    2021-04-25 22:25:41,105 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-25 22:25:41,111 [main] com.SafetyNet.Alert.Service.PersonService  - Persons findAll success
+INFO    2021-04-25 22:25:41,118 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by Address success : rue des invisibles
+INFO    2021-04-25 22:25:41,118 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by Address success : rue des invisibles
+INFO    2021-04-25 22:25:41,128 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by LastName and FirstName success : John Doe
+INFO    2021-04-25 22:25:41,128 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by LastName and FirstName success : John Doe
+INFO    2021-04-25 22:25:41,129 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by LastName and FirstName success : John Doe
+WARN    2021-04-25 22:25:41,137 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by Address error : mauvaise adresse -- java.lang.NullPointerException
+INFO    2021-04-25 22:25:41,145 [main] com.SafetyNet.Alert.Service.PersonService  - Persons findAll success
+WARN    2021-04-25 22:25:41,145 [main] com.SafetyNet.Alert.Service.PersonService  - Persons findAll error : java.lang.NullPointerException
+INFO    2021-04-25 22:25:41,151 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by LastName and FirstName success : John Doe
+WARN    2021-04-25 22:25:41,152 [main] com.SafetyNet.Alert.Service.PersonService  - Personsfind by LastName and FirstName error : John Doe -- java.lang.NullPointerException
+INFO    2021-04-25 22:25:41,161 [main] com.SafetyNet.Alert.Service.PersonService  - Persons update found : com.SafetyNet.Alert.Dto.PersonDTO@1d1196e id : 1
+INFO    2021-04-25 22:25:41,161 [main] com.SafetyNet.Alert.Service.PersonService  - Persons Repository save person success
+INFO    2021-04-25 22:25:41,169 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by id success : 1
+INFO    2021-04-25 22:25:41,182 [main] com.SafetyNet.Alert.Service.PersonService  - Persons save all success
+INFO    2021-04-25 22:25:41,190 [main] com.SafetyNet.Alert.Service.PersonService  - Persons Repository save person success
+INFO    2021-04-25 22:25:41,190 [main] com.SafetyNet.Alert.Service.PersonService  - Persons Repository save person success
+INFO    2021-04-25 22:25:41,198 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by LastName and FirstName success : John Doe
+INFO    2021-04-25 22:25:41,199 [main] com.SafetyNet.Alert.Service.PersonService  - Persons Repository deleteById : 1
+INFO    2021-04-25 22:25:41,199 [main] com.SafetyNet.Alert.Service.PersonService  - Persons to delete found : John Doe
+INFO    2021-04-25 22:25:41,208 [main] com.SafetyNet.Alert.Service.PersonService  - Persons Repository deleteById : 1
+INFO    2021-04-25 22:25:41,217 [main] com.SafetyNet.Alert.Service.PersonService  - Persons save all success
+INFO    2021-04-25 22:26:31,247 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-25 22:26:31,832 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations save one success
+INFO    2021-04-25 22:26:31,885 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations delete by id success
+INFO    2021-04-25 22:26:31,894 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations find by id success
+INFO    2021-04-25 22:26:34,683 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-25 22:26:34,711 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations save one success
+INFO    2021-04-25 22:26:34,720 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations update success
+INFO    2021-04-25 22:26:34,736 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations save one success
+INFO    2021-04-25 22:26:37,334 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-25 22:26:37,356 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations save one success
+INFO    2021-04-25 22:26:37,356 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations find by id success
+INFO    2021-04-25 22:26:40,249 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-25 22:26:40,256 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords save success
+INFO    2021-04-25 22:26:40,308 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - MedicalRecords update found : com.SafetyNet.Alert.Dto.MedicalRecordsDTO@52c9528e id : 1
+INFO    2021-04-25 22:26:40,308 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords save success
+INFO    2021-04-25 22:26:43,742 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-25 22:26:43,752 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords save success
+INFO    2021-04-25 22:26:43,812 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords find by FirstName and LastName success
+INFO    2021-04-25 22:26:43,812 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords delete by LastName and FirstName success
+INFO    2021-04-25 22:26:43,843 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords delete by Id success
+INFO    2021-04-25 22:26:43,843 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords find by Id success
+INFO    2021-04-25 22:26:46,898 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-25 22:26:46,907 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords save success
+INFO    2021-04-25 22:26:46,918 [main] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords find by Id success
+INFO    2021-04-25 22:26:49,187 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-25 22:26:49,196 [main] com.SafetyNet.Alert.Service.PersonService  - Persons Repository save person success
+INFO    2021-04-25 22:26:49,211 [main] com.SafetyNet.Alert.Service.PersonService  - Persons update found : com.SafetyNet.Alert.Dto.PersonDTO@2a8266e8 id : 1
+INFO    2021-04-25 22:26:49,211 [main] com.SafetyNet.Alert.Service.PersonService  - Persons Repository save person success
+INFO    2021-04-25 22:26:49,217 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by id success : 1
+INFO    2021-04-25 22:26:51,273 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-25 22:26:51,283 [main] com.SafetyNet.Alert.Service.PersonService  - Persons Repository save person success
+INFO    2021-04-25 22:26:51,288 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by id success : 1
+INFO    2021-04-25 22:26:53,084 [main] com.SafetyNet.Alert.Util.JsonReaderService  - Running Testing AlertApplication ...
+INFO    2021-04-25 22:26:53,092 [main] com.SafetyNet.Alert.Service.PersonService  - Persons Repository save person success
+INFO    2021-04-25 22:26:53,099 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by LastName and FirstName success : John Doe
+INFO    2021-04-25 22:26:53,112 [main] com.SafetyNet.Alert.Service.PersonService  - Persons Repository deleteById : 1
+INFO    2021-04-25 22:26:53,112 [main] com.SafetyNet.Alert.Service.PersonService  - Persons to delete found : John Doe
+INFO    2021-04-25 22:26:53,113 [main] com.SafetyNet.Alert.Service.PersonService  - Persons find by id success : 1

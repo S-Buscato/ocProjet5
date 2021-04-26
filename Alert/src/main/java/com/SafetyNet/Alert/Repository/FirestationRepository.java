@@ -12,7 +12,6 @@ import java.util.List;
 @Repository
 public interface FirestationRepository extends CrudRepository<Firestations, Long> {
     Firestations findFirestationsByAddress(String address);
-    Firestations findByStation(String i);
 
     @Query("SELECT p  FROM Persons p, Firestations f " +
             "WHERE p.address = f.address " +
