@@ -230,26 +230,6 @@ class FiresStationServiceTest {
         verify(firestationRepository, times(1)).deleteById(eq(id));
     }
 
-   /* @Test
-    @DisplayName("test delete one By Id return erro Success")
-    void testDeleteByIdReturnError() {
-        Exception e = new IllegalArgumentException();
-
-        final Firestations firestations = new Firestations();
-        firestations.setId(1);
-        firestations.setStation("1");
-        firestations.setAddress("rue des invisibles");
-
-        Optional<Firestations> optionalEntityType = Optional.of(firestations);
-
-        when(firestationRepository.findById(anyLong())).thenReturn(optionalEntityType).thenThrow(e);
-
-        Long id = firestationService.deleteById(1L);
-
-        Assertions.assertNull(id);
-        verify(firestationRepository, times(1)).deleteById(eq(1L));
-    }*/
-
     @Test
     @DisplayName("test FindById not exists Success")
     void testFindByIdNotExist() {
