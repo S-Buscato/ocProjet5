@@ -10,9 +10,7 @@
         <dependency maven-id="org.junit.platform:junit-platform-engine" />
       </exclude>
     </properties>
-    <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar!/" />
-    </CLASSES>
+    <CLASSES />
     <JAVADOC />
     <SOURCES />
   </library>

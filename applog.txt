@@ -1541,3 +1541,13 @@ INFO    2021-04-26 20:41:16,267 [restartedMain] com.SafetyNet.Alert.Service.Medi
 INFO    2021-04-26 20:41:16,279 [restartedMain] com.SafetyNet.Alert.Util.JsonReaderService  - add firestation in BDD ok
 INFO    2021-04-26 20:41:16,279 [restartedMain] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords save all success
 INFO    2021-04-26 20:41:16,292 [restartedMain] com.SafetyNet.Alert.Util.JsonReaderService  - add medicalrecords in BDD ok
+INFO    2021-04-27 10:01:04,577 [restartedMain] com.SafetyNet.Alert.Util.JsonReaderService  - Running AlertApplication => reading data.json...
+INFO    2021-04-27 10:01:04,627 [restartedMain] com.SafetyNet.Alert.Util.JsonReaderService  - read persons ok
+INFO    2021-04-27 10:01:04,630 [restartedMain] com.SafetyNet.Alert.Util.JsonReaderService  - read firestation ok
+INFO    2021-04-27 10:01:04,640 [restartedMain] com.SafetyNet.Alert.Util.JsonReaderService  - read medicalrecords ok
+INFO    2021-04-27 10:01:04,640 [restartedMain] com.SafetyNet.Alert.Service.PersonService  - Persons save all success
+INFO    2021-04-27 10:01:04,706 [restartedMain] com.SafetyNet.Alert.Util.JsonReaderService  - add persons in BDD ok
+INFO    2021-04-27 10:01:04,706 [restartedMain] com.SafetyNet.Alert.Service.MedicalrecordsService  - Firestations save all success
+INFO    2021-04-27 10:01:04,714 [restartedMain] com.SafetyNet.Alert.Util.JsonReaderService  - add firestation in BDD ok
+INFO    2021-04-27 10:01:04,714 [restartedMain] com.SafetyNet.Alert.Service.MedicalrecordsService  - Medicalrecords save all success
+INFO    2021-04-27 10:01:04,760 [restartedMain] com.SafetyNet.Alert.Util.JsonReaderService  - add medicalrecords in BDD ok
