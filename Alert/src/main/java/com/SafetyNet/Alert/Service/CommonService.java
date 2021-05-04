@@ -207,7 +207,6 @@ public class CommonService implements ICommonService {
         List<ChildrenByAddressDTO> childrenByAddressDTOS = new ArrayList<>();
 
         for (Persons person : personsList) {
-            // TODO : ATTENTION si on vire du medical records il n'y a plus d'age
             int age = this.calculAge(this.getBirthdate(person));
             if( age < PersonData.AGE_MAJORITE){
 

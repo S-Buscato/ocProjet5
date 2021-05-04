@@ -5,7 +5,6 @@ import com.SafetyNet.Alert.Dto.Mapper.FirestationMapper;
 import com.SafetyNet.Alert.Model.Firestations;
 import com.SafetyNet.Alert.Repository.FirestationRepository;
 import com.SafetyNet.Alert.Service.Iservice.IFirestationService;
-import lombok.Data;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

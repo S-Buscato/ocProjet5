@@ -20,8 +20,4 @@ public class AlertApplication implements CommandLineRunner {
     public void run(String... args) throws Exception {
         jsonReaderService.process();
     }
-
-
-
-
 }

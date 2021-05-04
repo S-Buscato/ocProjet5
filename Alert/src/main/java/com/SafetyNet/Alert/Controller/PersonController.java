@@ -2,7 +2,6 @@ package com.SafetyNet.Alert.Controller;
 
 import com.SafetyNet.Alert.Dto.Mapper.PersonMapper;
 import com.SafetyNet.Alert.Dto.PersonDTO;
-import com.SafetyNet.Alert.Service.MedicalrecordsService;
 import com.SafetyNet.Alert.Service.PersonService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;

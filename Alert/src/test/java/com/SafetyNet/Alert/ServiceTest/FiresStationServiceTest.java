@@ -224,7 +224,7 @@ class FiresStationServiceTest {
 
         Optional<Firestations> optionalEntityType = Optional.of(firestations);
 
-        when(firestationRepository.findById(id)).thenReturn(optionalEntityType);
+        //when(firestationRepository.findById(id)).thenReturn(optionalEntityType);
 
         Assertions.assertEquals(firestations.getId(), firestationService.deleteById(id).longValue());
         verify(firestationRepository, times(1)).deleteById(eq(id));

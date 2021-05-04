@@ -5,7 +5,6 @@ import com.SafetyNet.Alert.Dto.PersonDTO;
 import com.SafetyNet.Alert.Model.Persons;
 import com.SafetyNet.Alert.Repository.PersonRepository;
 import com.SafetyNet.Alert.Service.Iservice.IPersonService;
-import lombok.Data;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -25,20 +24,6 @@ public class PersonService implements IPersonService {
     PersonMapper personMapper;
 
     static Logger logger = Logger.getLogger(PersonService.class);
-
-
-/*    @Override
-    public List<Persons> findAll() {
-        try {
-            List<Persons> ret = StreamSupport.stream(personRepository.findAll().spliterator(),
-                    false).collect(Collectors.toList());
-            return ret;
-
-        } catch (Exception e) {
-
-        }
-        return null;
-    }*/
 
     public List<PersonDTO> getAllPersons() {
         try{

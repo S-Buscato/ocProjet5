@@ -26,7 +26,6 @@ public class DtoMapper {
         return FamilyMemberDTO;
     }
 
-
     @BeanMapping(nullValuePropertyMappingStrategy = NullValuePropertyMappingStrategy.IGNORE)
     public PersonsByAddressDTO convertPersonToPersonForStationDTO(Persons persons, Medicalrecords medicalrecords) {
         PersonsByAddressDTO personsByAddressDTO = new PersonsByAddressDTO();
